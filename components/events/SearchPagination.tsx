@@ -17,9 +17,12 @@ export function SearchPagination({
   if (nbPages <= 1) return null;
 
   const goTo = (nextPage: number) => {
+    console.log("[v0] Pagination goTo called with nextPage:", nextPage);
     const next = new URLSearchParams(params.toString());
     next.set("page", String(nextPage + 1));
-    router.push(`${NAMESPACE_PATH}/search?${next.toString()}`);
+    const newUrl = `${NAMESPACE_PATH}/search?${next.toString()}`;
+    console.log("[v0] Pagination pushing to URL:", newUrl);
+    router.push(newUrl);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -30,7 +33,10 @@ export function SearchPagination({
     >
       <button
         type="button"
-        onClick={() => goTo(page - 1)}
+        onClick={() => {
+          console.log("[v0] Previous button clicked, current page:", page);
+          goTo(page - 1);
+        }}
         disabled={page === 0}
         className="flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50"
       >
@@ -42,7 +48,10 @@ export function SearchPagination({
       </span>
       <button
         type="button"
-        onClick={() => goTo(page + 1)}
+        onClick={() => {
+          console.log("[v0] Next button clicked, current page:", page, "nbPages:", nbPages);
+          goTo(page + 1);
+        }}
         disabled={page >= nbPages - 1}
         className="flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50"
       >
