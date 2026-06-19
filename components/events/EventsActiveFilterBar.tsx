@@ -92,9 +92,20 @@ export function EventsActiveFilterBar() {
         weekend: "This weekend",
         next7: "Next 7 days",
       };
-      const label = quick
-        ? (quickLabels[quick] ?? quick)
-        : `${from ?? "…"} – ${to ?? "…"}`;
+      function fmtDate(iso: string): string {
+        const [y, m, d] = iso.split("-");
+        return `${d}/${m}/${y}`;
+      }
+      let label: string;
+      if (quick) {
+        label = quickLabels[quick] ?? quick;
+      } else if (from && to) {
+        label = `From: ${fmtDate(from)} To: ${fmtDate(to)}`;
+      } else if (from) {
+        label = `From: ${fmtDate(from)}`;
+      } else {
+        label = `To: ${fmtDate(to!)}`;
+      }
       items.push({
         key: "date",
         label,

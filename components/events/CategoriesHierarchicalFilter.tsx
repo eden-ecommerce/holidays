@@ -5,6 +5,7 @@ import { useCallback, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { NAMESPACE_PATH } from "@lib/config";
 import type { EventFacet } from "@lib/algolia/events";
+import { cleanCategoryLabel } from "@lib/algolia/category-label";
 
 type Props = {
   lvl0: EventFacet[];
@@ -47,8 +48,10 @@ export function CategoriesHierarchicalFilter({ lvl0, lvl1, lvl2, lvl3, lvl4 }: P
   // The back-nav value: go up one level.
   const parentValue = depth > 1 ? selected.split(" > ").slice(0, -1).join(" > ") : null;
 
-  // The label for the current selected node (last segment).
-  const currentLabel = selected ? selected.split(" > ").at(-1) ?? selected : null;
+  // The label for the current selected node (last segment), with :::id stripped.
+  const currentLabel = selected
+    ? cleanCategoryLabel(selected.split(" > ").at(-1) ?? selected)
+    : null;
 
   // Children to display at current depth.
   let children: EventFacet[] = [];

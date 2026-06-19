@@ -8,6 +8,7 @@ import {
   organisationHubIndex,
 } from "@lib/algolia/constants";
 import { extractHierarchyLabel } from "@lib/algolia/hierarchical-filter";
+import { cleanCategoryLabel } from "@lib/algolia/category-label";
 
 /**
  * Shape derived from live `organisationHub` browse (entityType:event).
@@ -63,11 +64,7 @@ function num(value: unknown): number | null {
   return typeof value === "number" && Number.isFinite(value) ? value : null;
 }
 
-/** Strip hierarchical facet encoding (e.g. "Label:::id") for display. */
-export function cleanCategoryLabel(value: string | null): string | null {
-  if (!value) return null;
-  return extractHierarchyLabel(value, defaultHierarchicalSearchPreset.hierarchicalFacet);
-}
+export { cleanCategoryLabel } from "@lib/algolia/category-label";
 
 function mapHit(raw: RawHit): EventHit {
   const location = (raw.location ?? {}) as Record<string, unknown>;
@@ -183,19 +180,27 @@ function buildSearchParams(params: SearchEventsParams) {
   const filters = [EVENTS_BASE_FILTER];
   if (typeof online === "boolean") filters.push(`online:${online}`);
 
-  const numericFilters: string[] = [];
-  if (typeof dateFrom === "number") {
-    numericFilters.push(`nextOccurrenceStartTimestamp >= ${dateFrom}`);
-  }
-  if (typeof dateTo === "number") {
-    numericFilters.push(`nextOccurrenceStartTimestamp <= ${dateTo}`);
+  // Use occurrenceStartTimestamps so recurring events are matched if ANY
+  // occurrence falls within the window, not just nextOccurrenceStartTimestamp.
+  const numericFilters: string[][] = [];
+  if (typeof dateFrom === "number" && typeof dateTo === "number") {
+    // Any occurrence that starts within [from, to]
+    numericFilters.push([
+      `occurrenceStartTimestamps >= ${dateFrom}`,
+      `occurrenceStartTimestamps <= ${dateTo}`,
+    ]);
+  } else if (typeof dateFrom === "number") {
+    numericFilters.push([`occurrenceStartTimestamps >= ${dateFrom}`]);
+  } else if (typeof dateTo === "number") {
+    numericFilters.push([`occurrenceStartTimestamps <= ${dateTo}`]);
   }
 
   const hasGeo = typeof lat === "number" && typeof lng === "number";
 
   const base: Record<string, unknown> = {
     filters: filters.join(" AND "),
-    numericFilters,
+    // numericFilters is an array of arrays — Algolia ANDs the outer array, ORs the inner.
+    ...(numericFilters.length > 0 ? { numericFilters } : {}),
     getRankingInfo: hasGeo,
   };
   if (hasGeo) {
@@ -206,14 +211,10 @@ function buildSearchParams(params: SearchEventsParams) {
 }
 
 function categoryFacetFilter(category: string): string[] {
-  // Match any hierarchy level so a region-level category still works.
-  return [
-    `categoryHierarchy.lvl0:${category}`,
-    `categoryHierarchy.lvl1:${category}`,
-    `categoryHierarchy.lvl2:${category}`,
-    `categoryHierarchy.lvl3:${category}`,
-    `categoryHierarchy.lvl4:${category}`,
-  ];
+  // The `category` URL param may be the cleaned label (no :::id) or raw Algolia value.
+  // We match both the raw value AND the label-only prefix so either form works.
+  const levels = [0, 1, 2, 3, 4];
+  return levels.map((l) => `categoryHierarchy.lvl${l}:${category}`);
 }
 
 /**
@@ -390,6 +391,40 @@ export async function getEventById(id: string): Promise<EventHit | null> {
     return mapHit(raw);
   } catch {
     return null;
+  }
+}
+
+/** Fetch multiple events by their ids in one Algolia multiQuery request. */
+export async function getEventsByIds(ids: string[]): Promise<EventHit[]> {
+  if (ids.length === 0) return [];
+  const client = getAlgoliaSearchClient();
+  if (!client) return [];
+
+  const objectIDs = ids.map((id) => (id.startsWith("event:") ? id : `event:${id}`));
+
+  try {
+    const response = await client.search(
+      objectIDs.map((objectID) => ({
+        indexName: organisationHubIndex,
+        query: "",
+        params: {
+          filters: `${EVENTS_BASE_FILTER} AND objectID:${objectID}`,
+          hitsPerPage: 1,
+        },
+      })) as unknown as Parameters<typeof client.search>[0],
+    );
+
+    const hits: EventHit[] = [];
+    for (const result of response.results) {
+      if ("hits" in result) {
+        for (const hit of result.hits as RawHit[]) {
+          if (hit.entityType === "event") hits.push(mapHit(hit));
+        }
+      }
+    }
+    return hits;
+  } catch {
+    return [];
   }
 }
 

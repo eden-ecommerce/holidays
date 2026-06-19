@@ -1,6 +1,6 @@
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
-import { Search, ShoppingBag, User } from "lucide-react";
+import { ShoppingBag, User } from "lucide-react";
 
 const PRIMARY_LINKS = [
   { text: "Bibles", href: "https://www.eden.co.uk/bibles" },
@@ -34,28 +34,7 @@ export function EdenHeader() {
             <span className="text-foreground">.co.uk</span>
           </a>
 
-          <form
-            action={`${NAMESPACE_PATH}/search`}
-            className="relative ml-2 hidden flex-1 items-center md:flex"
-            role="search"
-          >
-            <input
-              type="search"
-              name="q"
-              placeholder="Search Christian events near you…"
-              aria-label="Search events"
-              className="h-10 w-full rounded-full border border-border bg-card pl-4 pr-10 text-sm text-foreground outline-none placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-ring/30"
-            />
-            <button
-              type="submit"
-              aria-label="Submit search"
-              className="absolute right-1 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground"
-            >
-              <Search className="h-4 w-4" />
-            </button>
-          </form>
-
-          <div className="ml-auto flex items-center gap-5 md:ml-0">
+          <div className="ml-auto flex items-center gap-5">
             <a
               href="https://www.eden.co.uk/account"
               className="flex items-center gap-1.5 text-sm text-foreground hover:text-primary"

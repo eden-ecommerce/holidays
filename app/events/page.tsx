@@ -1,11 +1,11 @@
 import { EventCard } from "@components/events/EventCard";
-import { LocationSearchBox } from "@components/events/LocationSearchBox";
+import { HomeLocationSearch } from "@components/events/HomeLocationSearch";
 import { IntegrationEnvError } from "@components/common/IntegrationEnvError";
 import { NsLink } from "@components/ns-link";
 import { buttonVariants } from "@components/ui/button";
 import { NAMESPACE_PATH } from "@lib/config";
 import { getCategoryFacets, searchEvents } from "@lib/algolia/events";
-import { getAllTowns, getLocationStats, getRegions } from "@lib/locations";
+import { getLocationStats, getRegions } from "@lib/locations";
 import { ArrowRight, MapPin, Search } from "lucide-react";
 
 export const revalidate = 1800;
@@ -18,16 +18,6 @@ export default async function EventsHomePage() {
 
   const regions = getRegions();
   const stats = getLocationStats();
-  const townOptions = getAllTowns().map((t) => ({
-    name: t.name,
-    slug: t.slug,
-    lat: t.lat,
-    lng: t.lng,
-    countyName: t.countyName,
-    countySlug: t.countySlug,
-    regionName: t.regionName,
-    regionSlug: t.regionSlug,
-  }));
 
   return (
     <main>
@@ -47,7 +37,7 @@ export default async function EventsHomePage() {
           </p>
 
           <div className="mx-auto mt-8 max-w-2xl">
-            <LocationSearchBox towns={townOptions} />
+            <HomeLocationSearch />
           </div>
 
           <p className="mt-4 text-sm text-muted-foreground">

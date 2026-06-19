@@ -17,6 +17,7 @@ import { NsLink } from "@components/ns-link";
 import { Breadcrumbs } from "@components/events/Breadcrumbs";
 import { EventCard } from "@components/events/EventCard";
 import { ShareButton } from "@components/events/ShareButton";
+import { FavouriteButton } from "@components/events/FavouriteButton";
 import { getEventById, searchEvents } from "@lib/algolia/events";
 import { formatDateRange, formatPrice } from "@lib/format";
 import { NAMESPACE_PATH } from "@lib/config";
@@ -363,6 +364,7 @@ export default async function EventPage({ params }: Props) {
                   Add to calendar
                 </a>
               )}
+              <FavouriteButton eventId={event.id} variant="full" />
               <ShareButton
                 url={`https://www.eden.co.uk/events/${event.id}`}
                 title={event.title}

@@ -7,6 +7,7 @@ import { EventCard } from "@components/events/EventCard";
 import { EventSearchFilters } from "@components/events/EventSearchFilters";
 import { EventsActiveFilterBar } from "@components/events/EventsActiveFilterBar";
 import { SearchPagination } from "@components/events/SearchPagination";
+import { NoResultsCarousels } from "@components/events/NoResultsCarousels";
 import { PortableText } from "@components/ui/PortableText";
 import {
   searchEvents,
@@ -167,7 +168,6 @@ export default async function SearchPage({
                 </NsLink>
               </div>
 
-              {/* Promoted event carousels when no results */}
               <NoResultsCarousels />
             </>
           ) : (
@@ -189,20 +189,4 @@ export default async function SearchPage({
   );
 }
 
-/** Shown below the "no results" message — fetches a general set of upcoming events as a carousel. */
-async function NoResultsCarousels() {
-  const { hits } = await searchEvents({ hitsPerPage: 6 });
-  if (hits.length === 0) return null;
-  return (
-    <section className="mt-10">
-      <h2 className="mb-4 text-lg font-semibold text-foreground">
-        Upcoming events you might like
-      </h2>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {hits.map((event) => (
-          <EventCard key={event.objectID} event={event} />
-        ))}
-      </div>
-    </section>
-  );
-}
+

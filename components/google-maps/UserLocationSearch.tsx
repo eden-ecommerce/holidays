@@ -94,6 +94,7 @@ function UserLocationSearchInner({
         </p>
       ) : null}
       <LocationSearch
+        key={value?.label ?? ""}
         defaultValue={value?.label ?? ""}
         onPlaceSelect={handlePlaceSelect}
         placeholder={placeholder}

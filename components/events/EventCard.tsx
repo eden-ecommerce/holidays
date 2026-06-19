@@ -1,4 +1,5 @@
 import { NsLink } from "@components/ns-link";
+import { FavouriteButton } from "@components/events/FavouriteButton";
 import { NAMESPACE_PATH } from "@lib/config";
 import type { EventHit } from "@lib/algolia/events";
 import {
@@ -51,6 +52,9 @@ export function EventCard({ event }: { event: EventHit }) {
             <Wifi className="h-3 w-3" /> Online
           </span>
         ) : null}
+        <div className="absolute right-3 top-3">
+          <FavouriteButton eventId={event.id} variant="icon" />
+        </div>
       </div>
 
       <div className="flex flex-1 flex-col gap-3 p-4">
