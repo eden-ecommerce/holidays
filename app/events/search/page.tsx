@@ -145,7 +145,7 @@ export default async function SearchPage({
           hasGeo={hasGeo}
         />
 
-        <div>
+        <div className="min-w-0">
           {noResults ? (
             <>
               <div className="flex flex-col items-center justify-center gap-3 rounded-lg border border-dashed border-border bg-card px-6 py-12 text-center">

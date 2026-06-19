@@ -53,8 +53,8 @@ function PanelCarousel({ title, description, panelKey, eventIds }: PanelCarousel
 
       <div
         id={`carousel-${panelKey}`}
-        className="mt-4 -mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth px-6 pb-2 scrollbar-none"
-        style={{ scrollbarWidth: "none" }}
+        className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {eventIds.map((id) => (
           <div key={id} className="w-72 shrink-0 snap-start">
@@ -129,8 +129,8 @@ export async function NoResultsCarousels() {
         </div>
         <div
           id="carousel-upcoming"
-          className="mt-4 -mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth px-6 pb-2 scrollbar-none"
-          style={{ scrollbarWidth: "none" }}
+          className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {hits.map((event) => (
             <div key={event.objectID} className="w-72 shrink-0 snap-start">
