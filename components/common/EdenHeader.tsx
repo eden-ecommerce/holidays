@@ -1,6 +1,7 @@
 "use client";
 
 import { FavouritesLink } from "@components/events/FavouritesLink";
+import { HeaderSearch } from "@components/common/HeaderSearch";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
 import { ShoppingBag, HelpCircle, User, Phone } from "lucide-react";
@@ -47,32 +48,8 @@ export function EdenHeader() {
             <img src="/eden-logo.svg" alt="Eden" className="h-12 w-auto sm:h-14" />
           </a>
 
-          {/* Search bar */}
-          <form
-            action="https://www.eden.co.uk/search"
-            method="get"
-            role="search"
-            className="mx-4 hidden flex-1 md:flex"
-          >
-            <div className="flex w-full overflow-hidden rounded-full border-2 border-primary bg-white">
-              <input
-                type="search"
-                name="q"
-                placeholder="Search Eden.co.uk"
-                className="flex-1 bg-transparent px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
-                aria-label="Search Eden.co.uk"
-              />
-              <button
-                type="submit"
-                className="shrink-0 bg-primary px-4 text-primary-foreground hover:bg-primary/90"
-                aria-label="Search"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-                </svg>
-              </button>
-            </div>
-          </form>
+          {/* Live instant search */}
+          <HeaderSearch />
 
           {/* Phone + actions */}
           <div className="ml-auto flex items-center gap-1 sm:gap-3">
