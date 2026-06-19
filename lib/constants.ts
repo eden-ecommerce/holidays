@@ -20,12 +20,20 @@ export const API_PRODUCTION_ORIGIN =
   "https://events-snowy-phi.vercel.app/events";
 export const API_DEV_ORIGIN = "http://localhost:3000";
 
+// When running on Vercel (preview or production), use the deployment's own
+// URL so that assetPrefix resolves correctly regardless of which preview URL
+// is assigned. This fixes the v0 preview iframe ("content blocked") which
+// receives a different hostname on every deployment.
+const vercelUrl = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : undefined;
+
 export const ASSET_BASE_URL =
   process.env.NODE_ENV === "production"
-    ? ASSET_PRODUCTION_ORIGIN
+    ? (vercelUrl ?? ASSET_PRODUCTION_ORIGIN)
     : ASSET_DEV_ORIGIN;
 
 export const API_BASE_URL =
   process.env.NODE_ENV === "production"
-    ? API_PRODUCTION_ORIGIN
+    ? (vercelUrl ?? API_PRODUCTION_ORIGIN)
     : API_DEV_ORIGIN;

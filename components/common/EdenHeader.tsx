@@ -1,6 +1,6 @@
 "use client";
 
-import { FavouritesLink } from "@components/events/FavouritesLink";
+import { EdenLogo } from "@components/common/EdenLogo";
 import { HeaderSearch } from "@components/common/HeaderSearch";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
@@ -44,8 +44,7 @@ export function EdenHeader() {
         <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:py-4">
           {/* Logo */}
           <a href="https://www.eden.co.uk" className="shrink-0" aria-label="Eden home">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/eden-logo.svg" alt="Eden" className="h-12 w-auto sm:h-14" />
+            <EdenLogo className="h-12 w-auto sm:h-14" />
           </a>
 
           {/* Live instant search */}
@@ -66,8 +65,6 @@ export function EdenHeader() {
             </a>
 
             <div className="hidden h-8 w-px bg-border lg:block" aria-hidden="true" />
-
-            <FavouritesLink href={`${NAMESPACE_PATH}/favourites`} />
 
             <a
               href="https://www.eden.co.uk/help"

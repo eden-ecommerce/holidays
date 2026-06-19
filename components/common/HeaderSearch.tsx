@@ -132,7 +132,7 @@ export function HeaderSearch() {
   return (
     <div ref={containerRef} className="relative mx-4 hidden flex-1 md:block">
       <form
-        action="https://www.eden.co.uk/search"
+        action="https://www.eden.co.uk/shop/search.php"
         method="get"
         role="search"
         onSubmit={handleSubmit}
@@ -145,7 +145,7 @@ export function HeaderSearch() {
           <input
             ref={inputRef}
             type="search"
-            name="q"
+            name="products[query]"
             value={query}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
@@ -185,25 +185,25 @@ export function HeaderSearch() {
           id="header-search-listbox"
           role="listbox"
           aria-label="Search suggestions"
-          className="absolute left-0 right-0 z-50 overflow-hidden rounded-b-2xl border-2 border-t-0 border-primary bg-white shadow-xl"
+          className="absolute left-0 right-0 z-50 overflow-hidden rounded-b-xl border border-t-0 border-gray-200 bg-white shadow-lg"
         >
           {hits.map((hit, i) => {
             const isActive = i === activeIndex;
-            const salePrice = hit.saving_percent > 0
+            const displayPrice = hit.saving_percent > 0
               ? hit.price * (1 - hit.saving_percent / 100)
-              : null;
+              : hit.price;
 
             return (
               <li key={hit.objectID} role="option" aria-selected={isActive}>
                 <a
                   href={hit.url}
-                  className={`flex items-center gap-3 px-4 py-2.5 transition-colors ${
-                    isActive ? "bg-primary/10" : "hover:bg-muted"
+                  className={`flex items-center gap-4 px-5 py-3 transition-colors ${
+                    isActive ? "bg-gray-50" : "hover:bg-gray-50"
                   }`}
                   onMouseEnter={() => setActiveIndex(i)}
                 >
-                  {/* Product image */}
-                  <div className="h-12 w-12 shrink-0 overflow-hidden rounded bg-gray-50">
+                  {/* Thumbnail */}
+                  <div className="h-10 w-10 shrink-0 overflow-hidden rounded">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={hit.image || hit.imageFallback}
@@ -219,9 +219,9 @@ export function HeaderSearch() {
                     />
                   </div>
 
-                  {/* Details */}
+                  {/* Name + author */}
                   <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium text-foreground">
+                    <p className="truncate text-sm text-foreground">
                       {hit.product_name}
                     </p>
                     {hit.authorAlgolia && (
@@ -232,37 +232,21 @@ export function HeaderSearch() {
                   </div>
 
                   {/* Price */}
-                  <div className="shrink-0 text-right">
-                    {salePrice ? (
-                      <>
-                        <p className="text-sm font-semibold text-primary">
-                          {formatPrice(salePrice)}
-                        </p>
-                        <p className="text-xs text-muted-foreground line-through">
-                          {formatPrice(hit.price)}
-                        </p>
-                      </>
-                    ) : (
-                      <p className="text-sm font-semibold text-foreground">
-                        {formatPrice(hit.price)}
-                      </p>
-                    )}
-                  </div>
+                  <p className={`shrink-0 text-sm font-semibold ${hit.saving_percent > 0 ? "text-primary" : "text-foreground"}`}>
+                    {formatPrice(displayPrice)}
+                  </p>
                 </a>
               </li>
             );
           })}
 
-          {/* View all results footer */}
+          {/* See all */}
           <li role="option" aria-selected={false}>
             <a
-              href={`https://www.eden.co.uk/search?q=${encodeURIComponent(query)}`}
-              className="flex items-center justify-center gap-2 border-t border-border bg-muted/50 px-4 py-2.5 text-sm font-medium text-primary hover:bg-muted"
+              href={`https://www.eden.co.uk/shop/search.php?products%5Bquery%5D=${encodeURIComponent(query)}`}
+              className="flex items-center justify-center border-t border-gray-100 px-5 py-3 text-sm text-primary hover:bg-gray-50"
             >
-              <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-              </svg>
-              See all results for &ldquo;{query}&rdquo;
+              See all results for &ldquo;{query}&rdquo; &rarr;
             </a>
           </li>
         </ul>
