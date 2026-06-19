@@ -19,7 +19,7 @@ import { EventCard } from "@components/events/EventCard";
 import { ShareButton } from "@components/events/ShareButton";
 import { FavouriteButton } from "@components/events/FavouriteButton";
 import { PromoteEventSidebarCta } from "@components/events/PromoteEventBanner";
-import { getEventById, searchEvents } from "@lib/algolia/events";
+import { getEventById, getOrganisationById, searchEvents } from "@lib/algolia/events";
 import { formatDateRange, formatPrice } from "@lib/format";
 import { NAMESPACE_PATH } from "@lib/config";
 
@@ -39,6 +39,10 @@ export default async function EventPage({ params }: Props) {
   const { id } = await params;
   const event = await getEventById(id);
   if (!event) notFound();
+
+  const org = event.organisationId
+    ? await getOrganisationById(event.organisationId)
+    : null;
 
   const location = [
     event.locationName,
@@ -146,23 +150,63 @@ export default async function EventPage({ params }: Props) {
           </h1>
 
           {event.organisationName && (
-            <p className="mt-2 text-sm text-muted-foreground">
-              Hosted by{" "}
-              {orgHref ? (
-                <a
-                  href={orgHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-foreground underline-offset-2 hover:underline"
-                >
-                  {event.organisationName}
-                </a>
-              ) : (
-                <span className="font-medium text-foreground">
-                  {event.organisationName}
-                </span>
+            <div className="mt-4 flex items-start gap-3 rounded-xl border border-border bg-card p-4">
+              {event.organiserLogo && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={event.organiserLogo}
+                  alt={event.organisationName}
+                  className="h-12 w-12 shrink-0 rounded-lg object-contain"
+                />
               )}
-            </p>
+              <div className="min-w-0 flex-1">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  Hosted by
+                </p>
+                {orgHref ? (
+                  <a
+                    href={orgHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-foreground underline-offset-2 hover:underline"
+                  >
+                    {event.organisationName}
+                  </a>
+                ) : (
+                  <span className="font-semibold text-foreground">
+                    {event.organisationName}
+                  </span>
+                )}
+                {event.organisationType && (
+                  <span className="ml-2 inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-[11px] font-medium capitalize text-muted-foreground">
+                    {event.organisationType}
+                  </span>
+                )}
+                {(org?.mission ?? org?.description) && (
+                  <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+                    {org?.mission ?? org?.description}
+                  </p>
+                )}
+                <div className="mt-2 flex flex-wrap items-center gap-3">
+                  {org?.website && (
+                    <a
+                      href={org.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-medium text-primary underline-offset-2 hover:underline"
+                    >
+                      <Globe className="h-3.5 w-3.5" aria-hidden="true" />
+                      Website
+                    </a>
+                  )}
+                  {org?.yearFounded && (
+                    <span className="text-xs text-muted-foreground">
+                      Est. {org.yearFounded}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
           )}
 
           {event.description && (

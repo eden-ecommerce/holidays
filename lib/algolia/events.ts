@@ -36,6 +36,7 @@ export type EventHit = {
   organisationName: string | null;
   organisationSlug: string | null;
   organisationType: string | null;
+  organisationBrandingColour: string | null;
   organiserLogo: string | null;
   thumbnailUrl: string | null;
   logoUrl: string | null;
@@ -100,6 +101,7 @@ function mapHit(raw: RawHit): EventHit {
     organisationName: str(raw.organisationName),
     organisationSlug: str(raw.organisationSlug),
     organisationType: str(raw.organisationType),
+    organisationBrandingColour: str(raw.organisationBrandingColour),
     organiserLogo: str(raw.organiserLogo),
     thumbnailUrl: str(thumbnail.url) ?? str(raw.organiserLogo),
     logoUrl: str(logo.url) ?? str(raw.organiserLogo),
@@ -486,4 +488,67 @@ export async function getCategoryFacets(): Promise<CategoryFacetsResult> {
   const uncategorisedCount = Math.max(0, totalCount - categorisedCount);
 
   return { categories, totalCount, uncategorisedCount };
+}
+
+// ---------------------------------------------------------------------------
+// Organisation
+// ---------------------------------------------------------------------------
+
+export type OrganisationHit = {
+  objectID: string;
+  id: string;
+  name: string;
+  slug: string | null;
+  description: string | null;
+  mission: string | null;
+  website: string | null;
+  organisationType: string | null;
+  yearFounded: number | null;
+  logoUrl: string | null;
+  bannerUrl: string | null;
+};
+
+function mapOrgHit(raw: RawHit): OrganisationHit {
+  const logo = (raw.logo ?? {}) as Record<string, unknown>;
+  const banner = (raw.banner ?? {}) as Record<string, unknown>;
+  return {
+    objectID: String(raw.objectID ?? ""),
+    id: String(raw.id ?? ""),
+    name: str(raw.title) ?? str(raw.name) ?? "Unknown organisation",
+    slug: str(raw.slug),
+    description: str(raw.description),
+    mission: str(raw.mission),
+    website: str(raw.website),
+    organisationType: str(raw.organisationType),
+    yearFounded: typeof raw.yearFounded === "number" ? raw.yearFounded : null,
+    logoUrl: str(logo.url),
+    bannerUrl: str(banner.url),
+  };
+}
+
+/**
+ * Fetch the organisation record from the same organisationHub index.
+ * Returns null when not found or Algolia is not configured.
+ */
+export async function getOrganisationById(
+  organisationId: string
+): Promise<OrganisationHit | null> {
+  const client = getAlgoliaSearchClient();
+  if (!client) return null;
+
+  const response = await client.search([
+    {
+      indexName: organisationHubIndex,
+      query: "",
+      params: {
+        filters: `entityType:organisation AND id:${organisationId}`,
+        hitsPerPage: 1,
+      },
+    },
+  ] as unknown as Parameters<typeof client.search>[0]);
+
+  const result = response.results[0];
+  if (!result || !("hits" in result) || !result.hits.length) return null;
+
+  return mapOrgHit(result.hits[0] as RawHit);
 }

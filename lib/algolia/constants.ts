@@ -61,9 +61,14 @@ export const eventAttributesToRetrieve = [
   "ageRange",
   "parkingInstructions",
   "nextOccurrenceStartTimestamp",
+  "occurrenceStartTimestamps",
+  "occurrenceEndTimestamps",
+  "externalUrl",
+  "organisationId",
   "organisationName",
   "organisationSlug",
   "organisationType",
+  "organisationBrandingColour",
   "organiserLogo",
   "thumbnail",
   "logo",
@@ -76,6 +81,7 @@ export const eventAttributesToRetrieve = [
   "_geoloc",
   "categoryHierarchy",
   "entityType",
+  "published",
 ] as const;
 
 export const algoliaIndexPresets = {
