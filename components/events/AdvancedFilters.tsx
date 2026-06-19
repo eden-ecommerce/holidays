@@ -12,10 +12,9 @@ import {
   type QuickRange,
 } from "@lib/date-range";
 
-type Facet = { label: string; value: string; count: number };
+export type Facet = { label: string; value: string; count: number };
 
 type Props = {
-  categories: Facet[];
   organisationTypes: Facet[];
   hasGeo: boolean;
 };
@@ -59,7 +58,6 @@ function Section({
 }
 
 export function AdvancedFilters({
-  categories,
   organisationTypes,
   hasGeo,
 }: Props) {
@@ -180,47 +178,7 @@ export function AdvancedFilters({
         </div>
       </Section>
 
-      <Section title="Event Categories">
-        {categories.length === 0 ? (
-          <p className="text-sm text-muted-foreground">No categories.</p>
-        ) : (
-          <div className="flex flex-col gap-1">
-            <button
-              type="button"
-              onClick={() => apply({ category: null })}
-              className={`rounded-md px-2 py-1.5 text-left text-sm transition-colors ${
-                !activeCategory
-                  ? "font-semibold text-primary"
-                  : "text-foreground hover:bg-muted"
-              }`}
-            >
-              All Categories
-            </button>
-            {categories.map((cat) => (
-              <button
-                key={cat.value}
-                type="button"
-                onClick={() =>
-                  apply({
-                    category: activeCategory === cat.value ? null : cat.value,
-                  })
-                }
-                aria-pressed={activeCategory === cat.value}
-                className={`flex items-center justify-between gap-2 rounded-md px-2 py-1.5 text-left text-sm transition-colors ${
-                  activeCategory === cat.value
-                    ? "font-semibold text-primary"
-                    : "text-foreground hover:bg-muted"
-                }`}
-              >
-                <span>{cat.label}</span>
-                <span className="tabular-nums text-muted-foreground">
-                  ({cat.count})
-                </span>
-              </button>
-            ))}
-          </div>
-        )}
-      </Section>
+      {/* Categories filter moved to search page with hierarchical InstantSearch component */}
 
       <Section title="Organisation Type">
         <div className="flex flex-col gap-1">

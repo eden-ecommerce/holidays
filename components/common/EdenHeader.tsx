@@ -64,7 +64,7 @@ export function EdenHeader() {
               <span className="hidden sm:inline">Account</span>
             </a>
             <a
-              href="https://www.eden.co.uk/basket"
+              href="https://www.eden.co.uk/shop/basket.php"
               className="flex items-center gap-1.5 text-sm text-foreground hover:text-primary"
             >
               <ShoppingBag className="h-5 w-5" />

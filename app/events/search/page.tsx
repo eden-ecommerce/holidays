@@ -4,7 +4,7 @@ import { NsLink } from "@components/ns-link";
 import { IntegrationEnvError } from "@components/common/IntegrationEnvError";
 import { Breadcrumbs } from "@components/events/Breadcrumbs";
 import { EventCard } from "@components/events/EventCard";
-import { AdvancedFilters } from "@components/events/AdvancedFilters";
+import { EventSearchFilters } from "@components/events/EventSearchFilters";
 import { EventsActiveFilterBar } from "@components/events/EventsActiveFilterBar";
 import { SearchPagination } from "@components/events/SearchPagination";
 import { PortableText } from "@components/ui/PortableText";
@@ -134,8 +134,7 @@ export default async function SearchPage({
 
       {/* Filters on the left, results on the right — full width, minimal whitespace */}
       <div className="mt-5 grid grid-cols-1 gap-6 lg:grid-cols-[240px_1fr]">
-        <AdvancedFilters
-          categories={result.facets.categories}
+        <EventSearchFilters
           organisationTypes={result.facets.organisationTypes}
           hasGeo={hasGeo}
         />
