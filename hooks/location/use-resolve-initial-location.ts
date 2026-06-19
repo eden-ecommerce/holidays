@@ -84,13 +84,9 @@ export function useResolveInitialLocation({ serverLocation }: UseResolveInitialL
     hasResolvedRef.current = true;
 
     const resolveInitialLocation = async () => {
-      if (serverLocation.source === "cloudflare") {
-        if (!cancelled) {
-          setLocation(toUserLocation(serverLocation));
-        }
-        return;
-      }
-
+      // Per handoff doc: Cloudflare IP-based location should NOT auto-populate
+      // the search filter. Priority is: localStorage (already checked above) →
+      // browser geolocation → London default.
       const position = await requestBrowserLocation();
       if (cancelled) {
         return;

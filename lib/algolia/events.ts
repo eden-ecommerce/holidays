@@ -180,16 +180,17 @@ function buildSearchParams(params: SearchEventsParams) {
   const filters = [EVENTS_BASE_FILTER];
   if (typeof online === "boolean") filters.push(`online:${online}`);
 
-  // Filter recurring events by occurrenceStartTimestamps (array attribute).
-  // Algolia numeric filters: outer array = AND, inner array = OR.
-  // To match "any occurrence within [from, to]", we need TWO separate AND conditions
-  // each expressed as a plain string (not as inner OR arrays).
+  // Per handoff doc: use occurrenceStartTimestampMin for the "from" bound and
+  // occurrenceEndTimestampMax for the "to" bound — these are the numeric attributes
+  // configured in Algolia's numericAttributesForFiltering.
+  // occurrenceStartTimestampMin = Math.min of all occurrence starts (earliest start)
+  // occurrenceEndTimestampMax  = Math.max of all occurrence ends (latest end)
   const numericFilters: string[] = [];
   if (typeof dateFrom === "number") {
-    numericFilters.push(`occurrenceStartTimestamps >= ${dateFrom}`);
+    numericFilters.push(`occurrenceStartTimestampMin >= ${dateFrom}`);
   }
   if (typeof dateTo === "number") {
-    numericFilters.push(`occurrenceStartTimestamps <= ${dateTo}`);
+    numericFilters.push(`occurrenceEndTimestampMax <= ${dateTo}`);
   }
 
   const hasGeo = typeof lat === "number" && typeof lng === "number";

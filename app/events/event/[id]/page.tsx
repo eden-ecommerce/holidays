@@ -10,7 +10,7 @@ import {
   Car,
   Building2,
   Navigation,
-  Apple,
+  Map,
   Mail,
 } from "lucide-react";
 import { NsLink } from "@components/ns-link";
@@ -255,7 +255,7 @@ export default async function EventPage({ params }: Props) {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
                     >
-                      <Apple className="h-3.5 w-3.5" aria-hidden="true" />
+                      <Map className="h-3.5 w-3.5" aria-hidden="true" />
                       Apple Maps
                     </a>
                   )}

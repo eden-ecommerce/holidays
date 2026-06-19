@@ -101,12 +101,32 @@ export async function NoResultsCarousels() {
   return (
     <>
       <section aria-labelledby="upcoming-heading" className="mt-10">
-        <h2
-          id="upcoming-heading"
-          className="text-xl font-bold text-foreground"
-        >
-          Upcoming Christian Events
-        </h2>
+        <div className="flex items-end justify-between gap-4">
+          <h2
+            id="upcoming-heading"
+            className="text-xl font-bold text-foreground"
+          >
+            Upcoming Christian Events
+          </h2>
+          <div className="flex shrink-0 items-center gap-1">
+            <button
+              type="button"
+              aria-label="Scroll left"
+              className="carousel-prev flex h-8 w-8 items-center justify-center rounded-full border border-border bg-card text-foreground transition-colors hover:border-primary hover:text-primary"
+              data-carousel="upcoming"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              aria-label="Scroll right"
+              className="carousel-next flex h-8 w-8 items-center justify-center rounded-full border border-border bg-card text-foreground transition-colors hover:border-primary hover:text-primary"
+              data-carousel="upcoming"
+            >
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </button>
+          </div>
+        </div>
         <div
           id="carousel-upcoming"
           className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 scrollbar-none"
@@ -119,6 +139,7 @@ export async function NoResultsCarousels() {
           ))}
         </div>
       </section>
+      <CarouselScrollScript />
     </>
   );
 }
