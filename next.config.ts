@@ -22,7 +22,11 @@ const nextConfig: NextConfig = {
   // development assets MUST be served from the same origin the page is served
   // from — hardcoding `http://localhost:3000` here breaks the v0 preview and
   // any proxied/sandbox host because the browser can't reach localhost.
-  assetPrefix: process.env.NODE_ENV === "production" ? ASSET_BASE_URL : undefined,
+  // ASSET_BASE_URL is the canonical proxy origin (https://www.eden.co.uk).
+  // Assets resolve as https://www.eden.co.uk/events/_next/static/… which the
+  // Cloudflare Worker proxies back to this Vercel deployment.  An empty string
+  // or undefined both mean same-origin, so guard against the empty-string case.
+  assetPrefix: ASSET_BASE_URL || undefined,
   // v0 iterates quickly — builds tolerate TS errors during dev.
   // Before deploy: run `pnpm predeploy` (ts-check + lint + build) and fix all errors.
   typescript: {

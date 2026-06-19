@@ -10,30 +10,28 @@
  * and imported `@public/*` assets resolve correctly behind the Eden Cloudflare Worker.
  */
 
-/** REPLACE: asset + `_next/static` origin */
-export const ASSET_PRODUCTION_ORIGIN =
-  "https://events-snowy-phi.vercel.app/events";
-export const ASSET_DEV_ORIGIN = "http://localhost:3000";
+/**
+ * The canonical public origin the app is served from behind the Cloudflare
+ * Worker proxy.  All _next/static/* assets must be fetched relative to this
+ * origin so the browser can reach them whether the user is on the proxied
+ * domain or a Vercel preview URL.
+ *
+ * assetPrefix = ASSET_BASE_URL in next.config.ts, so every chunk URL becomes:
+ *   https://www.eden.co.uk/events/_next/static/css/…
+ * The Cloudflare Worker forwards /events/* to the Vercel deployment, so this
+ * works both on the canonical domain and on preview URLs (the browser just
+ * fetches assets through the proxy instead of directly from Vercel).
+ *
+ * DO NOT use VERCEL_URL here — that bypasses the proxy and breaks eden.co.uk.
+ */
+export const ASSET_PRODUCTION_ORIGIN = "https://www.eden.co.uk";
+export const ASSET_DEV_ORIGIN = "";          // empty = same-origin in dev
 
-/** REPLACE: API origin (may differ from assets) */
-export const API_PRODUCTION_ORIGIN =
-  "https://events-snowy-phi.vercel.app/events";
-export const API_DEV_ORIGIN = "http://localhost:3000";
-
-// When running on Vercel (preview or production), use the deployment's own
-// URL so that assetPrefix resolves correctly regardless of which preview URL
-// is assigned. This fixes the v0 preview iframe ("content blocked") which
-// receives a different hostname on every deployment.
-const vercelUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : undefined;
+export const API_PRODUCTION_ORIGIN = "https://www.eden.co.uk";
+export const API_DEV_ORIGIN = "";
 
 export const ASSET_BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? (vercelUrl ?? ASSET_PRODUCTION_ORIGIN)
-    : ASSET_DEV_ORIGIN;
+  process.env.NODE_ENV === "production" ? ASSET_PRODUCTION_ORIGIN : ASSET_DEV_ORIGIN;
 
 export const API_BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? (vercelUrl ?? API_PRODUCTION_ORIGIN)
-    : API_DEV_ORIGIN;
+  process.env.NODE_ENV === "production" ? API_PRODUCTION_ORIGIN : API_DEV_ORIGIN;
