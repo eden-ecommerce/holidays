@@ -18,7 +18,7 @@ type PanelCarouselProps = {
  */
 function PanelCarousel({ title, description, panelKey, eventIds }: PanelCarouselProps) {
   return (
-    <section aria-labelledby={`panel-${panelKey}-heading`} className="mt-10">
+    <section aria-labelledby={`panel-${panelKey}-heading`} className="mt-10 w-full">
       <div className="flex items-end justify-between gap-4">
         <div>
           <h2
@@ -53,7 +53,7 @@ function PanelCarousel({ title, description, panelKey, eventIds }: PanelCarousel
 
       <div
         id={`carousel-${panelKey}`}
-        className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 scrollbar-none"
+        className="mt-4 -mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth px-6 pb-2 scrollbar-none"
         style={{ scrollbarWidth: "none" }}
       >
         {eventIds.map((id) => (
@@ -100,7 +100,7 @@ export async function NoResultsCarousels() {
 
   return (
     <>
-      <section aria-labelledby="upcoming-heading" className="mt-10">
+      <section aria-labelledby="upcoming-heading" className="mt-10 w-full">
         <div className="flex items-end justify-between gap-4">
           <h2
             id="upcoming-heading"
@@ -129,7 +129,7 @@ export async function NoResultsCarousels() {
         </div>
         <div
           id="carousel-upcoming"
-          className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 scrollbar-none"
+          className="mt-4 -mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth px-6 pb-2 scrollbar-none"
           style={{ scrollbarWidth: "none" }}
         >
           {hits.map((event) => (
