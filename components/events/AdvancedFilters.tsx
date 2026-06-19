@@ -97,12 +97,9 @@ export function AdvancedFilters({
     Boolean(params.get("online"));
 
   return (
-    <aside
-      className="flex flex-col gap-5 rounded-xl border border-border bg-card p-5"
-      aria-label="Advanced filters"
-    >
+    <div className="flex flex-col gap-5">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold text-foreground">Advanced Filters</h2>
+        <h2 className="text-lg font-bold text-foreground">Filters</h2>
         {hasActiveFilters ? (
           <button
             type="button"
@@ -239,7 +236,7 @@ export function AdvancedFilters({
           />
         </div>
       </div>
-    </aside>
+    </div>
   );
 }
 

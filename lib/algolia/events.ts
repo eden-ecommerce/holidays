@@ -149,6 +149,8 @@ export type EventFacet = { label: string; value: string; count: number };
 
 export type EventFacets = {
   categories: EventFacet[];
+  categoryLvl1: EventFacet[];
+  categoryLvl2: EventFacet[];
   organisationTypes: EventFacet[];
 };
 
@@ -161,7 +163,7 @@ export type SearchEventsResult = {
   facets: EventFacets;
 };
 
-const EMPTY_FACETS: EventFacets = { categories: [], organisationTypes: [] };
+const EMPTY_FACETS: EventFacets = { categories: [], categoryLvl1: [], categoryLvl2: [], organisationTypes: [] };
 
 const EMPTY_RESULT: SearchEventsResult = {
   hits: [],
@@ -255,7 +257,12 @@ export async function searchEvents(
   const facetParams: Record<string, unknown> = {
     ...base,
     hitsPerPage: 0,
-    facets: ["categoryHierarchy.lvl0", "organisationType"],
+    facets: [
+      "categoryHierarchy.lvl0",
+      "categoryHierarchy.lvl1",
+      "categoryHierarchy.lvl2",
+      "organisationType",
+    ],
   };
 
   const response = await client.search([
@@ -317,6 +324,22 @@ function readFacets(result: unknown): EventFacets {
     }))
     .sort((a, b) => b.count - a.count);
 
+  const categoryLvl1 = Object.entries(facets["categoryHierarchy.lvl1"] ?? {})
+    .map(([value, count]) => ({
+      value,
+      label: cleanCategoryLabel(value.split(" > ").at(-1) ?? value) ?? value,
+      count,
+    }))
+    .sort((a, b) => b.count - a.count);
+
+  const categoryLvl2 = Object.entries(facets["categoryHierarchy.lvl2"] ?? {})
+    .map(([value, count]) => ({
+      value,
+      label: cleanCategoryLabel(value.split(" > ").at(-1) ?? value) ?? value,
+      count,
+    }))
+    .sort((a, b) => b.count - a.count);
+
   const organisationTypes = Object.entries(facets["organisationType"] ?? {})
     .map(([value, count]) => ({
       value,
@@ -325,7 +348,7 @@ function readFacets(result: unknown): EventFacets {
     }))
     .sort((a, b) => b.count - a.count);
 
-  return { categories, organisationTypes };
+  return { categories, categoryLvl1, categoryLvl2, organisationTypes };
 }
 
 /** Fetch a single event by its id. The Algolia objectID is `event:<id>`. */

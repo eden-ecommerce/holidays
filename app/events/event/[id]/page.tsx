@@ -11,12 +11,12 @@ import {
   Building2,
   Navigation,
   Apple,
-  Share2,
   Mail,
 } from "lucide-react";
 import { NsLink } from "@components/ns-link";
 import { Breadcrumbs } from "@components/events/Breadcrumbs";
 import { EventCard } from "@components/events/EventCard";
+import { ShareButton } from "@components/events/ShareButton";
 import { getEventById, searchEvents } from "@lib/algolia/events";
 import { formatDateRange, formatPrice } from "@lib/format";
 import { NAMESPACE_PATH } from "@lib/config";
@@ -103,9 +103,6 @@ export default async function EventPage({ params }: Props) {
     });
     return `https://calendar.google.com/calendar/render?${params.toString()}`;
   })();
-
-  // Share (Web Share API is client-side — we render a share link as a mailto fallback)
-  const shareMailto = `mailto:?subject=${encodeURIComponent(event.title)}&body=${encodeURIComponent(`Check out this event: ${event.title}\nhttps://www.eden.co.uk/events/${event.id}`)}`;
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
@@ -366,13 +363,10 @@ export default async function EventPage({ params }: Props) {
                   Add to calendar
                 </a>
               )}
-              <a
-                href={shareMailto}
-                className="inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-              >
-                <Share2 className="h-3.5 w-3.5" aria-hidden="true" />
-                Share with friends
-              </a>
+              <ShareButton
+                url={`https://www.eden.co.uk/events/${event.id}`}
+                title={event.title}
+              />
               {orgHref && (
                 <a
                   href={orgHref}

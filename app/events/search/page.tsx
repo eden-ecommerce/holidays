@@ -135,6 +135,9 @@ export default async function SearchPage({
       {/* Filters on the left, results on the right — full width, minimal whitespace */}
       <div className="mt-5 grid grid-cols-1 gap-6 lg:grid-cols-[240px_1fr]">
         <EventSearchFilters
+          categories={result.facets.categories}
+          categoryLvl1={result.facets.categoryLvl1}
+          categoryLvl2={result.facets.categoryLvl2}
           organisationTypes={result.facets.organisationTypes}
           hasGeo={hasGeo}
         />
