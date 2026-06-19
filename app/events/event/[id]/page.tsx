@@ -9,6 +9,10 @@ import {
   Globe,
   Car,
   Building2,
+  Navigation,
+  Apple,
+  Share2,
+  Mail,
 } from "lucide-react";
 import { NsLink } from "@components/ns-link";
 import { Breadcrumbs } from "@components/events/Breadcrumbs";
@@ -61,6 +65,48 @@ export default async function EventPage({ params }: Props) {
       ? `https://www.openstreetmap.org/export/embed.html?bbox=${event.lng - 0.02}%2C${event.lat - 0.012}%2C${event.lng + 0.02}%2C${event.lat + 0.012}&layer=mapnik&marker=${event.lat}%2C${event.lng}`
       : null;
 
+  // Organisation profile link: prefer slug, fallback to id
+  const orgHref = event.organisationSlug
+    ? `https://www.eden.co.uk/o/${event.organisationSlug}`
+    : event.organisationId
+      ? `https://www.eden.co.uk/o/${event.organisationId}`
+      : null;
+
+  // Quick links
+  const googleMapsHref =
+    event.lat && event.lng
+      ? `https://www.google.com/maps/search/?api=1&query=${event.lat},${event.lng}`
+      : location
+        ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location)}`
+        : null;
+
+  const appleMapsHref =
+    event.lat && event.lng
+      ? `https://maps.apple.com/?ll=${event.lat},${event.lng}&q=${encodeURIComponent(event.locationName ?? event.title)}`
+      : location
+        ? `https://maps.apple.com/?q=${encodeURIComponent(location)}`
+        : null;
+
+  // Add to calendar (Google Calendar)
+  const calendarHref = (() => {
+    if (!event.date) return null;
+    const startIso = event.date.replace(/[-:]/g, "").replace(".000", "");
+    const endIso = event.endDate
+      ? event.endDate.replace(/[-:]/g, "").replace(".000", "")
+      : startIso;
+    const params = new URLSearchParams({
+      action: "TEMPLATE",
+      text: event.title,
+      dates: `${startIso}/${endIso}`,
+      details: event.description?.slice(0, 500) ?? "",
+      location: location,
+    });
+    return `https://calendar.google.com/calendar/render?${params.toString()}`;
+  })();
+
+  // Share (Web Share API is client-side — we render a share link as a mailto fallback)
+  const shareMailto = `mailto:?subject=${encodeURIComponent(event.title)}&body=${encodeURIComponent(`Check out this event: ${event.title}\nhttps://www.eden.co.uk/events/${event.id}`)}`;
+
   return (
     <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
       <Breadcrumbs
@@ -103,9 +149,20 @@ export default async function EventPage({ params }: Props) {
           {event.organisationName && (
             <p className="mt-2 text-sm text-muted-foreground">
               Hosted by{" "}
-              <span className="font-medium text-foreground">
-                {event.organisationName}
-              </span>
+              {orgHref ? (
+                <a
+                  href={orgHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  {event.organisationName}
+                </a>
+              ) : (
+                <span className="font-medium text-foreground">
+                  {event.organisationName}
+                </span>
+              )}
             </p>
           )}
 
@@ -177,6 +234,34 @@ export default async function EventPage({ params }: Props) {
               </div>
               {location && (
                 <p className="mt-2 text-sm text-muted-foreground">{location}</p>
+              )}
+
+              {/* Quick links: Google Maps, Apple Maps */}
+              {(googleMapsHref || appleMapsHref) && (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {googleMapsHref && (
+                    <a
+                      href={googleMapsHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+                    >
+                      <Navigation className="h-3.5 w-3.5" aria-hidden="true" />
+                      Google Maps
+                    </a>
+                  )}
+                  {appleMapsHref && (
+                    <a
+                      href={appleMapsHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+                    >
+                      <Apple className="h-3.5 w-3.5" aria-hidden="true" />
+                      Apple Maps
+                    </a>
+                  )}
+                </div>
               )}
             </div>
           )}
@@ -258,14 +343,48 @@ export default async function EventPage({ params }: Props) {
               </div>
             </dl>
 
+            {/* Book tickets / View on Eden */}
             <a
-              href="https://www.eden.co.uk"
+              href={event.externalUrl ?? "https://www.eden.co.uk"}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-5 block w-full rounded-md bg-primary px-4 py-2.5 text-center text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
-              View on Eden
+              {event.externalUrl ? "Book tickets" : "View on Eden"}
             </a>
+
+            {/* Quick action links */}
+            <div className="mt-3 flex flex-col gap-1.5">
+              {calendarHref && (
+                <a
+                  href={calendarHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  <CalendarDays className="h-3.5 w-3.5" aria-hidden="true" />
+                  Add to calendar
+                </a>
+              )}
+              <a
+                href={shareMailto}
+                className="inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              >
+                <Share2 className="h-3.5 w-3.5" aria-hidden="true" />
+                Share with friends
+              </a>
+              {orgHref && (
+                <a
+                  href={orgHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  <Mail className="h-3.5 w-3.5" aria-hidden="true" />
+                  Contact organiser
+                </a>
+              )}
+            </div>
           </div>
         </aside>
       </div>

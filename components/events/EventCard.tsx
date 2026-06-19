@@ -2,18 +2,30 @@ import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
 import type { EventHit } from "@lib/algolia/events";
 import {
+  formatCardDateRange,
+  formatCardTime,
   formatDistance,
-  formatEventDate,
   formatPrice,
   locationLine,
 } from "@lib/format";
-import { CalendarDays, MapPin, Wifi } from "lucide-react";
+import { CalendarDays, Clock, MapPin, Wifi } from "lucide-react";
 
 export function EventCard({ event }: { event: EventHit }) {
-  const date = formatEventDate(event.date);
+  // Use the first occurrence timestamps for date/time display
+  const startMs = event.occurrenceStartTimestamps[0] ?? event.nextOccurrenceStartTimestamp;
+  const endMs = event.occurrenceEndTimestamps[0] ?? event.nextOccurrenceEndTimestamp;
+
+  const dateRange = formatCardDateRange(startMs, endMs);
+  const timeRange = formatCardTime(startMs, endMs);
   const location = locationLine(event);
   const distance = formatDistance(event.distanceMeters);
-  const category = event.categoryLvl0;
+
+  // Collect all non-null category levels for pill carousel
+  const categories = [
+    event.categoryLvl0,
+    event.categoryLvl1,
+    event.categoryLvl2,
+  ].filter((c): c is string => Boolean(c));
 
   return (
     <NsLink
@@ -34,11 +46,6 @@ export function EventCard({ event }: { event: EventHit }) {
             <CalendarDays className="h-10 w-10" />
           </div>
         )}
-        {category ? (
-          <span className="absolute left-3 top-3 rounded-full bg-background/90 px-2.5 py-1 text-xs font-medium text-foreground backdrop-blur">
-            {category}
-          </span>
-        ) : null}
         {event.online ? (
           <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-primary px-2.5 py-1 text-xs font-medium text-primary-foreground">
             <Wifi className="h-3 w-3" /> Online
@@ -66,11 +73,31 @@ export function EventCard({ event }: { event: EventHit }) {
           {event.title}
         </h3>
 
+        {/* Category pills carousel */}
+        {categories.length > 0 ? (
+          <div className="flex gap-1.5 overflow-x-auto pb-0.5 scrollbar-none">
+            {categories.map((cat) => (
+              <span
+                key={cat}
+                className="inline-flex shrink-0 items-center rounded-full border border-border bg-muted px-2.5 py-0.5 text-xs font-medium text-foreground"
+              >
+                {cat}
+              </span>
+            ))}
+          </div>
+        ) : null}
+
         <div className="mt-auto flex flex-col gap-1.5 text-sm text-muted-foreground">
-          {date ? (
+          {dateRange ? (
             <span className="inline-flex items-center gap-1.5">
               <CalendarDays className="h-4 w-4 shrink-0 text-primary" />
-              {date}
+              {dateRange}
+            </span>
+          ) : null}
+          {timeRange ? (
+            <span className="inline-flex items-center gap-1.5">
+              <Clock className="h-4 w-4 shrink-0 text-primary" />
+              {timeRange}
             </span>
           ) : null}
           <span className="inline-flex items-center gap-1.5">

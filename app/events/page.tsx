@@ -6,7 +6,7 @@ import { buttonVariants } from "@components/ui/button";
 import { NAMESPACE_PATH } from "@lib/config";
 import { getCategoryFacets, searchEvents } from "@lib/algolia/events";
 import { getAllTowns, getLocationStats, getRegions } from "@lib/locations";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, MapPin, Search } from "lucide-react";
 
 export const revalidate = 1800;
 
@@ -54,6 +54,15 @@ export default async function EventsHomePage() {
             Browsing {stats.towns.toLocaleString()} towns across {stats.regions}{" "}
             UK nations and {stats.counties} counties.
           </p>
+          <div className="mt-4">
+            <NsLink
+              href={`${NAMESPACE_PATH}/search`}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+            >
+              <Search className="h-4 w-4" />
+              Advanced search
+            </NsLink>
+          </div>
         </div>
       </section>
 

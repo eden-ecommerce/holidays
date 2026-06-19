@@ -1,5 +1,6 @@
 import { Breadcrumbs, type Crumb } from "@components/events/Breadcrumbs";
 import { EventCard } from "@components/events/EventCard";
+import { UseMyLocationButton } from "@components/events/UseMyLocationButton";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
 import { searchEvents } from "@lib/algolia/events";
@@ -9,16 +10,19 @@ import {
   getRegions,
   getTown,
 } from "@lib/locations";
-import { ChevronRight, MapPin } from "lucide-react";
+import { getCloudflareLocation } from "@lib/location/get-cloudflare-location.server";
+import { ChevronRight, ChevronLeft, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 export const revalidate = 3600;
 
 const BROWSE = `${NAMESPACE_PATH}/browse`;
+const HITS_PER_PAGE = 24;
 
 type Props = {
   params: Promise<{ path?: string[] }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -100,9 +104,17 @@ function PageShell({
   );
 }
 
-export default async function BrowsePage({ params }: Props) {
+export default async function BrowsePage({ params, searchParams }: Props) {
   const { path = [] } = await params;
+  const sp = await searchParams;
   const [regionSlug, countySlug, townSlug] = path;
+
+  // Parse pagination
+  const pageRaw = Array.isArray(sp.page) ? sp.page[0] : sp.page;
+  const page = pageRaw ? Math.max(0, Number(pageRaw) - 1) : 0;
+
+  // Read Cloudflare location (server-side, for "use my location" fallback)
+  const cfLocation = await getCloudflareLocation();
 
   // Level 0: all regions
   if (!regionSlug) {
@@ -111,8 +123,15 @@ export default async function BrowsePage({ params }: Props) {
       <PageShell
         crumbs={[{ label: "Events", href: NAMESPACE_PATH }, { label: "Browse" }]}
         title="Browse Christian events by location"
-        description="Choose a UK nation to drill down through counties and towns."
+        description="Choose a UK nation to drill down through counties and towns, or use your location to find nearby events."
       >
+        <div className="mb-6">
+          <UseMyLocationButton
+            cfLat={cfLocation.latitude}
+            cfLng={cfLocation.longitude}
+            cfLabel={cfLocation.label}
+          />
+        </div>
         <LinkGrid
           items={regions.map((r) => ({
             name: r.name,
@@ -139,6 +158,13 @@ export default async function BrowsePage({ params }: Props) {
         title={`Christian events in ${region.name}`}
         description={`Select a county in ${region.name} to find local events.`}
       >
+        <div className="mb-6">
+          <UseMyLocationButton
+            cfLat={cfLocation.latitude}
+            cfLng={cfLocation.longitude}
+            cfLabel={cfLocation.label}
+          />
+        </div>
         <LinkGrid
           items={region.counties.map((c) => ({
             name: c.name,
@@ -167,6 +193,13 @@ export default async function BrowsePage({ params }: Props) {
         title={`Christian events in ${county.name}`}
         description={`Choose a town in ${county.name} to see events nearby.`}
       >
+        <div className="mb-6">
+          <UseMyLocationButton
+            cfLat={cfLocation.latitude}
+            cfLng={cfLocation.longitude}
+            cfLabel={cfLocation.label}
+          />
+        </div>
         <LinkGrid
           items={county.towns.map((t) => ({
             name: t.name,
@@ -177,7 +210,7 @@ export default async function BrowsePage({ params }: Props) {
     );
   }
 
-  // Level 3: town -> nearby events (geo search)
+  // Level 3: town -> nearby events (geo search with pagination)
   const townMatch = getTown(regionSlug, countySlug, townSlug);
   if (!townMatch) notFound();
   const { town } = townMatch;
@@ -186,8 +219,11 @@ export default async function BrowsePage({ params }: Props) {
     lat: town.lat,
     lng: town.lng,
     radiusMeters: 48000,
-    hitsPerPage: 24,
+    hitsPerPage: HITS_PER_PAGE,
+    page,
   });
+
+  const townPageHref = `${BROWSE}/${region.slug}/${county.slug}/${town.slug}`;
 
   return (
     <PageShell
@@ -203,14 +239,50 @@ export default async function BrowsePage({ params }: Props) {
     >
       {results.hits.length > 0 ? (
         <>
-          <p className="mb-4 text-sm text-muted-foreground">
-            {results.nbHits} event{results.nbHits === 1 ? "" : "s"} found
-          </p>
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <p className="text-sm text-muted-foreground">
+              {results.nbHits.toLocaleString()} event{results.nbHits === 1 ? "" : "s"} found
+            </p>
+            <NsLink
+              href={`${NAMESPACE_PATH}/search?lat=${town.lat}&lng=${town.lng}&place=${encodeURIComponent(town.name)}`}
+              className="text-sm font-medium text-primary hover:underline"
+            >
+              Advanced search &amp; filters
+            </NsLink>
+          </div>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {results.hits.map((event) => (
               <EventCard key={event.objectID} event={event} />
             ))}
           </div>
+
+          {/* Pagination */}
+          {results.nbPages > 1 && (
+            <nav
+              className="mt-8 flex items-center justify-center gap-2"
+              aria-label="Pagination"
+            >
+              <NsLink
+                href={`${townPageHref}?page=${page}`}
+                aria-disabled={page === 0}
+                className={`flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted ${page === 0 ? "pointer-events-none opacity-50" : ""}`}
+              >
+                <ChevronLeft className="h-4 w-4" aria-hidden="true" />
+                Previous
+              </NsLink>
+              <span className="px-2 text-sm text-muted-foreground">
+                Page {page + 1} of {results.nbPages}
+              </span>
+              <NsLink
+                href={`${townPageHref}?page=${page + 2}`}
+                aria-disabled={page >= results.nbPages - 1}
+                className={`flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted ${page >= results.nbPages - 1 ? "pointer-events-none opacity-50" : ""}`}
+              >
+                Next
+                <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              </NsLink>
+            </nav>
+          )}
         </>
       ) : (
         <div className="rounded-xl border border-dashed border-border p-10 text-center">

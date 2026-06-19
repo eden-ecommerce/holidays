@@ -13,6 +13,63 @@ export function formatEventDate(iso: string | null): string | null {
   });
 }
 
+/**
+ * Card-style date: "Mon 14 Sept" (no year).
+ * Uses timestamps (ms) from Algolia occurrence fields.
+ */
+export function formatCardDate(tsMs: number | null): string | null {
+  if (tsMs === null) return null;
+  const d = new Date(tsMs);
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toLocaleDateString("en-GB", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+    timeZone: "Europe/London",
+  });
+}
+
+/**
+ * Card-style date range: "Mon 14 Sept - Mon 21 Sept".
+ * If same day (or end is missing), only shows start.
+ */
+export function formatCardDateRange(
+  startMs: number | null,
+  endMs: number | null,
+): string | null {
+  const start = formatCardDate(startMs);
+  if (!start) return null;
+  const end = formatCardDate(endMs);
+  if (!end || end === start) return start;
+  return `${start} - ${end}`;
+}
+
+/**
+ * Card-style time: "9:30am - 3:30pm".
+ * Accepts ms timestamps for start and end.
+ */
+export function formatCardTime(
+  startMs: number | null,
+  endMs: number | null,
+): string | null {
+  if (startMs === null) return null;
+  const fmt = (ms: number) =>
+    new Date(ms)
+      .toLocaleTimeString("en-GB", {
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+        timeZone: "Europe/London",
+      })
+      .replace(/ /g, "")
+      .toLowerCase();
+  const start = fmt(startMs);
+  if (endMs === null) return start;
+  const end = fmt(endMs);
+  if (end === start) return start;
+  return `${start} - ${end}`;
+}
+
 export function formatEventDateLong(iso: string | null): string | null {
   if (!iso) return null;
   const d = new Date(iso);

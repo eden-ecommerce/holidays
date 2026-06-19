@@ -27,6 +27,11 @@ export type EventHit = {
   ageRange: string | null;
   parkingInstructions: string | null;
   nextOccurrenceStartTimestamp: number | null;
+  nextOccurrenceEndTimestamp: number | null;
+  occurrenceStartTimestamps: number[];
+  occurrenceEndTimestamps: number[];
+  externalUrl: string | null;
+  organisationId: string | null;
   organisationName: string | null;
   organisationSlug: string | null;
   organisationType: string | null;
@@ -86,6 +91,15 @@ function mapHit(raw: RawHit): EventHit {
     ageRange: str(raw.ageRange),
     parkingInstructions: str(raw.parkingInstructions),
     nextOccurrenceStartTimestamp: num(raw.nextOccurrenceStartTimestamp),
+    nextOccurrenceEndTimestamp: num(raw.nextOccurrenceEndTimestamp),
+    occurrenceStartTimestamps: Array.isArray(raw.occurrenceStartTimestamps)
+      ? (raw.occurrenceStartTimestamps as unknown[]).filter((v): v is number => typeof v === "number" && Number.isFinite(v))
+      : [],
+    occurrenceEndTimestamps: Array.isArray(raw.occurrenceEndTimestamps)
+      ? (raw.occurrenceEndTimestamps as unknown[]).filter((v): v is number => typeof v === "number" && Number.isFinite(v))
+      : [],
+    externalUrl: str(raw.externalUrl),
+    organisationId: str(raw.organisationId),
     organisationName: str(raw.organisationName),
     organisationSlug: str(raw.organisationSlug),
     organisationType: str(raw.organisationType),

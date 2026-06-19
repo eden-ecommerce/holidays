@@ -1,6 +1,7 @@
 "use client";
 
 import { EventsUserLocationFilter } from "@components/events/EventsUserLocationFilter";
+import { useUserLocation } from "@hooks/google-maps/use-user-location";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useState } from "react";
 import { ChevronDown } from "lucide-react";
@@ -64,6 +65,7 @@ export function AdvancedFilters({
 }: Props) {
   const router = useRouter();
   const params = useSearchParams();
+  const { clearLocation } = useUserLocation();
 
   /** Apply a batch of param changes and navigate. null removes the key. */
   const apply = useCallback(
@@ -106,16 +108,17 @@ export function AdvancedFilters({
         {hasActiveFilters ? (
           <button
             type="button"
-            onClick={() =>
+            onClick={() => {
+              clearLocation();
               router.push(
                 `${NAMESPACE_PATH}/search${
                   params.get("q") ? `?q=${params.get("q")}` : ""
                 }`,
-              )
-            }
+              );
+            }}
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
-            Clear
+            Clear all
           </button>
         ) : null}
       </div>
