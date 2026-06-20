@@ -1,5 +1,4 @@
 import { EdenLogo } from "@components/common/EdenLogo";
-import type { CloudflareLocation } from "@lib/location/types";
 
 const FOOTER_COLUMNS = [
   {
@@ -51,11 +50,7 @@ const STATS = [
   { value: "3,000,000+", label: "Orders fulfilled" },
 ];
 
-type FooterProps = {
-  geo?: CloudflareLocation;
-};
-
-export function Footer({ geo }: FooterProps) {
+export function Footer() {
   return (
     <footer className="mt-16 border-t border-gray-200 bg-[#f5f5f0] text-foreground">
       {/* Main link grid */}
@@ -112,15 +107,6 @@ export function Footer({ geo }: FooterProps) {
           &copy; {new Date().getFullYear()} Eden.co.uk. Event data provided for
           information only. Always confirm details with the event organiser.
         </p>
-        {geo ? (
-          <p className="mt-1 text-[11px] text-white/40">
-            {geo.city ?? "unknown city"}, {geo.country ?? "unknown country"}
-            {" · "}
-            {geo.latitude.toFixed(4)}, {geo.longitude.toFixed(4)}
-            {" · via "}
-            {geo.source === "cloudflare" ? "Cloudflare" : "default"}
-          </p>
-        ) : null}
       </div>
     </footer>
   );

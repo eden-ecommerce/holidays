@@ -1,6 +1,5 @@
 import { EdenHeader } from "@components/common/EdenHeader";
 import { Footer } from "@components/common/Footer";
-import { getCloudflareLocation } from "@lib/location/get-cloudflare-location.server";
 import { QueryProvider } from "@providers/query-provider";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
@@ -54,12 +53,11 @@ export const viewport: Viewport = {
   themeColor: "#1a3d2b",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const geo = await getCloudflareLocation();
   return (
     <html
       lang="en"
@@ -69,7 +67,7 @@ export default async function RootLayout({
         <QueryProvider>
           <EdenHeader />
           <div className="flex-1">{children}</div>
-          <Footer geo={geo} />
+          <Footer />
         </QueryProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
