@@ -404,3 +404,13 @@ export function getProvidersByCategory(category: Provider["category"]): Provider
 export function getFeaturedProviders(): Provider[] {
   return ALL_PROVIDERS.filter((p) => p.featured);
 }
+
+export function getProviderById(id: string): Provider | undefined {
+  return ALL_PROVIDERS.find((p) => p.id === id);
+}
+
+export function getRelatedProviders(provider: Provider, limit = 3): Provider[] {
+  return ALL_PROVIDERS.filter(
+    (p) => p.id !== provider.id && p.category === provider.category
+  ).slice(0, limit);
+}
