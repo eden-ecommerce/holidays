@@ -19,10 +19,11 @@ export function FavouriteButton({ eventId, variant = "icon", className = "" }: P
     toggle(eventId);
   };
 
-  const favoured = isFav(eventId);
-
-  // Don't render until hydrated to avoid SSR mismatch
-  if (!hydrated) return null;
+  // Always render the control so the heart is present in SSR markup and never
+  // disappears in slower/preview environments. Only the "favoured" visual
+  // state depends on localStorage, which is unknown until hydration — default
+  // to not-favoured before then to avoid an SSR/client mismatch.
+  const favoured = hydrated && isFav(eventId);
 
   if (variant === "full") {
     return (
