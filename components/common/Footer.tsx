@@ -2,52 +2,51 @@ import { EdenLogo } from "@components/common/EdenLogo";
 
 const FOOTER_COLUMNS = [
   {
-    heading: "About us",
+    heading: "Find a Holiday",
     links: [
-      { text: "About Eden", href: "https://www.eden.co.uk/about" },
-      { text: "Return info", href: "https://www.eden.co.uk/help/returns" },
-      { text: "Privacy policy", href: "https://www.eden.co.uk/privacy" },
-      { text: "Christian Jobs App", href: "https://www.eden.co.uk/jobs" },
-      { text: "Christian Courses", href: "https://www.eden.co.uk/courses" },
+      { text: "Retreat Centres", href: "https://www.eden.co.uk/holidays/retreats" },
+      { text: "Tour Operators", href: "https://www.eden.co.uk/holidays/tours" },
+      { text: "Pilgrimages", href: "https://www.eden.co.uk/holidays/pilgrimages" },
+      { text: "Youth Camps", href: "https://www.eden.co.uk/holidays/youth" },
+      { text: "Festivals & Events", href: "https://www.eden.co.uk/holidays/festivals" },
     ],
   },
   {
-    heading: "Help & support",
+    heading: "Help & Info",
     links: [
-      { text: "Payment methods", href: "https://www.eden.co.uk/help/payment" },
+      { text: "About Eden", href: "https://www.eden.co.uk/about" },
       { text: "Help & support", href: "https://www.eden.co.uk/help" },
-      { text: "Christian.Work", href: "https://christian.work" },
-      { text: "Bible.compare", href: "https://bible.compare" },
+      { text: "Privacy policy", href: "https://www.eden.co.uk/privacy" },
       { text: "Modern slavery", href: "https://www.eden.co.uk/modern-slavery" },
     ],
   },
   {
-    heading: "Explore",
+    heading: "Explore Eden",
     links: [
       { text: "Eden blog", href: "https://www.eden.co.uk/blog" },
-      { text: "Contact us", href: "https://www.eden.co.uk/contact" },
+      { text: "Christian Books", href: "https://www.eden.co.uk/books" },
       { text: "Christian Events", href: "https://www.eden.co.uk/events" },
-      { text: "Christian.Gifts", href: "https://christian.gifts" },
-      { text: "Promote your event — free", href: "https://hub.eden.co.uk/dashboard/event-journey" },
+      { text: "Christian Jobs", href: "https://www.eden.co.uk/jobs" },
+      { text: "Contact us", href: "https://www.eden.co.uk/contact" },
     ],
   },
   {
-    heading: "Partners",
+    heading: "List with Us",
     links: [
-      { text: "Delivery info", href: "https://www.eden.co.uk/help/delivery" },
-      { text: "Christian Jobs", href: "https://www.eden.co.uk/jobs" },
-      { text: "Christian.events", href: "https://christian.events" },
+      { text: "List your accommodation", href: "https://hub.eden.co.uk/dashboard/event-journey" },
+      { text: "List your tour", href: "https://hub.eden.co.uk/dashboard/event-journey" },
       { text: "Christian360.com", href: "https://christian360.com" },
+      { text: "Christian.events", href: "https://christian.events" },
     ],
   },
 ];
 
 const STATS = [
   { value: "22 years", label: "Serving UK Church" },
-  { value: "175,000", label: "Christian Products Available" },
+  { value: "80+", label: "Holiday Providers" },
   { value: "3,500,000+", label: "Visitors / year" },
-  { value: "215,000+", label: "Bibles supplied / year" },
-  { value: "3,000,000+", label: "Orders fulfilled" },
+  { value: "27.5M", label: "UK Christians" },
+  { value: "20+", label: "Pilgrimage routes" },
 ];
 
 export function Footer() {
@@ -62,7 +61,7 @@ export function Footer() {
               <EdenLogo className="h-12 w-auto" />
             </a>
             <p className="mt-3 max-w-[180px] text-xs leading-relaxed text-muted-foreground">
-              The UK&apos;s favourite Christian bookshop — Bibles, books, gifts and Christian events.
+              The UK&apos;s trusted directory for Christian holidays, retreats, pilgrimages and faith-aligned breaks.
             </p>
           </div>
 
@@ -104,8 +103,7 @@ export function Footer() {
       {/* Copyright bar */}
       <div className="border-t border-gray-200 bg-[#1a3d2b] px-4 py-4 text-center">
         <p className="text-xs text-white/70">
-          &copy; {new Date().getFullYear()} Eden.co.uk. Event data provided for
-          information only. Always confirm details with the event organiser.
+          &copy; {new Date().getFullYear()} Eden.co.uk. Holiday and accommodation details are provided for information only. Always confirm directly with the provider before booking.
         </p>
       </div>
     </footer>

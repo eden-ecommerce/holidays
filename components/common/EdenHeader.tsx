@@ -4,25 +4,24 @@ import { EdenLogo } from "@components/common/EdenLogo";
 import { HeaderSearch } from "@components/common/HeaderSearch";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
-import { ShoppingBag, HelpCircle, User, Phone } from "lucide-react";
+import { HelpCircle, User, Phone, Cross } from "lucide-react";
 
 const NAV_LINKS = [
+  { text: "All Holidays", href: NAMESPACE_PATH, internal: true },
+  { text: "Retreats & Centres", href: `${NAMESPACE_PATH}/retreats`, internal: true },
+  { text: "Tour Operators", href: `${NAMESPACE_PATH}/tours`, internal: true },
+  { text: "Pilgrimages", href: `${NAMESPACE_PATH}/pilgrimages`, internal: true },
+  { text: "Youth & Activity", href: `${NAMESPACE_PATH}/youth`, internal: true },
+  { text: "Festivals", href: `${NAMESPACE_PATH}/festivals`, internal: true },
+  { text: "Self-Catering & B&Bs", href: `${NAMESPACE_PATH}/self-catering`, internal: true },
   { text: "Christian Books", href: "https://www.eden.co.uk/books" },
-  { text: "Bibles", href: "https://www.eden.co.uk/bibles" },
-  { text: "Children & Youth", href: "https://www.eden.co.uk/children" },
-  { text: "Church Supplies", href: "https://www.eden.co.uk/church-supplies" },
-  { text: "Home & Living", href: "https://www.eden.co.uk/home-and-living" },
-  { text: "Christian Gifts", href: "https://www.eden.co.uk/gifts" },
-  { text: "Cards", href: "https://www.eden.co.uk/cards" },
-  { text: "Top 50", href: "https://www.eden.co.uk/top-50" },
-  { text: "Christian Jobs", href: "https://www.eden.co.uk/jobs" },
-  { text: "Christian Events", href: NAMESPACE_PATH, internal: true },
+  { text: "Christian Events", href: "https://www.eden.co.uk/events" },
 ];
 
 const USP_ITEMS = [
-  { text: "FREE delivery on orders over £15" },
+  { text: "Trusted by UK Christians since 2002" },
+  { text: "Faith-aligned holidays, retreats & pilgrimages" },
   { text: "Serving over 2 million Christians in the UK" },
-  { text: "Excellent 4.8 out of 5 on Trustpilot" },
 ];
 
 export function EdenHeader() {
@@ -50,22 +49,8 @@ export function EdenHeader() {
           {/* Live instant search */}
           <HeaderSearch />
 
-          {/* Phone + actions */}
+          {/* Actions */}
           <div className="ml-auto flex items-center gap-1 sm:gap-3">
-            <a
-              href="tel:03452223336"
-              className="hidden items-center gap-2 text-foreground lg:flex"
-              aria-label="Call us on 0345 222 3336"
-            >
-              <Phone className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
-              <div className="text-left">
-                <p className="text-sm font-semibold leading-tight">0345 222 3336</p>
-                <p className="text-[11px] text-muted-foreground">Weekdays 8.30–17.30</p>
-              </div>
-            </a>
-
-            <div className="hidden h-8 w-px bg-border lg:block" aria-hidden="true" />
-
             <a
               href="https://www.eden.co.uk/help"
               className="flex flex-col items-center gap-0.5 px-2 py-1 text-foreground hover:text-primary"
@@ -79,15 +64,7 @@ export function EdenHeader() {
               className="flex flex-col items-center gap-0.5 px-2 py-1 text-foreground hover:text-primary"
             >
               <User className="h-5 w-5" aria-hidden="true" />
-              <span className="hidden text-[11px] font-medium sm:block">Login</span>
-            </a>
-
-            <a
-              href="https://www.eden.co.uk/shop/basket.php"
-              className="flex flex-col items-center gap-0.5 px-2 py-1 text-foreground hover:text-primary"
-            >
-              <ShoppingBag className="h-5 w-5" aria-hidden="true" />
-              <span className="hidden text-[11px] font-medium sm:block">Basket</span>
+              <span className="hidden text-[11px] font-medium sm:block">Account</span>
             </a>
           </div>
         </div>

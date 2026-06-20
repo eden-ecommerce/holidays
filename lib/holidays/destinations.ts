@@ -1,0 +1,110 @@
+import type { Destination } from "./types";
+
+export const DESTINATIONS: Destination[] = [
+  {
+    id: "DP001",
+    name: "St Cuthbert's Way",
+    country: "UK",
+    region: "Northumberland / Scottish Borders",
+    type: "domestic",
+    description:
+      "A 62-mile walking pilgrimage from Melrose to Lindisfarne (Holy Island), tracing the footsteps of St Cuthbert through some of northern England's most dramatic landscapes.",
+    highlights: ["Holy Island", "Northumberland coast", "Historic route", "Self-guided"],
+    website: "https://www.stcuthbertsway.info/",
+  },
+  {
+    id: "DP002",
+    name: "Iona",
+    country: "UK",
+    region: "Scotland",
+    type: "domestic",
+    description:
+      "A remote Scottish island with a rich spiritual heritage as the birthplace of Celtic Christianity. Home to the Iona Community and a popular pilgrimage destination.",
+    highlights: ["Celtic Christianity", "Iona Community", "Abbey ruins", "Remote island"],
+    website: "https://www.iona.org.uk/",
+  },
+  {
+    id: "DP003",
+    name: "Lindisfarne (Holy Island)",
+    country: "UK",
+    region: "Northumberland",
+    type: "domestic",
+    description:
+      "A tidal island off the Northumberland coast with extraordinary early Christian heritage, including Lindisfarne Priory and the Lindisfarne Gospels.",
+    highlights: ["Tidal island", "Lindisfarne Priory", "Celtic heritage", "Coastal walks"],
+  },
+  {
+    id: "DP004",
+    name: "Canterbury",
+    country: "UK",
+    region: "Kent",
+    type: "domestic",
+    description:
+      "England's oldest Christian city and the seat of the Archbishop of Canterbury, with the magnificent Canterbury Cathedral at its heart — a UNESCO World Heritage Site.",
+    highlights: ["Canterbury Cathedral", "UNESCO site", "Anglican heritage", "St Augustine"],
+  },
+  {
+    id: "DP005",
+    name: "Walsingham",
+    country: "UK",
+    region: "Norfolk",
+    type: "domestic",
+    description:
+      "England's national shrine, drawing both Anglican and Catholic pilgrims to the site of a medieval Marian apparition. Known as 'England's Nazareth'.",
+    highlights: ["National shrine", "Anglican & Catholic", "Medieval history", "England's Nazareth"],
+    website: "https://www.walsingham.org.uk/",
+  },
+  {
+    id: "DP006",
+    name: "The Holy Land (Israel & Palestine)",
+    country: "Israel",
+    type: "international",
+    description:
+      "The most significant pilgrimage destination for Christians worldwide, encompassing Jerusalem, Bethlehem, Nazareth, the Sea of Galilee, and the River Jordan.",
+    highlights: ["Jerusalem", "Bethlehem", "Sea of Galilee", "River Jordan"],
+  },
+  {
+    id: "DP007",
+    name: "Rome & Vatican City",
+    country: "Italy",
+    type: "international",
+    description:
+      "The Eternal City and heart of the Catholic world, home to St Peter's Basilica, the Vatican Museums and the Sistine Chapel, as well as countless early Christian churches.",
+    highlights: ["St Peter's Basilica", "Vatican Museums", "Sistine Chapel", "Catacombs"],
+  },
+  {
+    id: "DP008",
+    name: "Lourdes",
+    country: "France",
+    type: "international",
+    description:
+      "The world's most visited Catholic pilgrimage site, drawing millions annually to the Marian shrine where St Bernadette received apparitions in 1858.",
+    highlights: ["Marian shrine", "Healing baths", "Torchlit processions", "Mass attendance"],
+  },
+  {
+    id: "DP009",
+    name: "Camino de Santiago",
+    country: "Spain",
+    type: "international",
+    description:
+      "The famous network of pilgrimage routes leading to the Cathedral of Santiago de Compostela, with the Camino Francés being the most popular for UK pilgrims.",
+    highlights: ["Walking pilgrimage", "Camino Francés", "Cathedral of Santiago", "Compostela certificate"],
+  },
+  {
+    id: "DP010",
+    name: "Fatima",
+    country: "Portugal",
+    type: "international",
+    description:
+      "Major Catholic pilgrimage site in central Portugal, where three shepherd children reported apparitions of the Virgin Mary in 1917.",
+    highlights: ["Marian apparitions", "Sanctuary of Fatima", "Candlelight processions", "Chapel of Apparitions"],
+  },
+];
+
+export function getDomesticDestinations(): Destination[] {
+  return DESTINATIONS.filter((d) => d.type === "domestic");
+}
+
+export function getInternationalDestinations(): Destination[] {
+  return DESTINATIONS.filter((d) => d.type === "international");
+}
