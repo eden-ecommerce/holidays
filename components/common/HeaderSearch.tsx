@@ -150,7 +150,7 @@ export function HeaderSearch() {
             onChange={handleChange}
             onKeyDown={handleKeyDown}
             onFocus={() => hits.length > 0 && setOpen(true)}
-            placeholder="Search Eden.co.uk"
+            placeholder="Search Christian books, gifts and more…"
             className="flex-1 bg-transparent px-5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
             aria-label="Search Eden.co.uk"
             aria-autocomplete="list"

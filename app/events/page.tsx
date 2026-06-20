@@ -1,224 +1,241 @@
-import { EventCard } from "@components/events/EventCard";
-import { HomeLocationSearch } from "@components/events/HomeLocationSearch";
-import { IntegrationEnvError } from "@components/common/IntegrationEnvError";
+import { HolidaysHero } from "@components/holidays/HolidaysHero";
+import { HolidaysTrustBar } from "@components/holidays/HolidaysTrustBar";
+import { HolidayCategoryCard } from "@components/holidays/HolidayCategoryCard";
+import { ProviderCard } from "@components/holidays/ProviderCard";
+import { DestinationCard } from "@components/holidays/DestinationCard";
+import { ListWithUsBanner } from "@components/holidays/ListWithUsBanner";
 import { NsLink } from "@components/ns-link";
-import { buttonVariants } from "@components/ui/button";
 import { NAMESPACE_PATH } from "@lib/config";
-import { getCategoryFacets, searchEvents } from "@lib/algolia/events";
-import { getLocationStats, getRegions } from "@lib/locations";
-import { FavouritesCard, PromoteEventBanner } from "@components/events/PromoteEventBanner";
-import { buildEventListJsonLd, buildBreadcrumbJsonLd, jsonLdScriptProps } from "@lib/seo/jsonld";
+import { CATEGORIES } from "@lib/holidays/categories";
+import { getFeaturedProviders } from "@lib/holidays/providers";
+import { getDomesticDestinations, getInternationalDestinations } from "@lib/holidays/destinations";
+import { ArrowRight, MapPin } from "lucide-react";
 import type { Metadata } from "next";
-import { ArrowRight, MapPin, Search } from "lucide-react";
-
-export const revalidate = 1800;
 
 export const metadata: Metadata = {
-  title: "Christian Events Near You | Eden.co.uk",
+  title: "Christian Holidays | Faith-Based Retreats, Tours & Pilgrimages | Eden.co.uk",
   description:
-    "Find Christian events, conferences, training and worship nights across the UK. Browse by location or search by category.",
-  alternates: { canonical: "https://www.eden.co.uk/events" },
+    "Discover Christian holidays, retreats, pilgrimages, youth camps and festivals across the UK. Find faith-aligned accommodation and tour operators trusted by UK Christians.",
+  alternates: { canonical: "https://www.eden.co.uk/holidays" },
   openGraph: {
-    title: "Christian Events Near You | Eden.co.uk",
+    title: "Christian Holidays | Faith-Based Retreats, Tours & Pilgrimages",
     description:
-      "Find Christian events, conferences, training and worship nights across the UK.",
-    url: "https://www.eden.co.uk/events",
+      "Retreats, pilgrimages, tour operators, youth camps and festivals — curated for UK Christians.",
+    url: "https://www.eden.co.uk/holidays",
     type: "website",
-    images: [
-      {
-        url: "https://www.eden.co.uk/events/og-default.png",
-        width: 1200,
-        height: 630,
-        alt: "Christian Events — Eden.co.uk",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Christian Events Near You | Eden.co.uk",
-    description:
-      "Find Christian events, conferences, training and worship nights across the UK.",
-    images: ["https://www.eden.co.uk/events/og-default.png"],
   },
 };
 
-export default async function EventsHomePage() {
-  const [upcoming, { categories, totalCount, uncategorisedCount }] = await Promise.all([
-    searchEvents({ hitsPerPage: 6 }),
-    getCategoryFacets(),
-  ]);
-
-  const regions = getRegions();
-  const stats = getLocationStats();
-
-  const listJsonLd = buildEventListJsonLd(
-    upcoming.hits,
-    "Upcoming Christian Events",
-    "https://www.eden.co.uk/events"
-  );
-  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
-    { name: "Eden", url: "https://www.eden.co.uk" },
-    { name: "Events", url: "https://www.eden.co.uk/events" },
-  ]);
+export default function HolidaysHomePage() {
+  const featuredProviders = getFeaturedProviders();
+  const domestic = getDomesticDestinations();
+  const international = getInternationalDestinations();
 
   return (
     <main>
-      <script {...jsonLdScriptProps(listJsonLd)} />
-      <script {...jsonLdScriptProps(breadcrumbJsonLd)} />
-      {/* Hero */}
-      <section className="border-b border-border bg-accent/40">
-        <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:py-20">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-primary">
-            <MapPin className="h-3.5 w-3.5" /> UK Christian Events Directory
-          </span>
-          <h1 className="mt-5 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Find Christian events happening near you
-          </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Conferences, training, worship nights and community gatherings from
-            churches and charities across the UK. Search by town or browse by
-            region.
-          </p>
+      {/* ── Hero ── */}
+      <HolidaysHero />
 
-          <div className="mx-auto mt-8 max-w-2xl">
-            <HomeLocationSearch />
+      {/* ── Trust bar ── */}
+      <HolidaysTrustBar />
+
+      <div className="mx-auto max-w-6xl px-4 py-14">
+
+        {/* ── Browse by category ── */}
+        <section className="mb-16">
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold text-foreground">Browse by holiday type</h2>
+            <p className="mt-1 text-base text-muted-foreground">
+              Whether you&apos;re seeking stillness, adventure or community — we have a holiday for you.
+            </p>
           </div>
-
-          <p className="mt-4 text-sm text-muted-foreground">
-            Browsing {stats.towns.toLocaleString()} towns across {stats.regions}{" "}
-            UK nations and {stats.counties} counties.
-          </p>
-          <div className="mt-4">
-            <NsLink
-              href={`${NAMESPACE_PATH}/search`}
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-            >
-              <Search className="h-4 w-4" />
-              Advanced search
-            </NsLink>
-          </div>
-        </div>
-      </section>
-
-      <div className="mx-auto max-w-6xl px-4 py-12">
-        {/* Categories */}
-        {categories.length > 0 ? (
-          <section className="mb-12">
-            <h2 className="text-lg font-semibold text-foreground">
-              Browse by category
-            </h2>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {/* See All chip */}
-              <NsLink
-                href={`${NAMESPACE_PATH}/search`}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
-              >
-                See all
-                <span className="text-xs text-muted-foreground">{totalCount}</span>
-              </NsLink>
-
-              {categories.map((cat) => (
-                <NsLink
-                  key={cat.value}
-                  href={`${NAMESPACE_PATH}/search?category=${encodeURIComponent(cat.value)}`}
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
-                >
-                  {cat.label}
-                  <span className="text-xs text-muted-foreground">{cat.count}</span>
-                </NsLink>
-              ))}
-
-              {/* Uncategorised chip — only shown when there are events without a category */}
-              {uncategorisedCount > 0 ? (
-                <NsLink
-                  href={`${NAMESPACE_PATH}/search?uncategorised=true`}
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
-                >
-                  Uncategorised
-                  <span className="text-xs text-muted-foreground">{uncategorisedCount}</span>
-                </NsLink>
-              ) : null}
-            </div>
-          </section>
-        ) : null}
-
-        {/* Browse by region */}
-        <section className="mb-12">
-          <div className="flex items-end justify-between gap-4">
-            <h2 className="text-lg font-semibold text-foreground">
-              Browse by location
-            </h2>
-            <NsLink
-              href={`${NAMESPACE_PATH}/browse`}
-              className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-            >
-              All locations <ArrowRight className="h-4 w-4" />
-            </NsLink>
-          </div>
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {regions.map((region) => (
-              <NsLink
-                key={region.slug}
-                href={`${NAMESPACE_PATH}/browse/${region.slug}`}
-                className="flex flex-col gap-1 rounded-xl border border-border bg-card p-4 transition-colors hover:border-primary"
-              >
-                <span className="text-base font-semibold text-foreground">
-                  {region.name}
-                </span>
-                <span className="text-sm text-muted-foreground">
-                  {region.counties.length} counties
-                </span>
-              </NsLink>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {CATEGORIES.map((cat) => (
+              <HolidayCategoryCard key={cat.slug} category={cat} />
             ))}
           </div>
         </section>
 
-        {/* Promote CTA + Favourites */}
-        <section className="mb-12">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-[1fr_auto]">
-            <PromoteEventBanner />
-            <FavouritesCard />
-          </div>
-        </section>
-
-        {/* Upcoming events */}
-        <section>
-          <div className="flex items-end justify-between gap-4">
-            <h2 className="text-lg font-semibold text-foreground">
-              Upcoming events
-            </h2>
+        {/* ── Featured providers ── */}
+        <section className="mb-16">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <div>
+              <h2 className="text-2xl font-bold text-foreground">Featured providers</h2>
+              <p className="mt-1 text-base text-muted-foreground">
+                Trusted UK Christian holiday operators and retreat centres.
+              </p>
+            </div>
             <NsLink
-              href={`${NAMESPACE_PATH}/search`}
-              className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+              href={`${NAMESPACE_PATH}/retreats`}
+              className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-primary hover:underline"
             >
-              See all <ArrowRight className="h-4 w-4" />
+              View all <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </NsLink>
           </div>
-
-          {upcoming.hits.length > 0 ? (
-            <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {upcoming.hits.map((event) => (
-                <EventCard key={event.objectID} event={event} />
-              ))}
-            </div>
-          ) : (
-            <div className="mt-4 rounded-xl border border-dashed border-border p-10 text-center">
-              {upcoming.configured ? (
-                <p className="text-sm text-muted-foreground">
-                  No events to show right now. Please check back soon.
-                </p>
-              ) : (
-                <IntegrationEnvError integration="algolia" className="border-0 bg-transparent" />
-              )}
-              <NsLink
-                href={`${NAMESPACE_PATH}/browse`}
-                className={`${buttonVariants({ variant: "outline" })} mt-4`}
-              >
-                Browse by location
-              </NsLink>
-            </div>
-          )}
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredProviders.slice(0, 6).map((provider) => (
+              <ProviderCard key={provider.id} provider={provider} />
+            ))}
+          </div>
         </section>
+
+        {/* ── Domestic pilgrimages ── */}
+        <section className="mb-16">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <div>
+              <h2 className="text-2xl font-bold text-foreground">UK pilgrimage routes</h2>
+              <p className="mt-1 text-base text-muted-foreground">
+                Walk in the footsteps of the saints — sacred sites across Britain.
+              </p>
+            </div>
+            <NsLink
+              href={`${NAMESPACE_PATH}/pilgrimages`}
+              className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-primary hover:underline"
+            >
+              All destinations <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </NsLink>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {domestic.slice(0, 3).map((dest) => (
+              <DestinationCard key={dest.id} destination={dest} />
+            ))}
+          </div>
+        </section>
+
+        {/* ── List with us CTA ── */}
+        <section className="mb-16">
+          <ListWithUsBanner />
+        </section>
+
+        {/* ── International destinations ── */}
+        <section className="mb-16">
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <div>
+              <h2 className="text-2xl font-bold text-foreground">International pilgrimages</h2>
+              <p className="mt-1 text-base text-muted-foreground">
+                The Holy Land, Lourdes, Rome, Santiago and beyond.
+              </p>
+            </div>
+            <NsLink
+              href={`${NAMESPACE_PATH}/pilgrimages`}
+              className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-primary hover:underline"
+            >
+              All routes <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </NsLink>
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {international.slice(0, 4).map((dest) => (
+              <DestinationCard key={dest.id} destination={dest} />
+            ))}
+          </div>
+        </section>
+
+        {/* ── Image feature strip ── */}
+        <section className="mb-16">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {/* Retreats */}
+            <div className="group relative overflow-hidden rounded-2xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/holidays-retreat.png"
+                alt="Peaceful retreat centre surrounded by gardens"
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-[#0d2218]/50" aria-hidden="true" />
+              <div className="absolute inset-0 flex flex-col justify-end p-5">
+                <p className="text-xs font-semibold uppercase tracking-widest text-white/70">Retreats</p>
+                <h3 className="mt-1 text-balance text-lg font-bold text-white">
+                  Peaceful UK retreat centres
+                </h3>
+                <NsLink
+                  href={`${NAMESPACE_PATH}/retreats`}
+                  className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white underline-offset-2 hover:underline"
+                >
+                  Find a retreat <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </NsLink>
+              </div>
+            </div>
+            {/* Pilgrimages */}
+            <div className="group relative overflow-hidden rounded-2xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/holidays-pilgrimage.png"
+                alt="Pilgrims walking towards an ancient church"
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-[#0d2218]/50" aria-hidden="true" />
+              <div className="absolute inset-0 flex flex-col justify-end p-5">
+                <p className="text-xs font-semibold uppercase tracking-widest text-white/70">Pilgrimages</p>
+                <h3 className="mt-1 text-balance text-lg font-bold text-white">
+                  Guided pilgrimage tours
+                </h3>
+                <NsLink
+                  href={`${NAMESPACE_PATH}/pilgrimages`}
+                  className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white underline-offset-2 hover:underline"
+                >
+                  Explore tours <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </NsLink>
+              </div>
+            </div>
+            {/* Festivals */}
+            <div className="group relative overflow-hidden rounded-2xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/holidays-festival.png"
+                alt="Christians worshipping at an outdoor festival"
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-[#0d2218]/50" aria-hidden="true" />
+              <div className="absolute inset-0 flex flex-col justify-end p-5">
+                <p className="text-xs font-semibold uppercase tracking-widest text-white/70">Festivals</p>
+                <h3 className="mt-1 text-balance text-lg font-bold text-white">
+                  UK Christian festivals
+                </h3>
+                <NsLink
+                  href={`${NAMESPACE_PATH}/festivals`}
+                  className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-white underline-offset-2 hover:underline"
+                >
+                  View festivals <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </NsLink>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Niche categories callout ── */}
+        <section>
+          <div className="rounded-2xl bg-secondary p-8 text-center">
+            <MapPin className="mx-auto h-8 w-8 text-primary" aria-hidden="true" />
+            <h2 className="mt-4 text-xl font-bold text-foreground">
+              Looking for something specific?
+            </h2>
+            <p className="mx-auto mt-2 max-w-xl text-base text-muted-foreground">
+              From accessible holidays and clergy breaks to home swaps and youth adventures — our directory covers every kind of faith-filled break.
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-2">
+              {["Accessible holidays", "Clergy discounts", "Solo travellers", "Seniors", "Youth camps", "Home swap"].map(
+                (tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-border bg-card px-4 py-1.5 text-sm font-medium text-foreground"
+                  >
+                    {tag}
+                  </span>
+                ),
+              )}
+            </div>
+            <NsLink
+              href={`${NAMESPACE_PATH}/all`}
+              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              Browse all providers <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </NsLink>
+          </div>
+        </section>
+
       </div>
     </main>
   );

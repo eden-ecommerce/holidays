@@ -53,38 +53,45 @@
 
 :root {
   color-scheme: light;
-  --background: oklch(0.99 0.005 95);
-  --foreground: oklch(0.22 0.02 150);
+  /* Christian Holidays — warm parchment base, deep forest green primary */
+  --background: oklch(0.98 0.007 80);
+  --foreground: oklch(0.18 0.025 155);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.02 150);
+  --card-foreground: oklch(0.18 0.025 155);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.02 150);
-  --primary: oklch(0.52 0.13 158);
-  --primary-foreground: oklch(0.99 0.01 150);
-  --secondary: oklch(0.96 0.02 120);
-  --secondary-foreground: oklch(0.3 0.05 158);
-  --muted: oklch(0.96 0.01 110);
-  --muted-foreground: oklch(0.5 0.02 150);
-  --accent: oklch(0.93 0.05 120);
-  --accent-foreground: oklch(0.32 0.08 158);
+  --popover-foreground: oklch(0.18 0.025 155);
+  /* Deep forest green — #1a3d2b equivalent */
+  --primary: oklch(0.30 0.08 155);
+  --primary-foreground: oklch(0.97 0.01 90);
+  /* Warm sage secondary */
+  --secondary: oklch(0.94 0.02 130);
+  --secondary-foreground: oklch(0.28 0.06 155);
+  --muted: oklch(0.95 0.01 100);
+  --muted-foreground: oklch(0.50 0.02 150);
+  /* Warm amber accent */
+  --accent: oklch(0.92 0.04 85);
+  --accent-foreground: oklch(0.28 0.06 155);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0.01 120);
-  --input: oklch(0.9 0.01 120);
-  --ring: oklch(0.52 0.13 158);
+  --border: oklch(0.89 0.01 110);
+  --input: oklch(0.89 0.01 110);
+  --ring: oklch(0.30 0.08 155);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --radius: 0.75rem;
+  /* Gold highlight token for featured/trust elements */
+  --highlight: oklch(0.82 0.12 80);
+  --highlight-foreground: oklch(0.18 0.025 155);
+  --sidebar: oklch(0.97 0 0);
+  --sidebar-foreground: oklch(0.18 0.025 155);
+  --sidebar-primary: oklch(0.30 0.08 155);
+  --sidebar-primary-foreground: oklch(0.97 0.01 90);
+  --sidebar-accent: oklch(0.94 0.02 130);
+  --sidebar-accent-foreground: oklch(0.28 0.06 155);
+  --sidebar-border: oklch(0.89 0.01 110);
+  --sidebar-ring: oklch(0.30 0.08 155);
 }
 
 .dark {
