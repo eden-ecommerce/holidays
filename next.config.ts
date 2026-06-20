@@ -1,9 +1,14 @@
 import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs";
-import { ASSET_BASE_URL } from "@lib/constants";
 import { ALLOWED_ORIGIN, CORS_HEADERS } from "@lib/cors";
 
 const nextConfig: NextConfig = {
+  // Mount the entire app under /christian-holidays. Next.js automatically
+  // prepends this to all routes, _next/static assets, and <Link> hrefs — no
+  // assetPrefix or manual path juggling required. The Cloudflare Worker that
+  // proxies www.eden.co.uk/christian-holidays/* to this Vercel deployment
+  // works correctly with basePath out of the box.
+  basePath: "/christian-holidays",
   // Expose SENTRY_DATASET to client bundles at build time (not a secret).
   env: {
     SENTRY_DATASET: process.env.SENTRY_DATASET ?? "",
@@ -18,11 +23,6 @@ const nextConfig: NextConfig = {
     // "@christian-360/next-design",
     // "@christian-360/sanity",
   ],
-  // Only prefix assets in production (behind the Cloudflare Worker). In
-  // development assets MUST be served from the same origin the page is served
-  // from — hardcoding `http://localhost:3000` here breaks the v0 preview and
-  // any proxied/sandbox host because the browser can't reach localhost.
-  assetPrefix: process.env.NODE_ENV === "production" ? ASSET_BASE_URL : undefined,
   // v0 iterates quickly — builds tolerate TS errors during dev.
   // Before deploy: run `pnpm predeploy` (ts-check + lint + build) and fix all errors.
   typescript: {
@@ -38,7 +38,8 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/christian-holidays/api/:path*",
+        // With basePath, Next.js source patterns are relative to the basePath.
+        source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Origin", value: ALLOWED_ORIGIN },
           {
@@ -51,15 +52,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Security headers (CSP, HSTS, frame-ancestors) may be owned by the
-      // Cloudflare Worker or Vercel edge — confirm with infra before enabling:
-      // {
-      //   source: "/:path*",
-      //   headers: [
-      //     { key: "X-Content-Type-Options", value: "nosniff" },
-      //     { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-      //   ],
-      // },
     ];
   },
 };

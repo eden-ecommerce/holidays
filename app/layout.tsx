@@ -1,6 +1,8 @@
 import { EdenHeader } from "@components/common/EdenHeader";
 import { Footer } from "@components/common/Footer";
 import { QueryProvider } from "@providers/query-provider";
+import { EventsLocationProvider } from "@components/events/EventsLocationProvider";
+import { getCloudflareLocation } from "@lib/location/get-cloudflare-location.server";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -12,9 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Default OG image used when a page doesn't supply its own.
-// Absolute URL required by the OG spec — metadataBase resolves relative paths.
-const DEFAULT_OG_IMAGE = "https://www.eden.co.uk/events/og-default.png";
+const DEFAULT_OG_IMAGE = "https://www.eden.co.uk/christian-holidays/og-default.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.eden.co.uk"),
@@ -52,11 +52,15 @@ export const viewport: Viewport = {
   themeColor: "#1a3d2b",
 };
 
-export default function RootLayout({
+export const dynamic = "force-dynamic";
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const serverLocation = await getCloudflareLocation();
+
   return (
     <html
       lang="en"
@@ -64,9 +68,11 @@ export default function RootLayout({
     >
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <QueryProvider>
-          <EdenHeader />
-          <div className="flex-1">{children}</div>
-          <Footer />
+          <EventsLocationProvider serverLocation={serverLocation}>
+            <EdenHeader />
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </EventsLocationProvider>
         </QueryProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
