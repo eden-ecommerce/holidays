@@ -38,7 +38,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/api/:path*",
+        source: "/christian-holidays/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Origin", value: ALLOWED_ORIGIN },
           {
