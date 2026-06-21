@@ -1,13 +1,14 @@
 import Image from "next/image";
+import heroImage from "../../public/holidays-hero.png";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
 import { Search, ArrowRight } from "lucide-react";
 
 export function HolidaysHero() {
   return (
-    <section className="relative min-h-[420px] overflow-hidden border-b border-border sm:min-h-[520px]">
+    <section className="relative h-[420px] overflow-hidden border-b border-border sm:h-[520px]">
       <Image
-        src="/holidays-hero.png"
+        src={heroImage}
         alt="Peaceful English countryside with a historic church"
         fill
         className="object-cover"

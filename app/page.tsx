@@ -1,4 +1,7 @@
 import Image from "next/image";
+import retreatImage from "../public/holidays-retreat.png";
+import pilgrimageImage from "../public/holidays-pilgrimage.png";
+import festivalImage from "../public/holidays-festival.png";
 import { HolidaysHero } from "@components/holidays/HolidaysHero";
 import { HolidaysTrustBar } from "@components/holidays/HolidaysTrustBar";
 import { HolidayCategoryCard } from "@components/holidays/HolidayCategoryCard";
@@ -137,7 +140,7 @@ export default function HolidaysHomePage() {
             {/* Retreats */}
             <div className="group relative overflow-hidden rounded-2xl">
               <Image
-                src="/holidays-retreat.png"
+                src={retreatImage}
                 alt="Peaceful retreat centre surrounded by gardens"
                 width={600}
                 height={450}
@@ -161,7 +164,7 @@ export default function HolidaysHomePage() {
             {/* Pilgrimages */}
             <div className="group relative overflow-hidden rounded-2xl">
               <Image
-                src="/holidays-pilgrimage.png"
+                src={pilgrimageImage}
                 alt="Pilgrims walking towards an ancient church"
                 width={600}
                 height={450}
@@ -185,7 +188,7 @@ export default function HolidaysHomePage() {
             {/* Festivals */}
             <div className="group relative overflow-hidden rounded-2xl">
               <Image
-                src="/holidays-festival.png"
+                src={festivalImage}
                 alt="Christians worshipping at an outdoor festival"
                 width={600}
                 height={450}

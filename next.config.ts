@@ -35,6 +35,20 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "*.amazonaws.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        // Redirect the bare server root to the app entrypoint.
+        // basePath: false on both source and destination means these paths are
+        // absolute (not relative to basePath), so "/" → "/christian-holidays"
+        // works correctly regardless of which domain the request arrives on.
+        source: "/",
+        destination: "/christian-holidays",
+        basePath: false,
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
