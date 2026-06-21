@@ -6,7 +6,7 @@
  * preflight `OPTIONS` request consistently.
  */
 
-/** REPLACE: the single origin allowed to call this app's API. */
+/** The single origin allowed to call this app's API. */
 export const ALLOWED_ORIGIN = "https://www.eden.co.uk";
 
 export const CORS_HEADERS = {
