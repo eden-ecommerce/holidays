@@ -35,6 +35,21 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "*.amazonaws.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        // Redirect the bare server root to the app entrypoint.
+        // basePath: false makes these paths absolute (not relative to basePath),
+        // so "/" → "/christian-holidays" works on every domain. Without this,
+        // visiting the Vercel root (or www.eden.co.uk) returns a 404 because
+        // the app only serves pages under /christian-holidays.
+        source: "/",
+        destination: "/christian-holidays",
+        basePath: false,
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
