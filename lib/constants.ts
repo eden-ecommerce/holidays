@@ -1,51 +1,28 @@
 /**
- * REPLACE: Per-project deploy origins.
+ * Per-project deploy origins.
  *
  * Public config — safe in the client bundle. Hardcode production URLs before deploy.
- * API and asset origins may differ. Dev always uses localhost:3000.
- *
  * Private secrets (API keys, tokens, etc.) belong in `.env` — see `@lib/env-server`.
  *
- * ASSET_BASE_URL drives `assetPrefix` in `next.config.ts` so `/_next/static/*`
- * and imported `@public/*` assets resolve correctly behind the Eden Cloudflare Worker.
+ * The app uses Next.js `basePath: "/christian-holidays"` so assets, routes,
+ * and API calls all resolve correctly on every environment (local, preview,
+ * production) without any assetPrefix or origin-switching logic.
  */
 
-/**
- * Canonical proxy origin. The app is served behind the Eden Cloudflare Worker
- * at https://www.eden.co.uk/christian-holidays, so `/_next/static/*` must resolve as
- *   https://www.eden.co.uk/christian-holidays/_next/static/…
- * The Worker forwards /christian-holidays/* back to this deployment.
- */
-export const ASSET_PRODUCTION_ORIGIN = "https://www.eden.co.uk/christian-holidays";
-export const ASSET_DEV_ORIGIN = "http://localhost:3000";
+/** Canonical production origin (used for absolute URLs in metadata/OG only). */
+export const PRODUCTION_ORIGIN = "https://www.eden.co.uk";
 
-/** API origin (may differ from assets) */
-export const API_PRODUCTION_ORIGIN = "https://www.eden.co.uk/christian-holidays";
-export const API_DEV_ORIGIN = "http://localhost:3000";
+/** Dev origin for absolute URL construction outside Next.js context. */
+export const DEV_ORIGIN = "http://localhost:3000";
 
-// Origin resolution:
-//
-// Production (VERCEL_ENV === "production"): use the canonical proxy origin so
-// assets load through the Cloudflare Worker on eden.co.uk. Using VERCEL_URL
-// here would point the browser straight at the Vercel deployment, bypass the
-// proxy, and break CSS/JS on eden.co.uk (unstyled HTML).
-//
-// Preview (VERCEL_ENV === "preview"): there is no proxy, so use the
-// deployment's own VERCEL_URL. This keeps the v0 preview iframe working and
-// avoids the "content blocked" error from a mismatched origin.
-//
-// Development: same-origin localhost.
-const vercelPreviewUrl =
-  process.env.VERCEL_ENV === "preview" && process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : undefined;
+// Kept for any legacy callers that still import these names.
+export const ASSET_PRODUCTION_ORIGIN = PRODUCTION_ORIGIN;
+export const ASSET_DEV_ORIGIN = DEV_ORIGIN;
+export const API_PRODUCTION_ORIGIN = PRODUCTION_ORIGIN;
+export const API_DEV_ORIGIN = DEV_ORIGIN;
 
 export const ASSET_BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? (vercelPreviewUrl ?? ASSET_PRODUCTION_ORIGIN)
-    : ASSET_DEV_ORIGIN;
+  process.env.NODE_ENV === "production" ? PRODUCTION_ORIGIN : DEV_ORIGIN;
 
 export const API_BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? (vercelPreviewUrl ?? API_PRODUCTION_ORIGIN)
-    : API_DEV_ORIGIN;
+  process.env.NODE_ENV === "production" ? PRODUCTION_ORIGIN : DEV_ORIGIN;

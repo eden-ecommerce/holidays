@@ -24,8 +24,12 @@ export { API_BASE_URL, ASSET_BASE_URL };
 /** The single URL namespace this app is mounted under (no leading slash). */
 export const NAMESPACE = "christian-holidays";
 
-/** Absolute path prefix for the namespace, e.g. "/churches". */
-export const NAMESPACE_PATH = `/${NAMESPACE}`;
+/**
+ * Path prefix for in-app links. Empty string because Next.js `basePath`
+ * ("/christian-holidays") is prepended automatically by <Link> and the router.
+ * Do NOT add "/christian-holidays" here — that would double-prefix every href.
+ */
+export const NAMESPACE_PATH = "";
 
 /**
  * Build an absolute URL for a static asset in `/public` (metadata, dynamic paths).
