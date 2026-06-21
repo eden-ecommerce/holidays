@@ -1,21 +1,18 @@
+import Image from "next/image";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
 import { Search, ArrowRight } from "lucide-react";
 
-// basePath is "/christian-holidays" — public assets must include it manually
-// when used in raw <img> or CSS url() since only next/image with a static
-// import gets it prepended automatically.
-const BASE = "/christian-holidays";
-
 export function HolidaysHero() {
   return (
     <section className="relative min-h-[420px] overflow-hidden border-b border-border sm:min-h-[520px]">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={`${BASE}/holidays-hero.png`}
+      <Image
+        src="/holidays-hero.png"
         alt="Peaceful English countryside with a historic church"
-        className="absolute inset-0 h-full w-full object-cover"
-        fetchPriority="high"
+        fill
+        className="object-cover"
+        priority
+        unoptimized
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0d2218]/65" aria-hidden="true" />

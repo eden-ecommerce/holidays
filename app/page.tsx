@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HolidaysHero } from "@components/holidays/HolidaysHero";
 import { HolidaysTrustBar } from "@components/holidays/HolidaysTrustBar";
 import { HolidayCategoryCard } from "@components/holidays/HolidayCategoryCard";
@@ -11,8 +12,6 @@ import { getFeaturedProviders } from "@lib/holidays/providers";
 import { getDomesticDestinations, getInternationalDestinations } from "@lib/holidays/destinations";
 import { ArrowRight, MapPin } from "lucide-react";
 import type { Metadata } from "next";
-
-const BASE = "/christian-holidays";
 
 export const metadata: Metadata = {
   title: "Christian Holidays | Faith-Based Retreats, Tours & Pilgrimages | Eden.co.uk",
@@ -137,12 +136,13 @@ export default function HolidaysHomePage() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {/* Retreats */}
             <div className="group relative overflow-hidden rounded-2xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`${BASE}/holidays-retreat.png`}
+              <Image
+                src="/holidays-retreat.png"
                 alt="Peaceful retreat centre surrounded by gardens"
+                width={600}
+                height={450}
                 className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
+                unoptimized
               />
               <div className="absolute inset-0 bg-[#0d2218]/50" aria-hidden="true" />
               <div className="absolute inset-0 flex flex-col justify-end p-5">
@@ -160,12 +160,13 @@ export default function HolidaysHomePage() {
             </div>
             {/* Pilgrimages */}
             <div className="group relative overflow-hidden rounded-2xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`${BASE}/holidays-pilgrimage.png`}
+              <Image
+                src="/holidays-pilgrimage.png"
                 alt="Pilgrims walking towards an ancient church"
+                width={600}
+                height={450}
                 className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
+                unoptimized
               />
               <div className="absolute inset-0 bg-[#0d2218]/50" aria-hidden="true" />
               <div className="absolute inset-0 flex flex-col justify-end p-5">
@@ -183,12 +184,13 @@ export default function HolidaysHomePage() {
             </div>
             {/* Festivals */}
             <div className="group relative overflow-hidden rounded-2xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`${BASE}/holidays-festival.png`}
+              <Image
+                src="/holidays-festival.png"
                 alt="Christians worshipping at an outdoor festival"
+                width={600}
+                height={450}
                 className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
+                unoptimized
               />
               <div className="absolute inset-0 bg-[#0d2218]/50" aria-hidden="true" />
               <div className="absolute inset-0 flex flex-col justify-end p-5">
