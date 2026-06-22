@@ -10,6 +10,7 @@ const CATEGORY_LABEL: Record<Provider["category"], string> = {
   youth: "Youth Camp",
   festivals: "Festival",
   "self-catering": "Self-Catering",
+  missions: "Mission Trip",
 };
 
 export function ProviderCard({ provider }: { provider: Provider }) {

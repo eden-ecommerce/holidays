@@ -4,7 +4,8 @@ export type HolidayCategory =
   | "pilgrimages"
   | "youth"
   | "festivals"
-  | "self-catering";
+  | "self-catering"
+  | "missions";
 
 export interface Provider {
   id: string;

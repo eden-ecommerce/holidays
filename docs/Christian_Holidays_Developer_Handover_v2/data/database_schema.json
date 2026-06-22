@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Database schema for Christian Holidays Directory Platform",
+  "entities": {
+    "User": {
+      "description": "Registered travellers/holidaymakers browsing and booking",
+      "fields": {
+        "user_id": { "type": "UUID", "primary_key": true },
+        "email": { "type": "VARCHAR(255)", "unique": true, "required": true },
+        "password_hash": { "type": "VARCHAR(255)", "required": true },
+        "first_name": { "type": "VARCHAR(100)", "required": true },
+        "last_name": { "type": "VARCHAR(100)", "required": true },
+        "profile_picture_url": { "type": "TEXT", "required": false },
+        "denomination_preference": { "type": "VARCHAR(100)", "required": false, "enum": ["Anglican", "Baptist", "Catholic", "Charismatic", "Evangelical", "Methodist", "Pentecostal", "Presbyterian", "Quaker", "Reformed", "Interdenominational", "Other"] },
+        "home_church": { "type": "VARCHAR(255)", "required": false },
+        "is_clergy": { "type": "BOOLEAN", "default": false },
+        "clergy_verification_status": { "type": "VARCHAR(50)", "enum": ["unverified", "pending", "verified", "rejected"], "default": "unverified" },
+        "is_christian_worker": { "type": "BOOLEAN", "default": false },
+        "accessibility_needs": { "type": "JSON", "required": false, "description": "Array of accessibility requirements" },
+        "newsletter_opt_in": { "type": "BOOLEAN", "default": false },
+        "created_at": { "type": "TIMESTAMP", "required": true },
+        "updated_at": { "type": "TIMESTAMP", "required": true },
+        "last_login": { "type": "TIMESTAMP", "required": false }
+      }
+    },
+    "Provider": {
+      "description": "Holiday operators, property owners, retreat centres, and event organisers",
+      "fields": {
+        "provider_id": { "type": "UUID", "primary_key": true },
+        "user_id": { "type": "UUID", "foreign_key": "User.user_id", "description": "The user account that manages this provider profile" },
+        "provider_type": { "type": "VARCHAR(50)", "required": true, "enum": ["tour_operator", "property_owner", "retreat_centre", "activity_centre", "festival_organiser", "cruise_operator", "home_swap_host"] },
+        "company_name": { "type": "VARCHAR(255)", "required": true },
+        "trading_name": { "type": "VARCHAR(255)", "required": false },
+        "description": { "type": "TEXT", "required": true },
+        "logo_url": { "type": "TEXT", "required": false },
+        "website_url": { "type": "TEXT", "required": false },
+        "contact_email": { "type": "VARCHAR(255)", "required": true },
+        "contact_phone": { "type": "VARCHAR(50)", "required": false },
+        "address_line_1": { "type": "VARCHAR(255)", "required": false },
+        "address_line_2": { "type": "VARCHAR(255)", "required": false },
+        "city": { "type": "VARCHAR(100)", "required": false },
+        "county": { "type": "VARCHAR(100)", "required": false },
+        "postcode": { "type": "VARCHAR(20)", "required": false },
+        "country": { "type": "VARCHAR(100)", "required": true },
+        "latitude": { "type": "DECIMAL(10,8)", "required": false },
+        "longitude": { "type": "DECIMAL(11,8)", "required": false },
+        "denomination_affiliation": { "type": "VARCHAR(100)", "required": false },
+        "christian_ethos_statement": { "type": "TEXT", "required": false, "description": "Provider's own statement about their Christian values and approach" },
+        "verification_status": { "type": "VARCHAR(50)", "enum": ["unverified", "pending", "verified", "featured"], "default": "unverified" },
+        "subscription_tier": { "type": "VARCHAR(50)", "enum": ["free", "basic", "premium", "featured"], "default": "free" },
+        "stripe_connect_id": { "type": "VARCHAR(255)", "required": false },
+        "atol_number": { "type": "VARCHAR(20)", "required": false, "description": "ATOL protection number for tour operators" },
+        "abta_number": { "type": "VARCHAR(20)", "required": false },
+        "companies_house_number": { "type": "VARCHAR(20)", "required": false },
+        "charity_number": { "type": "VARCHAR(20)", "required": false },
+        "is_active": { "type": "BOOLEAN", "default": true },
+        "created_at": { "type": "TIMESTAMP", "required": true },
+        "updated_at": { "type": "TIMESTAMP", "required": true }
+      }
+    },
+    "Listing": {
+      "description": "Individual holiday listings - accommodations, tours, events, etc.",
+      "fields": {
+        "listing_id": { "type": "UUID", "primary_key": true },
+        "provider_id": { "type": "UUID", "foreign_key": "Provider.provider_id", "required": true },
+        "listing_type": { "type": "VARCHAR(50)", "required": true, "enum": ["accommodation", "tour_package", "retreat_programme", "activity_holiday", "festival_event", "cruise", "home_swap", "campsite"] },
+        "title": { "type": "VARCHAR(255)", "required": true },
+        "slug": { "type": "VARCHAR(255)", "unique": true, "required": true },
+        "summary": { "type": "VARCHAR(500)", "required": true, "description": "Short description for search results and cards" },
+        "description": { "type": "TEXT", "required": true },
+        "status": { "type": "VARCHAR(50)", "enum": ["draft", "pending_review", "active", "paused", "expired", "rejected"], "default": "draft" },
+        "featured_image_url": { "type": "TEXT", "required": false },
+        "price_from": { "type": "DECIMAL(10,2)", "required": false },
+        "price_to": { "type": "DECIMAL(10,2)", "required": false },
+        "price_currency": { "type": "VARCHAR(3)", "default": "GBP" },
+        "price_basis": { "type": "VARCHAR(50)", "enum": ["per_person", "per_night", "per_week", "per_group", "total_package", "free"], "required": false },
+        "location_name": { "type": "VARCHAR(255)", "required": false },
+        "address_line_1": { "type": "VARCHAR(255)", "required": false },
+        "city": { "type": "VARCHAR(100)", "required": false },
+        "region": { "type": "VARCHAR(100)", "required": false },
+        "country": { "type": "VARCHAR(100)", "required": true },
+        "postcode": { "type": "VARCHAR(20)", "required": false },
+        "latitude": { "type": "DECIMAL(10,8)", "required": false },
+        "longitude": { "type": "DECIMAL(11,8)", "required": false },
+        "start_date": { "type": "DATE", "required": false, "description": "For dated events/tours" },
+        "end_date": { "type": "DATE", "required": false },
+        "is_recurring": { "type": "BOOLEAN", "default": false },
+        "recurrence_pattern": { "type": "JSON", "required": false, "description": "Cron-like pattern for recurring events" },
+        "duration_days": { "type": "INTEGER", "required": false },
+        "max_guests": { "type": "INTEGER", "required": false },
+        "min_age": { "type": "INTEGER", "required": false },
+        "max_age": { "type": "INTEGER", "required": false },
+        "booking_url": { "type": "TEXT", "required": false, "description": "External booking link if not using platform booking" },
+        "booking_method": { "type": "VARCHAR(50)", "enum": ["platform", "external_link", "inquiry_only", "phone_only"], "default": "inquiry_only" },
+        "average_rating": { "type": "DECIMAL(3,2)", "required": false },
+        "review_count": { "type": "INTEGER", "default": 0 },
+        "view_count": { "type": "INTEGER", "default": 0 },
+        "inquiry_count": { "type": "INTEGER", "default": 0 },
+        "created_at": { "type": "TIMESTAMP", "required": true },
+        "updated_at": { "type": "TIMESTAMP", "required": true },
+        "published_at": { "type": "TIMESTAMP", "required": false }
+      }
+    },
+    "ListingChristianMetadata": {
+      "description": "Faith-specific attributes unique to this platform",
+      "fields": {
+        "metadata_id": { "type": "UUID", "primary_key": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "unique": true, "required": true },
+        "ethos_description": { "type": "TEXT", "required": false, "description": "How faith is integrated into the experience" },
+        "has_on_site_worship": { "type": "BOOLEAN", "default": false },
+        "has_bible_teaching": { "type": "BOOLEAN", "default": false },
+        "has_prayer_ministry": { "type": "BOOLEAN", "default": false },
+        "has_chapel_or_prayer_room": { "type": "BOOLEAN", "default": false },
+        "has_spiritual_direction": { "type": "BOOLEAN", "default": false },
+        "worship_style": { "type": "VARCHAR(100)", "required": false, "enum": ["traditional", "contemporary", "charismatic", "contemplative", "liturgical", "mixed", "none_structured"] },
+        "denomination_welcome": { "type": "JSON", "required": false, "description": "Array of denominations explicitly welcomed" },
+        "alcohol_policy": { "type": "VARCHAR(50)", "enum": ["dry_site", "alcohol_free_events", "permitted", "licensed_bar", "not_specified"], "default": "not_specified" },
+        "clergy_discount_percentage": { "type": "INTEGER", "required": false },
+        "christian_worker_discount_percentage": { "type": "INTEGER", "required": false },
+        "missionary_discount_percentage": { "type": "INTEGER", "required": false },
+        "is_suitable_for_church_groups": { "type": "BOOLEAN", "default": false },
+        "is_suitable_for_quiet_retreat": { "type": "BOOLEAN", "default": false },
+        "is_suitable_for_youth_groups": { "type": "BOOLEAN", "default": false },
+        "spiritual_focus_tags": { "type": "JSON", "required": false, "description": "Array: e.g. ['silent_retreat', 'healing', 'celtic_spirituality', 'missions', 'discipleship']" }
+      }
+    },
+    "ListingAccommodationDetails": {
+      "description": "Additional fields for accommodation-type listings",
+      "fields": {
+        "accommodation_detail_id": { "type": "UUID", "primary_key": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "unique": true, "required": true },
+        "property_type": { "type": "VARCHAR(50)", "required": true, "enum": ["hotel", "guest_house", "bnb", "self_catering_cottage", "self_catering_apartment", "retreat_house", "monastery", "convent", "campsite", "glamping", "caravan_park", "holiday_park", "hostel", "bunkhouse", "hermitage", "community_house"] },
+        "bedrooms": { "type": "INTEGER", "required": false },
+        "bathrooms": { "type": "INTEGER", "required": false },
+        "max_occupancy": { "type": "INTEGER", "required": false },
+        "is_self_catering": { "type": "BOOLEAN", "default": false },
+        "is_full_board": { "type": "BOOLEAN", "default": false },
+        "is_half_board": { "type": "BOOLEAN", "default": false },
+        "is_bed_and_breakfast": { "type": "BOOLEAN", "default": false },
+        "meal_options": { "type": "JSON", "required": false, "description": "Array: e.g. ['vegetarian', 'vegan', 'gluten_free', 'halal']" },
+        "check_in_time": { "type": "TIME", "required": false },
+        "check_out_time": { "type": "TIME", "required": false },
+        "minimum_stay_nights": { "type": "INTEGER", "default": 1 },
+        "pets_allowed": { "type": "BOOLEAN", "default": false },
+        "smoking_allowed": { "type": "BOOLEAN", "default": false },
+        "wifi_available": { "type": "BOOLEAN", "default": false },
+        "parking_available": { "type": "BOOLEAN", "default": false },
+        "garden_grounds": { "type": "BOOLEAN", "default": false },
+        "ical_feed_url": { "type": "TEXT", "required": false, "description": "iCal URL for calendar sync with other platforms" }
+      }
+    },
+    "ListingTourDetails": {
+      "description": "Additional fields for tour/package-type listings",
+      "fields": {
+        "tour_detail_id": { "type": "UUID", "primary_key": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "unique": true, "required": true },
+        "tour_type": { "type": "VARCHAR(50)", "required": true, "enum": ["pilgrimage", "heritage_tour", "walking_holiday", "ski_holiday", "beach_holiday", "cruise", "adventure", "mission_trip", "study_tour"] },
+        "departure_city": { "type": "VARCHAR(100)", "required": false },
+        "destinations_visited": { "type": "JSON", "required": false, "description": "Array of destination objects with name and country" },
+        "itinerary": { "type": "JSON", "required": false, "description": "Day-by-day itinerary array" },
+        "group_size_min": { "type": "INTEGER", "required": false },
+        "group_size_max": { "type": "INTEGER", "required": false },
+        "includes_flights": { "type": "BOOLEAN", "default": false },
+        "includes_accommodation": { "type": "BOOLEAN", "default": false },
+        "includes_meals": { "type": "VARCHAR(50)", "enum": ["none", "breakfast", "half_board", "full_board", "all_inclusive"], "default": "none" },
+        "includes_guide": { "type": "BOOLEAN", "default": false },
+        "includes_transfers": { "type": "BOOLEAN", "default": false },
+        "difficulty_level": { "type": "VARCHAR(50)", "enum": ["easy", "moderate", "challenging", "strenuous"], "required": false },
+        "physical_fitness_required": { "type": "VARCHAR(50)", "enum": ["low", "moderate", "high", "very_high"], "required": false },
+        "is_atol_protected": { "type": "BOOLEAN", "default": false },
+        "next_departure_date": { "type": "DATE", "required": false }
+      }
+    },
+    "ListingAccessibility": {
+      "description": "Detailed accessibility information for listings",
+      "fields": {
+        "accessibility_id": { "type": "UUID", "primary_key": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "unique": true, "required": true },
+        "wheelchair_accessible": { "type": "BOOLEAN", "default": false },
+        "wheelchair_accessible_details": { "type": "TEXT", "required": false },
+        "hearing_loop": { "type": "BOOLEAN", "default": false },
+        "braille_materials": { "type": "BOOLEAN", "default": false },
+        "level_access": { "type": "BOOLEAN", "default": false },
+        "accessible_bathroom": { "type": "BOOLEAN", "default": false },
+        "accessible_parking": { "type": "BOOLEAN", "default": false },
+        "lift_available": { "type": "BOOLEAN", "default": false },
+        "assistance_dogs_welcome": { "type": "BOOLEAN", "default": false },
+        "carer_accommodation": { "type": "BOOLEAN", "default": false, "description": "Free or discounted carer stays" },
+        "sensory_friendly": { "type": "BOOLEAN", "default": false },
+        "accessibility_statement_url": { "type": "TEXT", "required": false },
+        "accessibility_rating": { "type": "VARCHAR(50)", "enum": ["fully_accessible", "partially_accessible", "limited_accessibility", "not_accessible", "contact_for_details"], "required": false }
+      }
+    },
+    "ListingImage": {
+      "description": "Images associated with listings",
+      "fields": {
+        "image_id": { "type": "UUID", "primary_key": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "required": true },
+        "image_url": { "type": "TEXT", "required": true },
+        "alt_text": { "type": "VARCHAR(255)", "required": true },
+        "caption": { "type": "VARCHAR(500)", "required": false },
+        "display_order": { "type": "INTEGER", "default": 0 },
+        "is_featured": { "type": "BOOLEAN", "default": false }
+      }
+    },
+    "Tag": {
+      "description": "Flexible tagging system for listings",
+      "fields": {
+        "tag_id": { "type": "UUID", "primary_key": true },
+        "tag_category": { "type": "VARCHAR(50)", "required": true, "enum": ["activity", "audience", "season", "feature", "spiritual", "location_type"] },
+        "tag_name": { "type": "VARCHAR(100)", "required": true },
+        "tag_slug": { "type": "VARCHAR(100)", "unique": true, "required": true },
+        "description": { "type": "TEXT", "required": false }
+      },
+      "seed_data_examples": [
+        { "category": "activity", "examples": ["walking", "skiing", "sailing", "surfing", "climbing", "cycling", "kayaking", "horse_riding", "swimming", "fishing"] },
+        { "category": "audience", "examples": ["families", "singles", "couples", "seniors", "youth", "clergy", "church_groups", "women_only", "men_only", "disabled"] },
+        { "category": "season", "examples": ["spring", "summer", "autumn", "winter", "easter", "christmas", "new_year", "half_term", "bank_holiday"] },
+        { "category": "feature", "examples": ["pet_friendly", "wifi", "pool", "beach_access", "mountain_views", "coastal", "rural", "urban", "eco_friendly", "budget"] },
+        { "category": "spiritual", "examples": ["silent_retreat", "guided_retreat", "healing", "celtic_spirituality", "contemplative", "charismatic_worship", "bible_teaching", "missions_focus", "prayer_ministry", "pilgrimage"] },
+        { "category": "location_type", "examples": ["seaside", "countryside", "mountain", "lakeside", "island", "city", "village", "forest", "national_park"] }
+      ]
+    },
+    "ListingTag": {
+      "description": "Many-to-many junction table between Listings and Tags",
+      "fields": {
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "required": true },
+        "tag_id": { "type": "UUID", "foreign_key": "Tag.tag_id", "required": true }
+      },
+      "primary_key": ["listing_id", "tag_id"]
+    },
+    "Review": {
+      "description": "User reviews of listings",
+      "fields": {
+        "review_id": { "type": "UUID", "primary_key": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "required": true },
+        "user_id": { "type": "UUID", "foreign_key": "User.user_id", "required": true },
+        "rating_overall": { "type": "INTEGER", "required": true, "min": 1, "max": 5 },
+        "rating_value_for_money": { "type": "INTEGER", "required": false, "min": 1, "max": 5 },
+        "rating_location": { "type": "INTEGER", "required": false, "min": 1, "max": 5 },
+        "rating_facilities": { "type": "INTEGER", "required": false, "min": 1, "max": 5 },
+        "rating_spiritual_programme": { "type": "INTEGER", "required": false, "min": 1, "max": 5 },
+        "rating_welcome_and_hospitality": { "type": "INTEGER", "required": false, "min": 1, "max": 5 },
+        "title": { "type": "VARCHAR(255)", "required": false },
+        "content": { "type": "TEXT", "required": true },
+        "visit_date": { "type": "DATE", "required": false },
+        "travel_party_type": { "type": "VARCHAR(50)", "enum": ["solo", "couple", "family", "church_group", "friends", "youth_group"], "required": false },
+        "would_recommend": { "type": "BOOLEAN", "required": false },
+        "provider_response": { "type": "TEXT", "required": false },
+        "provider_response_date": { "type": "TIMESTAMP", "required": false },
+        "is_verified_stay": { "type": "BOOLEAN", "default": false },
+        "status": { "type": "VARCHAR(50)", "enum": ["pending", "published", "flagged", "removed"], "default": "pending" },
+        "created_at": { "type": "TIMESTAMP", "required": true }
+      }
+    },
+    "Inquiry": {
+      "description": "Booking inquiries from users to providers",
+      "fields": {
+        "inquiry_id": { "type": "UUID", "primary_key": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "required": true },
+        "user_id": { "type": "UUID", "foreign_key": "User.user_id", "required": true },
+        "provider_id": { "type": "UUID", "foreign_key": "Provider.provider_id", "required": true },
+        "check_in_date": { "type": "DATE", "required": false },
+        "check_out_date": { "type": "DATE", "required": false },
+        "guest_count_adults": { "type": "INTEGER", "required": false },
+        "guest_count_children": { "type": "INTEGER", "required": false },
+        "message": { "type": "TEXT", "required": true },
+        "status": { "type": "VARCHAR(50)", "enum": ["sent", "read", "replied", "booking_confirmed", "declined", "expired"], "default": "sent" },
+        "created_at": { "type": "TIMESTAMP", "required": true },
+        "updated_at": { "type": "TIMESTAMP", "required": true }
+      }
+    },
+    "Wishlist": {
+      "description": "User saved/favourited listings",
+      "fields": {
+        "wishlist_id": { "type": "UUID", "primary_key": true },
+        "user_id": { "type": "UUID", "foreign_key": "User.user_id", "required": true },
+        "name": { "type": "VARCHAR(255)", "required": true, "description": "e.g. 'Summer 2026 Ideas' or 'Retreat Options'" },
+        "is_public": { "type": "BOOLEAN", "default": false },
+        "created_at": { "type": "TIMESTAMP", "required": true }
+      }
+    },
+    "WishlistItem": {
+      "description": "Junction table for wishlists and listings",
+      "fields": {
+        "wishlist_id": { "type": "UUID", "foreign_key": "Wishlist.wishlist_id", "required": true },
+        "listing_id": { "type": "UUID", "foreign_key": "Listing.listing_id", "required": true },
+        "added_at": { "type": "TIMESTAMP", "required": true },
+        "notes": { "type": "TEXT", "required": false }
+      },
+      "primary_key": ["wishlist_id", "listing_id"]
+    },
+    "BlogPost": {
+      "description": "Editorial content for SEO and user engagement",
+      "fields": {
+        "post_id": { "type": "UUID", "primary_key": true },
+        "author_id": { "type": "UUID", "foreign_key": "User.user_id", "required": true },
+        "title": { "type": "VARCHAR(255)", "required": true },
+        "slug": { "type": "VARCHAR(255)", "unique": true, "required": true },
+        "excerpt": { "type": "VARCHAR(500)", "required": false },
+        "content": { "type": "TEXT", "required": true },
+        "featured_image_url": { "type": "TEXT", "required": false },
+        "category": { "type": "VARCHAR(100)", "required": true, "enum": ["destination_guide", "retreat_review", "pilgrimage_route", "festival_guide", "travel_tips", "spiritual_reflection", "operator_spotlight", "seasonal_guide"] },
+        "tags": { "type": "JSON", "required": false },
+        "seo_title": { "type": "VARCHAR(70)", "required": false },
+        "seo_description": { "type": "VARCHAR(160)", "required": false },
+        "schema_type": { "type": "VARCHAR(50)", "required": false, "description": "Schema.org type for structured data" },
+        "status": { "type": "VARCHAR(50)", "enum": ["draft", "published", "archived"], "default": "draft" },
+        "published_at": { "type": "TIMESTAMP", "required": false },
+        "created_at": { "type": "TIMESTAMP", "required": true },
+        "updated_at": { "type": "TIMESTAMP", "required": true }
+      }
+    },
+    "Destination": {
+      "description": "Destination pages for SEO pillar content",
+      "fields": {
+        "destination_id": { "type": "UUID", "primary_key": true },
+        "name": { "type": "VARCHAR(255)", "required": true },
+        "slug": { "type": "VARCHAR(255)", "unique": true, "required": true },
+        "description": { "type": "TEXT", "required": true },
+        "country": { "type": "VARCHAR(100)", "required": true },
+        "region": { "type": "VARCHAR(100)", "required": false },
+        "latitude": { "type": "DECIMAL(10,8)", "required": false },
+        "longitude": { "type": "DECIMAL(11,8)", "required": false },
+        "featured_image_url": { "type": "TEXT", "required": false },
+        "christian_significance": { "type": "TEXT", "required": false, "description": "Why this destination matters to Christian travellers" },
+        "best_time_to_visit": { "type": "VARCHAR(255)", "required": false },
+        "pilgrimage_route_id": { "type": "UUID", "foreign_key": "PilgrimageRoute.route_id", "required": false }
+      }
+    },
+    "PilgrimageRoute": {
+      "description": "Pilgrimage and walking routes",
+      "fields": {
+        "route_id": { "type": "UUID", "primary_key": true },
+        "name": { "type": "VARCHAR(255)", "required": true },
+        "slug": { "type": "VARCHAR(255)", "unique": true, "required": true },
+        "description": { "type": "TEXT", "required": true },
+        "start_point": { "type": "VARCHAR(255)", "required": true },
+        "end_point": { "type": "VARCHAR(255)", "required": true },
+        "distance_miles": { "type": "DECIMAL(6,1)", "required": false },
+        "difficulty": { "type": "VARCHAR(50)", "enum": ["easy", "moderate", "challenging", "strenuous"], "required": false },
+        "typical_duration_days": { "type": "INTEGER", "required": false },
+        "country": { "type": "VARCHAR(100)", "required": true },
+        "region": { "type": "VARCHAR(100)", "required": false },
+        "route_geojson": { "type": "JSON", "required": false, "description": "GeoJSON LineString for map rendering" },
+        "historical_significance": { "type": "TEXT", "required": false },
+        "associated_saint": { "type": "VARCHAR(255)", "required": false },
+        "featured_image_url": { "type": "TEXT", "required": false }
+      }
+    }
+  },
+  "indexes": [
+    { "table": "Listing", "columns": ["listing_type", "status"], "type": "btree" },
+    { "table": "Listing", "columns": ["latitude", "longitude"], "type": "spatial" },
+    { "table": "Listing", "columns": ["country", "region"], "type": "btree" },
+    { "table": "Listing", "columns": ["price_from"], "type": "btree" },
+    { "table": "Listing", "columns": ["average_rating"], "type": "btree" },
+    { "table": "Listing", "columns": ["published_at"], "type": "btree" },
+    { "table": "Provider", "columns": ["provider_type", "verification_status"], "type": "btree" },
+    { "table": "Review", "columns": ["listing_id", "rating_overall"], "type": "btree" },
+    { "table": "ListingChristianMetadata", "columns": ["clergy_discount_percentage"], "type": "btree" },
+    { "table": "Tag", "columns": ["tag_category", "tag_slug"], "type": "btree" }
+  ],
+  "full_text_search": {
+    "description": "Full-text search indexes for semantic search functionality",
+    "indexed_fields": [
+      "Listing.title",
+      "Listing.summary",
+      "Listing.description",
+      "Provider.company_name",
+      "Provider.description",
+      "Destination.name",
+      "Destination.description",
+      "BlogPost.title",
+      "BlogPost.content"
+    ]
+  }
+}

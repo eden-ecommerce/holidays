@@ -99,6 +99,111 @@ export const DESTINATIONS: Destination[] = [
       "Major Catholic pilgrimage site in central Portugal, where three shepherd children reported apparitions of the Virgin Mary in 1917.",
     highlights: ["Marian apparitions", "Sanctuary of Fatima", "Candlelight processions", "Chapel of Apparitions"],
   },
+  {
+    id: "DP011",
+    name: "Pilgrims' Way (North Downs Way)",
+    country: "UK",
+    region: "South East England",
+    type: "domestic",
+    description:
+      "Historic route from Winchester to Canterbury following the North Downs. Medieval pilgrimage to Thomas Becket's shrine at Canterbury Cathedral.",
+    highlights: ["Canterbury Cathedral", "Medieval history", "Chaucer connection", "120 miles"],
+    website: "https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/",
+  },
+  {
+    id: "DP012",
+    name: "Augustine Camino",
+    country: "UK",
+    region: "Kent",
+    type: "domestic",
+    description:
+      "Route following St Augustine's journey from his landing at Ramsgate to Canterbury, where he established Christianity in England.",
+    highlights: ["Augustine's landing site", "Canterbury Cathedral", "Anglo-Saxon Christianity"],
+    website: "https://www.augustinecamino.co.uk/",
+  },
+  {
+    id: "DP013",
+    name: "St Columba's Way",
+    country: "UK",
+    region: "Western Scotland",
+    type: "domestic",
+    description:
+      "Route following St Columba's journey from Glasgow through the Scottish Highlands to the sacred island of Iona.",
+    highlights: ["Iona Abbey", "Celtic Christianity", "Scottish Highlands", "Island hopping"],
+  },
+  {
+    id: "DP014",
+    name: "Glastonbury",
+    country: "UK",
+    region: "Somerset",
+    type: "domestic",
+    description:
+      "Ancient Christian site associated with Joseph of Arimathea and King Arthur. Home to Glastonbury Abbey and the Tor.",
+    highlights: ["Glastonbury Abbey", "The Tor", "Joseph of Arimathea legend", "Celtic connections"],
+  },
+  {
+    id: "DP015",
+    name: "Durham",
+    country: "UK",
+    region: "North East",
+    type: "domestic",
+    description:
+      "Durham Cathedral houses the shrine of St Cuthbert and the tomb of the Venerable Bede. A UNESCO World Heritage Site.",
+    highlights: ["Durham Cathedral", "St Cuthbert's shrine", "Bede's tomb", "UNESCO"],
+    website: "https://www.durhamcathedral.co.uk/",
+  },
+  {
+    id: "DP016",
+    name: "Assisi",
+    country: "Italy",
+    type: "international",
+    description:
+      "Birthplace of St Francis. Home to the Basilica of San Francesco, a medieval hill town and centre of Franciscan spirituality.",
+    highlights: ["Basilica of San Francesco", "Franciscan heritage", "Medieval town"],
+  },
+  {
+    id: "DP017",
+    name: "Oberammergau",
+    country: "Germany",
+    region: "Bavaria",
+    type: "international",
+    description:
+      "Bavarian village famous for its Passion Play performed every ten years (next 2030). Popular with Christian tour groups.",
+    highlights: ["Passion Play", "Bavarian Alps", "Wood carving tradition", "Decennial event"],
+  },
+  {
+    id: "DP018",
+    name: "Taizé",
+    country: "France",
+    region: "Burgundy",
+    type: "international",
+    description:
+      "Ecumenical monastic community attracting thousands of young people weekly for prayer, worship and community.",
+    highlights: ["Ecumenical community", "Youth focus", "Contemplative worship", "International"],
+    website: "https://www.taize.fr/",
+  },
+  {
+    id: "DP019",
+    name: "London Christian Heritage Trail",
+    country: "UK",
+    region: "London",
+    type: "domestic",
+    description:
+      "Walking tours exploring London's Christian heritage including Wilberforce, Wesley, Whitefield, Spurgeon and more.",
+    highlights: ["Multiple walking routes", "Reformation sites", "Missionary history", "Free churches"],
+    website: "https://christianheritagelondon.org/",
+  },
+  {
+    id: "DP020",
+    name: "Christian Heritage Cambridge",
+    country: "UK",
+    region: "East of England",
+    type: "domestic",
+    description:
+      "The Round Church and associated tours exploring Christianity's role in Cambridge history. Over 20,000 visitors annually.",
+    highlights: ["Round Church", "University connections", "Reformation history", "12th century"],
+    website: "https://www.christianheritage.org.uk/",
+  },
 ];
 
 export function getDomesticDestinations(): Destination[] {

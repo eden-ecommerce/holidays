@@ -50,4 +50,12 @@ export const CATEGORIES: CategoryMeta[] = [
     icon: "🏠",
     count: ALL_PROVIDERS.filter((p) => p.category === "self-catering").length,
   },
+  {
+    slug: "missions",
+    label: "Missions & Voluntourism",
+    description:
+      "Short-term mission trips, overseas service projects, and charity field experiences for UK Christians.",
+    icon: "🌍",
+    count: ALL_PROVIDERS.filter((p) => p.category === "missions").length,
+  },
 ];

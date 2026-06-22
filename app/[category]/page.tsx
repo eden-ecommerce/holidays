@@ -11,7 +11,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 
-const VALID_CATEGORIES = ["retreats", "tours", "pilgrimages", "youth", "festivals", "self-catering", "all"] as const;
+const VALID_CATEGORIES = ["retreats", "tours", "pilgrimages", "youth", "festivals", "self-catering", "missions", "all"] as const;
 
 interface Props {
   params: Promise<{ category: string }>;

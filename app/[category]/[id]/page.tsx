@@ -42,6 +42,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   youth: "Youth & Activity",
   festivals: "Festivals",
   "self-catering": "Self-Catering & B&Bs",
+  missions: "Missions & Voluntourism",
 };
 
 export default async function ProviderDetailPage({ params }: Props) {
