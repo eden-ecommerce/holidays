@@ -7,6 +7,7 @@ import { DestinationCard } from "@components/holidays/DestinationCard";
 import { ListWithUsBanner } from "@components/holidays/ListWithUsBanner";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
+import { VERCEL_PRODUCTION_ORIGIN } from "@lib/constants";
 import { CATEGORIES } from "@lib/holidays/categories";
 import { getFeaturedProviders } from "@lib/holidays/providers";
 import { getDomesticDestinations, getInternationalDestinations } from "@lib/holidays/destinations";
@@ -137,7 +138,7 @@ export default function HolidaysHomePage() {
             {/* Retreats */}
             <div className="group relative overflow-hidden rounded-2xl">
               <Image
-                src="/holidays-retreat.png"
+                src={`${VERCEL_PRODUCTION_ORIGIN}/holidays-retreat.png`}
                 alt="Peaceful retreat centre surrounded by gardens"
                 width={600}
                 height={450}
@@ -161,7 +162,7 @@ export default function HolidaysHomePage() {
             {/* Pilgrimages */}
             <div className="group relative overflow-hidden rounded-2xl">
               <Image
-                src="/holidays-pilgrimage.png"
+                src={`${VERCEL_PRODUCTION_ORIGIN}/holidays-pilgrimage.png`}
                 alt="Pilgrims walking towards an ancient church"
                 width={600}
                 height={450}
@@ -185,7 +186,7 @@ export default function HolidaysHomePage() {
             {/* Festivals */}
             <div className="group relative overflow-hidden rounded-2xl">
               <Image
-                src="/holidays-festival.png"
+                src={`${VERCEL_PRODUCTION_ORIGIN}/holidays-festival.png`}
                 alt="Christians worshipping at an outdoor festival"
                 width={600}
                 height={450}

@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { NsLink } from "@components/ns-link";
 import { NAMESPACE_PATH } from "@lib/config";
+import { VERCEL_PRODUCTION_ORIGIN } from "@lib/constants";
 import { Search, ArrowRight } from "lucide-react";
 
 export function HolidaysHero() {
   return (
     <section className="relative min-h-[420px] overflow-hidden border-b border-border sm:min-h-[520px]">
       <Image
-        src="/holidays-hero.png"
+        src={`${VERCEL_PRODUCTION_ORIGIN}/holidays-hero.png`}
         alt="Peaceful English countryside with a historic church"
         fill
         className="object-cover"
