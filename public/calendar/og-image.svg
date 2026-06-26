@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The Complete Christian Holidays Guide  Eden.co.uk">
+  <rect width="1200" height="630" fill="#2d7a27"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#g)" opacity="0.35"/>
+  <defs>
+    <radialGradient id="g" cx="30%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#5bbf2a"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <text x="80" y="280" fill="#ffffff" font-family="system-ui, sans-serif" font-size="56" font-weight="700">The Complete Christian</text>
+  <text x="80" y="350" fill="#ffffff" font-family="system-ui, sans-serif" font-size="56" font-weight="700">Holidays Guide</text>
+  <text x="80" y="420" fill="rgba(255,255,255,0.85)" font-family="system-ui, sans-serif" font-size="28">200+ holidays · 15+ denominations · Eden.co.uk</text>
+</svg>

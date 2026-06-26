@@ -1,0 +1,4577 @@
+[
+  {
+    "id": "advent",
+    "name": "Advent",
+    "alsoKnownAs": [
+      "Adviento (Spanish)",
+      "Avent (French)",
+      "Der Advent (German)"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "Four Sundays before Christmas (begins late Nov/early Dec)",
+    "type": "liturgical-season",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "incarnation",
+      "penitence",
+      "eschatology"
+    ],
+    "liturgicalColor": [
+      "Purple/Violet",
+      "Blue (Anglican",
+      "Methodist",
+      "some Lutheran)"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A season of preparation, expectation, and watchfulness lasting four Sundays before Christmas. Advent marks the beginning of the liturgical year in Western Christianity. The tradition of lighting Advent candles — one for each Sunday — is widely observed across Catholic, Lutheran, Anglican, and Methodist churches. In its dual focus, Advent looks back to Christ's first coming at Christmas and forward to his promised Second Coming.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Advent — Christian holiday illustration",
+    "seoExcerpt": "A season of preparation, expectation, and watchfulness lasting four Sundays before Christmas. Advent marks the beginning of the liturgical year in Western…",
+    "phase1": true
+  },
+  {
+    "id": "christmas-day-nativity-of-jesus-christ",
+    "name": "Christmas Day / Nativity of Jesus Christ",
+    "alsoKnownAs": [
+      "Nativity of Our Lord",
+      "Noel",
+      "Navidad",
+      "Natale",
+      "Рождество (Rozhdestvo)",
+      "Genna/Ledet (Ethiopian)",
+      "Dznoont (Armenian)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-07",
+    "dateRule": "December 25 (Western & New Calendar Orthodox); January 7 (Julian Calendar Orthodox, Coptic, Ethiopian); January 6 (Armenian)",
+    "type": "solemnity",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "GB"
+    ],
+    "sourceDescription": "The annual celebration of the birth of Jesus Christ in Bethlehem, as narrated in the Gospels of Matthew and Luke. The date of December 25 was established in Rome by the 4th century; Eastern Christians following the Julian calendar celebrate on January 7 in the Gregorian reckoning. The Armenian Apostolic Church uniquely celebrates Christmas and Epiphany together on January 6, preserving an ancient practice predating the 4th-century separation of the two feasts. Observed with special liturgies, carol services, nativity scenes, and family celebrations across all denominations.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Christmas Day / Nativity of Jesus Christ — Christian holiday illustration",
+    "seoExcerpt": "The annual celebration of the birth of Jesus Christ in Bethlehem, as narrated in the Gospels of Matthew and Luke. The date of December 25 was established…",
+    "phase1": true
+  },
+  {
+    "id": "christmas-season-christmastide-the-twelve-days-of-christmas",
+    "name": "Christmas Season / Christmastide / The Twelve Days of Christmas",
+    "dateType": "fixed",
+    "dateFixed": "01-05",
+    "dateRule": "December 25 – January 5 (or through Epiphany, Jan 6)",
+    "type": "liturgical-season",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "GB"
+    ],
+    "sourceDescription": "The period from Christmas Day through the eve of Epiphany, known as the \"Twelve Days of Christmas.\" In Catholic tradition, the Christmas season extends until the Feast of the Baptism of the Lord. Many traditions observe the days between Christmas and Epiphany as a continuous celebration, with special feasts on December 26 (St. Stephen), December 27 (St. John), and December 28 (Holy Innocents).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Christmas Season / Christmastide / The Twelve Days of Christmas — Christian holiday illustration",
+    "seoExcerpt": "The period from Christmas Day through the eve of Epiphany, known as the \"Twelve Days of Christmas.\" In Catholic tradition, the Christmas season extends…",
+    "phase1": false
+  },
+  {
+    "id": "epiphany",
+    "name": "Epiphany",
+    "alsoKnownAs": [
+      "Twelfth Night",
+      "Three Kings Day",
+      "Día de Reyes (Spanish)",
+      "La Befana (Italy)",
+      "Theophany (Eastern)",
+      "Timkat (Ethiopian)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-06",
+    "dateRule": "January 6 (fixed); or transferred to the nearest Sunday (some countries)",
+    "type": "solemnity",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "epiphany"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ",
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the manifestation of Christ to the world. In Western Christianity (Catholic, Protestant, Anglican), Epiphany primarily celebrates the arrival of the Magi at Bethlehem. In Eastern Christianity, it is called Theophany and commemorates Christ's Baptism in the Jordan River, with a blessing of waters as a central rite. In Hispanic and Latino cultures, January 6 is \"Día de Reyes\" (Three Kings Day), when children traditionally receive gifts. In Italy, the gift-giving figure is \"La Befana.\" In some European Catholic countries, Epiphany is a more significant gift-giving day than Christmas.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Epiphany — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the manifestation of Christ to the world. In Western Christianity (Catholic, Protestant, Anglican), Epiphany primarily celebrates…",
+    "phase1": true
+  },
+  {
+    "id": "ash-wednesday",
+    "name": "Ash Wednesday",
+    "alsoKnownAs": [
+      "The Beginning of Lent",
+      "Dies Cinerum (Latin)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "46 days before Easter (the Wednesday before the first Sunday of Lent)",
+    "moveableRule": "ash-wednesday",
+    "type": "major-feast",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "methodist",
+      "presbyterian"
+    ],
+    "seasons": [
+      "lent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "penitence",
+      "mortality",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "Purple/Violet"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The first day of Lent in Western Christianity, marked by the imposition of ashes on the forehead in the shape of a cross, accompanied by the words \"Remember that you are dust, and to dust you shall return\" (Genesis 3:19). The ashes are traditionally made from palm branches burned from the previous year's Palm Sunday. Ash Wednesday is one of two required days of fasting and abstinence in Catholic practice (along with Good Friday). Eastern Orthodox churches begin Lent on Clean Monday, two days earlier, without the use of ashes.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Ash Wednesday — Christian holiday illustration",
+    "seoExcerpt": "The first day of Lent in Western Christianity, marked by the imposition of ashes on the forehead in the shape of a cross, accompanied by the words…",
+    "phase1": true
+  },
+  {
+    "id": "lent",
+    "name": "Lent",
+    "alsoKnownAs": [
+      "Great Lent (Orthodox)",
+      "Cuaresma (Spanish)",
+      "Carême (French)",
+      "Fastenzeit (German)",
+      "Great Fast",
+      "Medz Bahk (Armenian)",
+      "Hudade (Ethiopian)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "40 days before Easter (from Ash Wednesday in the West; Clean Monday in the East)",
+    "moveableRule": "western-easter",
+    "type": "liturgical-season",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "lent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "penitence",
+      "baptism-preparation",
+      "passion-death"
+    ],
+    "liturgicalColor": [
+      "Purple/Violet"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A solemn season of fasting, prayer, and almsgiving in preparation for Easter. In Western Christianity, Lent spans 40 days from Ash Wednesday to Holy Saturday (Sundays are not counted as fasting days). In Eastern Orthodox tradition, Great Lent begins on Clean Monday and is stricter, involving abstinence from meat, dairy, fish, oil, and wine on most days, lasting 7 weeks. Ethiopian Orthodox Lent (Hudade) spans 55 days. The 40-day period recalls Christ's 40-day fast in the wilderness (Matthew 4:1–11).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Lent — Christian holiday illustration",
+    "seoExcerpt": "A solemn season of fasting, prayer, and almsgiving in preparation for Easter. In Western Christianity, Lent spans 40 days from Ash Wednesday to Holy…",
+    "phase1": true
+  },
+  {
+    "id": "palm-sunday-passion-sunday",
+    "name": "Palm Sunday / Passion Sunday",
+    "alsoKnownAs": [
+      "Domingo de Ramos (Spanish)",
+      "Flowery Sunday",
+      "Hosanna Sunday",
+      "Entry of Christ into Jerusalem"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Sunday before Easter",
+    "moveableRule": "palm-sunday",
+    "type": "major-feast",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "holy-week"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "passion-death",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The beginning of Holy Week, commemorating Christ's triumphal entry into Jerusalem on a donkey, greeted by crowds waving palm branches (John 12:12–15). Congregations typically process with palm fronds (or pussy willow branches in Russia; olive branches in some Mediterranean countries) that are blessed during the liturgy. The liturgy also incorporates the reading of the Passion narrative, which gives this day its alternative name \"Passion Sunday\" in the Roman Rite. In the Philippine tradition, palaspás (ornately woven palms) are central to the observance.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Palm Sunday / Passion Sunday — Christian holiday illustration",
+    "seoExcerpt": "The beginning of Holy Week, commemorating Christ's triumphal entry into Jerusalem on a donkey, greeted by crowds waving palm branches (John 12:12–15).…",
+    "phase1": true
+  },
+  {
+    "id": "holy-week",
+    "name": "Holy Week",
+    "alsoKnownAs": [
+      "Semana Santa (Spanish)",
+      "Semaine Sainte (French)",
+      "Karwoche (German)",
+      "Mahal na Araw (Filipino)",
+      "Mamat (Ethiopian)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Palm Sunday through Holy Saturday",
+    "type": "liturgical-season",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "holy-week"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "passion-death",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "Red (Palm Sunday",
+      "Maundy Thursday)",
+      "Purple (Lent days)",
+      "Black (Good Friday)"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The final week of Lent, encompassing the most solemn liturgical days of the Christian year. It begins with Palm Sunday, moves through Maundy Thursday (Last Supper), Good Friday (Crucifixion), and Holy Saturday (the Great Silence before resurrection), culminating in the Easter Vigil. In Catholic Spain and Latin America, Holy Week (Semana Santa) is marked by elaborate public processions of images and hooded brotherhoods, making it one of the world's most dramatic religious observances. In the Philippines, Holy Week (Semana Santa) is the most important religious period of the year.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Holy Week — Christian holiday illustration",
+    "seoExcerpt": "The final week of Lent, encompassing the most solemn liturgical days of the Christian year. It begins with Palm Sunday, moves through Maundy Thursday…",
+    "phase1": false
+  },
+  {
+    "id": "maundy-thursday-holy-thursday",
+    "name": "Maundy Thursday / Holy Thursday",
+    "alsoKnownAs": [
+      "Jueves Santo",
+      "Jeudi Saint",
+      "Gründonnerstag",
+      "Quinta-feira da Ceia",
+      "Holy and Great Thursday (Orthodox)",
+      "Covenant Thursday"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Thursday of Holy Week",
+    "moveableRule": "maundy-thursday",
+    "type": "feast",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "holy-week",
+      "triduum"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "passion-death",
+      "incarnation",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "White",
+      "then Red or Black stripped at end"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The commemoration of the Last Supper of Jesus with his disciples, at which he instituted the Eucharist (\"the Lord's Supper\"), washed the disciples' feet, and gave the \"new commandment\" (mandatum novum — from which the name \"Maundy\" derives) to love one another. Rites typically include: a Mass of the Lord's Supper or equivalent service, a Washing of Feet ceremony (mandatum), and the solemn transfer or \"repose\" of the Blessed Sacrament. In Catholic tradition, the altar is stripped bare at the end of the liturgy, signaling the beginning of the Triduum.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Maundy Thursday / Holy Thursday — Christian holiday illustration",
+    "seoExcerpt": "The commemoration of the Last Supper of Jesus with his disciples, at which he instituted the Eucharist (\"the Lord's Supper\"), washed the disciples' feet,…",
+    "phase1": true
+  },
+  {
+    "id": "good-friday",
+    "name": "Good Friday",
+    "alsoKnownAs": [
+      "Viernes Santo",
+      "Vendredi Saint",
+      "Karfreitag",
+      "Great and Holy Friday (Orthodox)",
+      "Crucifixion of Our Lord"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Friday of Holy Week",
+    "moveableRule": "good-friday",
+    "type": "fast-day",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "holy-week",
+      "triduum"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "passion-death",
+      "holy-cross"
+    ],
+    "liturgicalColor": [
+      "Red (Catholic)",
+      "Black (some traditions)",
+      "no color (some Protestant)"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "GB"
+    ],
+    "sourceDescription": "The most solemn day of the Christian year, commemorating the crucifixion and death of Jesus Christ at Calvary. In Catholic practice, there is no Mass on Good Friday — the service (the Liturgy of the Lord's Passion) consists of readings, the Veneration of the Cross, and Holy Communion from pre-consecrated hosts. Many Protestant traditions hold Tenebrae services (a service of darkening) or Stations of the Cross. Good Friday is one of two required fast-and-abstinence days in Catholicism. A public holiday in many countries worldwide. In Ethiopia, it is called Siqlet (Crucifixion) and is observed with particular intensity.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Good Friday — Christian holiday illustration",
+    "seoExcerpt": "The most solemn day of the Christian year, commemorating the crucifixion and death of Jesus Christ at Calvary. In Catholic practice, there is no Mass on…",
+    "phase1": true
+  },
+  {
+    "id": "holy-saturday-great-and-holy-saturday",
+    "name": "Holy Saturday / Great and Holy Saturday",
+    "alsoKnownAs": [
+      "Silent Saturday",
+      "Easter Eve",
+      "Sabbato Santo",
+      "Sábado Santo"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Saturday of Holy Week (before Easter Sunday)",
+    "moveableRule": "holy-saturday",
+    "type": "feast",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "holy-week",
+      "triduum"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "passion-death",
+      "resurrection",
+      "eschatology"
+    ],
+    "liturgicalColor": [
+      "White (Easter Vigil)",
+      "no liturgical services in daytime"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The day between Christ's burial and resurrection — a day of silence, vigil, and anticipation. No Mass is celebrated during the daytime in the Catholic tradition; the only liturgy is the Easter Vigil, which begins after nightfall. The Easter Vigil is considered the \"mother of all vigils\" and includes the Service of Light (lighting the Paschal candle), the Liturgy of the Word with multiple Old Testament readings, and the Liturgy of Baptism. For Eastern Orthodox Christians, Holy Saturday includes the service called the \"Lamentations\" (Epitaphios), in which the burial shroud of Christ is venerated.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Holy Saturday / Great and Holy Saturday — Christian holiday illustration",
+    "seoExcerpt": "The day between Christ's burial and resurrection — a day of silence, vigil, and anticipation. No Mass is celebrated during the daytime in the Catholic…",
+    "phase1": true
+  },
+  {
+    "id": "easter-sunday-resurrection-of-our-lord",
+    "name": "Easter Sunday / Resurrection of Our Lord",
+    "alsoKnownAs": [
+      "Pascha (Greek/Orthodox)",
+      "Pesach/Pâques",
+      "Ostern (German)",
+      "Påsk (Swedish)",
+      "Паска (Ukrainian)",
+      "Fasika (Ethiopian)",
+      "Zatik (Armenian)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "First Sunday after the first full moon on or after March 21 (Western); calculated similarly against Julian calendar (Eastern — usually 1–5 weeks later)",
+    "moveableRule": "western-easter",
+    "type": "solemnity",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The central and most important feast of the entire Christian calendar, celebrating the resurrection of Jesus Christ from the dead on the third day after his crucifixion. All other seasons and feasts of the liturgical year radiate from Easter. In Eastern Orthodoxy, Pascha is described as the \"Feast of Feasts\" and \"Resurrection of Resurrections.\" The night before (Easter Vigil / Paschal Vigil) is when catechumens are baptized and confirmed. Every Sunday of the year is considered a \"little Easter\" in Catholic and Orthodox theology. In Ethiopia and elsewhere, Easter follows a longer Lenten fast (55 days in Ethiopian practice).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Easter Sunday / Resurrection of Our Lord — Christian holiday illustration",
+    "seoExcerpt": "The central and most important feast of the entire Christian calendar, celebrating the resurrection of Jesus Christ from the dead on the third day after…",
+    "phase1": true
+  },
+  {
+    "id": "easter-monday",
+    "name": "Easter Monday",
+    "alsoKnownAs": [
+      "Lundi de Pâques",
+      "Ostermontag",
+      "Lunes de Pascua",
+      "Bright Monday (Orthodox)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Monday after Easter Sunday",
+    "moveableRule": "easter-monday",
+    "type": "feast",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran",
+      "pan-christian"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "europe",
+      "latin-america",
+      "global"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "GB"
+    ],
+    "sourceDescription": "The day after Easter Sunday, widely observed as a public holiday and continuation of Easter celebrations across Europe, Latin America, Australia, and many other regions. In Poland, Śmigus-dyngus (Wet Monday) involves playful water-throwing between young people. In Eastern Orthodoxy, it is called Bright Monday, the first day of Bright Week. In many countries it is a formal bank holiday, though not a major liturgical day. In some traditions (particularly Methodist), an \"Easter Monday lovefeast\" was historically observed.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Easter Monday — Christian holiday illustration",
+    "seoExcerpt": "The day after Easter Sunday, widely observed as a public holiday and continuation of Easter celebrations across Europe, Latin America, Australia, and many…",
+    "phase1": false
+  },
+  {
+    "id": "ascension-day-ascension-of-our-lord",
+    "name": "Ascension Day / Ascension of Our Lord",
+    "alsoKnownAs": [
+      "Ascensiontide",
+      "Feast of the Ascension",
+      "Jesu Himmelfahrt (German)",
+      "Wniebowstąpienie (Polish)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "40 days after Easter (traditionally Thursday; often transferred to the following Sunday in many Western countries)",
+    "moveableRule": "ascension-thursday",
+    "type": "solemnity",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "easter",
+      "ascension"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "ascension",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating Jesus Christ's ascension into heaven 40 days after his resurrection, as described in Acts 1:9–11 and Luke 24:50–51. In Catholic tradition it remains on Thursday and is a Holy Day of Obligation in some countries; many dioceses have transferred it to the following Sunday. In Eastern Orthodox tradition it is one of the Twelve Great Feasts and is calculated as the 40th day after Pascha (always a Thursday). The feast marks Christ's glorification at the right hand of the Father and anticipates the sending of the Holy Spirit at Pentecost.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Ascension Day / Ascension of Our Lord — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating Jesus Christ's ascension into heaven 40 days after his resurrection, as described in Acts 1:9–11 and Luke 24:50–51. In Catholic…",
+    "phase1": true
+  },
+  {
+    "id": "pentecost-day-of-pentecost",
+    "name": "Pentecost / Day of Pentecost",
+    "alsoKnownAs": [
+      "Whit Sunday (British)",
+      "Pfingsten (German)",
+      "Pentecôte (French)",
+      "Shavuot of Christians",
+      "Descent of the Holy Spirit (Orthodox)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "50 days after Easter (7th Sunday after Easter)",
+    "moveableRule": "pentecost",
+    "type": "solemnity",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "pentecost"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "holy-spirit",
+      "mission",
+      "church"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of the descent of the Holy Spirit upon the apostles and disciples gathered in Jerusalem, as described in Acts 2:1–11. Often called the \"birthday of the Church.\" In the Catholic and Anglican tradition, red vestments signify the tongues of fire of the Holy Spirit. In England, Whit Sunday was historically a major occasion for baptisms and Whit Monday was a public holiday. Pentecost Sunday is especially significant in Pentecostal and Charismatic Christianity, which places great emphasis on the gifts of the Spirit. In Eastern Orthodoxy, it is one of the Twelve Great Feasts and the liturgy includes a special service of kneeling prayers (Vespers of Pentecost).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "festivals",
+    "edenCtaLabel": "Browse Christian festivals →",
+    "edenCtaUrl": "/festivals",
+    "imageAlt": "Pentecost / Day of Pentecost — Christian holiday illustration",
+    "seoExcerpt": "The feast of the descent of the Holy Spirit upon the apostles and disciples gathered in Jerusalem, as described in Acts 2:1–11. Often called the \"birthday…",
+    "phase1": true
+  },
+  {
+    "id": "whit-monday",
+    "name": "Whit Monday",
+    "alsoKnownAs": [
+      "Whitmonday",
+      "Lundi de Pentecôte",
+      "Pfingstmontag",
+      "Whitsun Monday"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Monday after Pentecost Sunday",
+    "moveableRule": "whit-monday",
+    "type": "feast",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "pan-christian"
+    ],
+    "seasons": [
+      "pentecost"
+    ],
+    "regions": [
+      "europe",
+      "western-christianity"
+    ],
+    "themes": [
+      "holy-spirit"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The day after Pentecost Sunday, observed as a public holiday in Germany, Austria, Switzerland, France, Hungary, the Netherlands, and many other European countries. Though it has largely secular significance today, it historically completed the Pentecost \"octave\" celebration and was a day for outdoor processions and Whitsun fairs in England. Some Lutheran and Catholic traditions observe the Monday as a continuation of the feast.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "festivals",
+    "edenCtaLabel": "Browse Christian festivals →",
+    "edenCtaUrl": "/festivals",
+    "imageAlt": "Whit Monday — Christian holiday illustration",
+    "seoExcerpt": "The day after Pentecost Sunday, observed as a public holiday in Germany, Austria, Switzerland, France, Hungary, the Netherlands, and many other European…",
+    "phase1": false
+  },
+  {
+    "id": "all-saints-day",
+    "name": "All Saints' Day",
+    "alsoKnownAs": [
+      "All Hallows' Day",
+      "Allerheiligen (German)",
+      "La Toussaint (French)",
+      "Todos los Santos (Spanish)",
+      "Día de Todos los Santos"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "November 1",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "methodist",
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "PL",
+      "ES"
+    ],
+    "sourceDescription": "A feast honoring all Christian saints, known and unknown, who have attained eternal life in heaven. In Catholicism it is a Holy Day of Obligation. The Anglican and Episcopal tradition celebrates it as one of the seven Principal Feasts. In Eastern Orthodoxy, All Saints Sunday falls on the first Sunday after Pentecost. In many cultures (particularly Mexican and Latin American), November 1 blends with the feast of All Souls and pre-Christian traditions into the Día de Muertos / Day of the Dead (see Regional section). In Poland, All Saints (Wszystkich Świętych) is a national public holiday when families visit graves with candles and flowers.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "All Saints' Day — Christian holiday illustration",
+    "seoExcerpt": "A feast honoring all Christian saints, known and unknown, who have attained eternal life in heaven. In Catholicism it is a Holy Day of Obligation. The…",
+    "phase1": true
+  },
+  {
+    "id": "all-souls-day-commemoration-of-the-faithful-departed",
+    "name": "All Souls' Day / Commemoration of the Faithful Departed",
+    "alsoKnownAs": [
+      "Día de los Muertos (Mexico)",
+      "Dzień Zaduszny (Poland)",
+      "Giornata della Memoria",
+      "Seelensonntag (German)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "11-02",
+    "dateRule": "November 2",
+    "type": "memorial",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "penitence",
+      "eschatology",
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "Black",
+      "Purple/Violet"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The day after All Saints' Day, dedicated to prayer for all the faithful departed who are not yet in the full glory of heaven. In Catholic theology, this relates to the doctrine of Purgatory and the practice of praying for the dead. In Mexico and many Latin American cultures, November 1–2 is celebrated as Día de Muertos, a vibrant cultural and religious observance blending Aztec ancestor veneration with Catholic All Saints'/All Souls' traditions. Eastern Orthodoxy has multiple \"Soul Saturdays\" (Psych-Saturdays) throughout the year on which prayers are offered for the dead, rather than a single annual day.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "All Souls' Day / Commemoration of the Faithful Departed — Christian holiday illustration",
+    "seoExcerpt": "The day after All Saints' Day, dedicated to prayer for all the faithful departed who are not yet in the full glory of heaven. In Catholic theology, this…",
+    "phase1": true
+  },
+  {
+    "id": "solemnity-of-mary-mother-of-god",
+    "name": "Solemnity of Mary, Mother of God",
+    "alsoKnownAs": [
+      "World Day of Peace",
+      "Feast of the Circumcision (former name)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-01",
+    "dateRule": "January 1 (Octave Day of Christmas)",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian",
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "isObligation": true,
+    "sourceDescription": "The first day of the calendar year is celebrated in the Catholic Church as a Marian solemnity, honoring Mary as the \"Theotokos\" (Mother of God). It is also the eighth day after Christmas (Octave Day), and recalls the circumcision of the infant Jesus and his naming (Luke 2:21). The Solemnity is a Holy Day of Obligation in the Catholic Church — though some bishops' conferences have abrogated this obligation when January 1 falls on a Saturday or Monday. The Pope traditionally issues a World Day of Peace message on this date. Previously in the pre-1970 calendar, this was the Feast of the Circumcision of Our Lord.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Solemnity of Mary, Mother of God — Christian holiday illustration",
+    "seoExcerpt": "The first day of the calendar year is celebrated in the Catholic Church as a Marian solemnity, honoring Mary as the \"Theotokos\" (Mother of God). It is…",
+    "phase1": false
+  },
+  {
+    "id": "baptism-of-the-lord",
+    "name": "Baptism of the Lord",
+    "alsoKnownAs": [
+      "Feast of the Baptism of Christ"
+    ],
+    "dateType": "fixed",
+    "dateRule": "Sunday after January 6 (or January 13 if Epiphany is celebrated on Jan 6)",
+    "type": "feast",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "methodist"
+    ],
+    "seasons": [
+      "christmas",
+      "epiphany"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ",
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast marking the end of the Christmas season in the Roman Rite, commemorating Jesus's baptism in the Jordan River by John the Baptist (Matthew 3:13–17). The event revealed the Trinity — the voice of the Father (\"This is my beloved Son\") and the descent of the Holy Spirit as a dove. In Eastern Christianity, the baptism of Christ is the central event commemorated at Theophany (January 6). Catholic churches often hold a renewal of baptismal promises on this day.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Baptism of the Lord — Christian holiday illustration",
+    "seoExcerpt": "The feast marking the end of the Christmas season in the Roman Rite, commemorating Jesus's baptism in the Jordan River by John the Baptist (Matthew…",
+    "phase1": false
+  },
+  {
+    "id": "presentation-of-the-lord-candlemas",
+    "name": "Presentation of the Lord / Candlemas",
+    "alsoKnownAs": [
+      "Meeting of the Lord (Eastern)",
+      "La Chandeleur (French)",
+      "Lichtmess (German)",
+      "February 2nd",
+      "Purification of Mary"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "02-02",
+    "dateRule": "February 2",
+    "type": "major-feast",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "epiphany"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ",
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating Mary and Joseph bringing the infant Jesus to the Temple in Jerusalem 40 days after his birth, fulfilling the Law of Moses (Luke 2:22–38). The name \"Candlemas\" derives from the blessing and procession of candles that precedes the Mass, symbolizing Christ as \"a light to enlighten the Gentiles\" (Simeon's canticle). The holy elder Simeon's words — \"Now let your servant depart in peace\" — are sung at Compline (night prayer) throughout the Church year. In Poland and some other Eastern European countries, the candles blessed on this day are kept throughout the year for special occasions.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Presentation of the Lord / Candlemas — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating Mary and Joseph bringing the infant Jesus to the Temple in Jerusalem 40 days after his birth, fulfilling the Law of Moses (Luke…",
+    "phase1": true
+  },
+  {
+    "id": "st-joseph-husband-of-the-blessed-virgin-mary",
+    "name": "St. Joseph, Husband of the Blessed Virgin Mary",
+    "alsoKnownAs": [
+      "San José (Spanish)",
+      "Saint Joseph Patron of Workers (May 1",
+      "separate feast)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "03-19",
+    "dateRule": "March 19",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "lent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "life-of-christ",
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast honoring St. Joseph, foster father of Jesus and husband of the Virgin Mary. Joseph is the patron of the universal Church, workers, fathers, and a happy death. In the Catholic calendar, this is a Solemnity (the highest rank), meaning it takes precedence over Lenten weekdays. In Italy and in Sicilian-American communities, a special feast with an elaborate spread of food (Tavola di San Giuseppe) is prepared on this day. A second feast — St. Joseph the Worker — is celebrated on May 1 (intentionally placed on International Workers' Day).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "St. Joseph, Husband of the Blessed Virgin Mary — Christian holiday illustration",
+    "seoExcerpt": "The feast honoring St. Joseph, foster father of Jesus and husband of the Virgin Mary. Joseph is the patron of the universal Church, workers, fathers, and…",
+    "phase1": false
+  },
+  {
+    "id": "annunciation-of-the-lord",
+    "name": "Annunciation of the Lord",
+    "alsoKnownAs": [
+      "Lady Day",
+      "Annunciation to the Blessed Virgin Mary",
+      "Feast of the Annunciation",
+      "Baggaladà (Coptic)",
+      "Annunciazione (Italian)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "03-25",
+    "dateRule": "March 25",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran",
+      "methodist"
+    ],
+    "seasons": [
+      "lent",
+      "epiphany"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian",
+      "incarnation",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the archangel Gabriel's announcement to the Virgin Mary that she would conceive and bear the Son of God (Luke 1:26–38), and her \"fiat\" (\"Be it done to me according to your word\"). March 25 is exactly nine months before December 25 (Christmas), symbolizing that Christ was conceived on this date. In England, \"Lady Day\" was historically a quarter-day and the date on which the legal year began. When March 25 falls during Holy Week, the feast is transferred to the Monday after the Second Sunday of Easter.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Annunciation of the Lord — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the archangel Gabriel's announcement to the Virgin Mary that she would conceive and bear the Son of God (Luke 1:26–38), and her…",
+    "phase1": true
+  },
+  {
+    "id": "trinity-sunday",
+    "name": "Trinity Sunday",
+    "dateType": "moveable",
+    "dateRule": "Sunday after Pentecost",
+    "moveableRule": "trinity-sunday",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "methodist"
+    ],
+    "seasons": [
+      "pentecost",
+      "ordinary-time"
+    ],
+    "regions": [
+      "western-christianity"
+    ],
+    "themes": [
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast honoring the Holy Trinity — Father, Son, and Holy Spirit — as One God in Three Persons, as defined in the Nicene Creed. Trinity Sunday was established in the Western calendar in the 10th–11th centuries and accepted universally by Rome in 1334. In the Anglican tradition, Sundays are traditionally counted \"after Trinity\" rather than \"after Pentecost,\" giving the post-Pentecost season the name \"Trinitytide.\" In Eastern Orthodoxy, the Trinity is honored on Pentecost Sunday itself (as \"the Day of the Holy Trinity\") and the Monday following is \"Day of the Holy Spirit.\"",
+    "descriptionTeen": "",
+    "edenCtaCategory": "festivals",
+    "edenCtaLabel": "Browse Christian festivals →",
+    "edenCtaUrl": "/festivals",
+    "imageAlt": "Trinity Sunday — Christian holiday illustration",
+    "seoExcerpt": "The feast honoring the Holy Trinity — Father, Son, and Holy Spirit — as One God in Three Persons, as defined in the Nicene Creed. Trinity Sunday was…",
+    "phase1": true
+  },
+  {
+    "id": "corpus-christi-the-most-holy-body-and-blood-of-christ",
+    "name": "Corpus Christi / The Most Holy Body and Blood of Christ",
+    "alsoKnownAs": [
+      "Boże Ciało (Polish)",
+      "Fête-Dieu (French)",
+      "Fronleichnam (German)",
+      "Feast of the Blessed Sacrament"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Thursday after Trinity Sunday (or transferred to the following Sunday in some countries)",
+    "moveableRule": "corpus-christi-thursday",
+    "type": "solemnity",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "incarnation",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "isObligation": true,
+    "sourceDescription": "The feast celebrating the Real Presence of Jesus Christ in the Eucharist. Established by Pope Urban IV in 1264 following visions of Bl. Juliana of Liège, with the famous office composed by St. Thomas Aquinas. The feast's most distinctive feature is the outdoor Corpus Christi procession, in which the Blessed Sacrament is carried through streets decorated with flowers and altars — a tradition maintained with great festivity in Poland, Bavaria, and many Latin American countries. The hymn \"Tantum Ergo\" (from Aquinas's Pange Lingua) is traditional to this feast.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Corpus Christi / The Most Holy Body and Blood of Christ — Christian holiday illustration",
+    "seoExcerpt": "The feast celebrating the Real Presence of Jesus Christ in the Eucharist. Established by Pope Urban IV in 1264 following visions of Bl. Juliana of Liège,…",
+    "phase1": true
+  },
+  {
+    "id": "sacred-heart-of-jesus",
+    "name": "Sacred Heart of Jesus",
+    "alsoKnownAs": [
+      "Feast of the Most Sacred Heart of Jesus",
+      "Sagrado Corazón (Spanish)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Friday of the week after Corpus Christi (19 days after Pentecost)",
+    "type": "solemnity",
+    "denominations": [
+      "anglican"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "passion-death",
+      "covenant",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast honoring the physical heart of Jesus as the symbol of his divine love for humanity. Deeply connected with the visions of St. Margaret Mary Alacoque (17th century) in Paray-le-Monial, France, and the revelations given to her by Christ. The devotion to the Sacred Heart became one of the defining popular devotions of 19th–20th century Catholicism, promoted by the Jesuits and closely linked to the practice of the First Friday devotion (receiving Communion on the first Friday of each month for nine consecutive months).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Sacred Heart of Jesus — Christian holiday illustration",
+    "seoExcerpt": "The feast honoring the physical heart of Jesus as the symbol of his divine love for humanity. Deeply connected with the visions of St. Margaret Mary…",
+    "phase1": false
+  },
+  {
+    "id": "nativity-of-st-john-the-baptist",
+    "name": "Nativity of St. John the Baptist",
+    "alsoKnownAs": [
+      "Midsummer Day",
+      "St. John's Eve",
+      "La Saint-Jean",
+      "Johannistag",
+      "Día de San Juan",
+      "Midsommar (Sweden)"
+    ],
+    "dateType": "fixed",
+    "dateRule": "June 24 (exactly six months before Christmas; Luke 1:26 sets Gabriel's visit to Mary six months after Elizabeth's conception)",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ",
+      "apostles"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "One of only three birthdays celebrated in the Christian liturgical calendar (the others being Christ's and Mary's), because John was sanctified \"from his mother's womb\" (Luke 1:15). The feast coincides with midsummer in the Northern Hemisphere. In Scandinavia (Midsommar), the feast is celebrated with bonfires and dancing. In Spain and Latin America, Día de San Juan is celebrated with bonfires, fireworks, and jumping over flames (a custom shared with many European traditions). The birth of John, the \"voice crying in the wilderness,\" precedes the Nativity by six months.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Nativity of St. John the Baptist — Christian holiday illustration",
+    "seoExcerpt": "One of only three birthdays celebrated in the Christian liturgical calendar (the others being Christ's and Mary's), because John was sanctified \"from his…",
+    "phase1": true
+  },
+  {
+    "id": "sts-peter-and-paul",
+    "name": "Sts. Peter and Paul",
+    "alsoKnownAs": [
+      "Feast of the Apostles Peter and Paul",
+      "SS. Pietro e Paolo (Italian)",
+      "Den hellige Peter og Paul (Norwegian)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "06-29",
+    "dateRule": "June 29",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "apostles"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast honoring the two \"princes of the apostles,\" St. Peter (first bishop of Rome, crucified upside down c. AD 64–68) and St. Paul (beheaded c. AD 64–68), who are believed to have been martyred in Rome on the same day. In Rome, a special Mass is celebrated at St. Peter's Basilica, and the Pope blesses the pallia (liturgical vestments) worn by new metropolitan archbishops. A public holiday in Rome. In Orthodox tradition, it concludes the Apostles' Fast. In various countries, June 29 is a civic holiday for fishermen (Peter was a fisherman).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Sts. Peter and Paul — Christian holiday illustration",
+    "seoExcerpt": "The feast honoring the two \"princes of the apostles,\" St. Peter (first bishop of Rome, crucified upside down c. AD 64–68) and St. Paul (beheaded c. AD…",
+    "phase1": true
+  },
+  {
+    "id": "transfiguration-of-the-lord",
+    "name": "Transfiguration of the Lord",
+    "alsoKnownAs": [
+      "Feast of the Transfiguration",
+      "Vardavar (Armenian)",
+      "Преображение (Preobrazhenie",
+      "Russian)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "08-06",
+    "dateRule": "August 6",
+    "type": "feast",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ",
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the moment when Jesus appeared in radiant glory on Mount Tabor before Peter, James, and John, alongside Moses and Elijah (Matthew 17:1–9). In Eastern Orthodoxy, this is one of the Twelve Great Feasts and is a major summer celebration. The Armenian Apostolic Church celebrates it as Vardavar (\"feast of roses\"), 14 weeks after Easter, with popular traditions of water-throwing inherited from pre-Christian Armenian culture. The feast is particularly important in Russian Orthodox spirituality, linked to hesychast theology and the vision of the uncreated light of Tabor.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Transfiguration of the Lord — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the moment when Jesus appeared in radiant glory on Mount Tabor before Peter, James, and John, alongside Moses and Elijah (Matthew…",
+    "phase1": true
+  },
+  {
+    "id": "assumption-of-the-blessed-virgin-mary-dormition-of-the-theotokos",
+    "name": "Assumption of the Blessed Virgin Mary / Dormition of the Theotokos",
+    "alsoKnownAs": [
+      "Dormition (Eastern)",
+      "L'Assomption (French)",
+      "Ferragosto (Italy)",
+      "Mariä Himmelfahrt (German)",
+      "Wniebowzięcie NMP (Polish)",
+      "Asdvadzadzin (Armenian)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "08-15",
+    "dateRule": "August 15",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "dormition-fast-orthodox",
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "isObligation": true,
+    "sourceDescription": "The feast marking the end of the earthly life of the Virgin Mary and her bodily taking up (assumption/dormition) into heaven. Catholic theology defines the Assumption as a dogma (defined 1950), while Eastern Orthodoxy speaks of the \"Dormition\" (falling asleep) and resurrection of Mary, emphasizing her death before glorification. In Italy, August 15 (Ferragosto) is a major national holiday — the height of the summer vacation period — with ancient roots in the Roman Feriae Augusti. In Poland (Święto Wojska Polskiego), it coincides with the national military holiday commemorating the 1920 Battle of Warsaw. In many countries it is a public holiday. Preceded in Eastern Orthodoxy by a two-week Dormition Fast (August 1–14).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Assumption of the Blessed Virgin Mary / Dormition of the Theotokos — Christian holiday illustration",
+    "seoExcerpt": "The feast marking the end of the earthly life of the Virgin Mary and her bodily taking up (assumption/dormition) into heaven. Catholic theology defines…",
+    "phase1": true
+  },
+  {
+    "id": "queenship-of-mary-our-lady-queen-of-heaven",
+    "name": "Queenship of Mary / Our Lady, Queen of Heaven",
+    "dateType": "fixed",
+    "dateFixed": "08-22",
+    "dateRule": "August 22",
+    "type": "memorial",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A Catholic memorial celebrating Mary's royal dignity as Queen of Heaven and Earth, instituted by Pope Pius XII in 1954 and placed eight days (an \"octave\") after the Assumption. Based on Mary's role as Mother of Christ the King and the tradition of crowning Marian images.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Queenship of Mary / Our Lady, Queen of Heaven — Christian holiday illustration",
+    "seoExcerpt": "A Catholic memorial celebrating Mary's royal dignity as Queen of Heaven and Earth, instituted by Pope Pius XII in 1954 and placed eight days (an \"octave\")…",
+    "phase1": false
+  },
+  {
+    "id": "exaltation-of-the-holy-cross-triumph-of-the-cross",
+    "name": "Exaltation of the Holy Cross / Triumph of the Cross",
+    "alsoKnownAs": [
+      "Holy Cross Day",
+      "Feast of the Holy Cross",
+      "Khatchverats (Armenian)",
+      "Meskel (Ethiopian Connection)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "09-14",
+    "dateRule": "September 14",
+    "type": "major-feast",
+    "denominations": [
+      "catholic",
+      "eastern-orthodox",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "holy-cross"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the discovery of the True Cross by St. Helena (mother of Emperor Constantine) in Jerusalem in 326 AD, and the dedication of the Church of the Holy Sepulchre. In Eastern Orthodox tradition, this is a Great Feast during which the Cross is carried in solemn procession and venerated by the faithful. In Armenia, Khatchverats (Exaltation of the Cross) is one of the Five Cardinal Feasts. In Ethiopia, the related Meskel feast (September 27) commemorates the same event with distinctive bonfires. In the Anglican tradition, September 14 is \"Holy Cross Day.\"",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Exaltation of the Holy Cross / Triumph of the Cross — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the discovery of the True Cross by St. Helena (mother of Emperor Constantine) in Jerusalem in 326 AD, and the dedication of the…",
+    "phase1": false
+  },
+  {
+    "id": "dedication-of-the-lateran-basilica",
+    "name": "Dedication of the Lateran Basilica",
+    "dateType": "fixed",
+    "dateFixed": "11-09",
+    "dateRule": "November 9",
+    "type": "feast",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the dedication of the Archbasilica of St. John Lateran in Rome in 324 AD — the cathedral church of the Bishop of Rome (the Pope) and the oldest and highest-ranking Catholic church in the world (\"mother church of all churches in the city and the world\"). The fact that a feast of a building ranks as a universal Feast (not just Memorial) reflects the ecclesiological significance of the building as a symbol of the universal Church.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Dedication of the Lateran Basilica — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the dedication of the Archbasilica of St. John Lateran in Rome in 324 AD — the cathedral church of the Bishop of Rome (the Pope)…",
+    "phase1": false
+  },
+  {
+    "id": "christ-the-king-our-lord-jesus-christ-king-of-the-universe",
+    "name": "Christ the King / Our Lord Jesus Christ, King of the Universe",
+    "alsoKnownAs": [
+      "Feast of the Kingship of Christ",
+      "Cristo Rey (Spanish)"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "Last Sunday before Advent (last Sunday of Ordinary Time)",
+    "moveableRule": "christ-the-king",
+    "type": "solemnity",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "methodist",
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "trinity",
+      "eschatology"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast concluding the liturgical year, proclaiming the universal kingship of Jesus Christ over all creation, history, and human affairs. Instituted by Pope Pius XI in 1925 in the encyclical Quas Primas, partly in response to the rise of secular nationalism and totalitarianism. In the Eastern Orthodox tradition, the final Sunday before Advent (called \"the Sunday of Judgment\" or \"the Sunday before the Nativity\") has a similar eschatological character. In Mexico and Latin America, \"Cristo Rey\" is widely celebrated.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Christ the King / Our Lord Jesus Christ, King of the Universe — Christian holiday illustration",
+    "seoExcerpt": "The feast concluding the liturgical year, proclaiming the universal kingship of Jesus Christ over all creation, history, and human affairs. Instituted by…",
+    "phase1": true
+  },
+  {
+    "id": "immaculate-conception-of-the-blessed-virgin-mary",
+    "name": "Immaculate Conception of the Blessed Virgin Mary",
+    "dateType": "fixed",
+    "dateFixed": "12-08",
+    "dateRule": "December 8",
+    "type": "solemnity",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Blue"
+    ],
+    "isPublicHoliday": false,
+    "isObligation": true,
+    "sourceDescription": "The feast celebrating the Catholic and Anglican doctrine that Mary was conceived without original sin (the \"Immaculate Conception\"), by a unique divine grace. Defined as a dogma by Pope Pius IX in 1854. This is often confused with the Virgin Birth of Jesus, but is distinct — it refers to Mary's own conception in her mother's womb. The feast is the patronal feast of the United States, Argentina, Brazil, Nicaragua, Spain, and many other nations. It falls during Advent, 16–17 days before Christmas. When December 8 falls on a Sunday, the feast is transferred to December 9.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Immaculate Conception of the Blessed Virgin Mary — Christian holiday illustration",
+    "seoExcerpt": "The feast celebrating the Catholic and Anglican doctrine that Mary was conceived without original sin (the \"Immaculate Conception\"), by a unique divine…",
+    "phase1": true
+  },
+  {
+    "id": "our-lady-of-guadalupe",
+    "name": "Our Lady of Guadalupe",
+    "dateType": "fixed",
+    "dateFixed": "12-12",
+    "dateRule": "December 12",
+    "type": "national-feast",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "latin-america",
+      "global",
+      "north-america"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the apparitions of the Virgin Mary to the indigenous convert Juan Diego in 1531 at Tepeyac Hill, near Mexico City, and the miraculous imprint of her image on his cloak (the tilma). Our Lady of Guadalupe is the patroness of the Americas, Mexico, and the Philippines. December 12 is the most widely observed Marian feast in the Americas, celebrated with night-long vigils (las mañanitas), Masses, processions, music, and fireworks. The basilica at Tepeyac is one of the most visited pilgrimage sites in the world.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Our Lady of Guadalupe — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the apparitions of the Virgin Mary to the indigenous convert Juan Diego in 1531 at Tepeyac Hill, near Mexico City, and the…",
+    "phase1": true
+  },
+  {
+    "id": "ecclesiastical-new-year-indiction",
+    "name": "Ecclesiastical New Year / Indiction",
+    "alsoKnownAs": [
+      "Beginning of the Church Year",
+      "September 1",
+      "Blessings of Water for the New Year"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "09-01",
+    "dateRule": "September 1",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "eastern-christianity"
+    ],
+    "themes": [
+      "creation",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Orthodox ecclesiastical year begins on September 1, a date historically linked to the Byzantine Empire's tax calendar and associated with the beginning of the agricultural cycle. A service is held blessing water and thanking God for the fruits of creation. The Ecumenical Patriarch has designated September 1 as a day of prayer for the protection of the natural environment.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Ecclesiastical New Year / Indiction — Christian holiday illustration",
+    "seoExcerpt": "The Orthodox ecclesiastical year begins on September 1, a date historically linked to the Byzantine Empire's tax calendar and associated with the…",
+    "phase1": false
+  },
+  {
+    "id": "nativity-of-the-theotokos",
+    "name": "Nativity of the Theotokos",
+    "alsoKnownAs": [
+      "Birth of the Virgin Mary",
+      "Η Γέννηση της Παναγίας (Greek)",
+      "Рождество Богородицы"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "09-08",
+    "dateRule": "September 8 (New Calendar) / September 21 (Old Calendar)",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox",
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The first of the Twelve Great Feasts in the Orthodox liturgical year (which begins September 1), celebrating the birth of the Virgin Mary to her elderly parents Joachim and Anna (known from the Protoevangelium of James). In Catholic tradition, this feast (September 8) is also the feast of Our Lady of Loreto (Italy) and of several patronal shrines. The birth of Mary is seen as the beginning of the fulfillment of God's plan of salvation.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Nativity of the Theotokos — Christian holiday illustration",
+    "seoExcerpt": "The first of the Twelve Great Feasts in the Orthodox liturgical year (which begins September 1), celebrating the birth of the Virgin Mary to her elderly…",
+    "phase1": false
+  },
+  {
+    "id": "presentation-of-the-theotokos-in-the-temple",
+    "name": "Presentation of the Theotokos in the Temple",
+    "alsoKnownAs": [
+      "Entering of the Most Holy Theotokos into the Temple",
+      "Eisodos Theotokou (Greek)",
+      "Введение во Храм"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "11-21",
+    "dateRule": "November 21 (New Calendar) / December 4 (Old Calendar)",
+    "type": "memorial",
+    "denominations": [
+      "eastern-orthodox",
+      "catholic",
+      "anglican"
+    ],
+    "seasons": [
+      "nativity-fast-orthodox"
+    ],
+    "regions": [
+      "eastern-christianity"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast celebrating the tradition (from the Protoevangelium of James) that Mary was brought to the Jerusalem Temple as a child at the age of three, to be dedicated to God, where she lived in the Holy of Holies. In Orthodox theology, this reveals Mary's unique vocation: as the one who would \"contain the uncontainable God\" within her womb, she was set apart in the Temple before the incarnation. In Catholic tradition, this is the Memorial of the Presentation of the Blessed Virgin Mary (November 21).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Presentation of the Theotokos in the Temple — Christian holiday illustration",
+    "seoExcerpt": "The feast celebrating the tradition (from the Protoevangelium of James) that Mary was brought to the Jerusalem Temple as a child at the age of three, to…",
+    "phase1": false
+  },
+  {
+    "id": "theophany-epiphany-orthodox",
+    "name": "Theophany / Epiphany (Orthodox)",
+    "alsoKnownAs": [
+      "Holy Theophany",
+      "Blessing of the Waters",
+      "Αγία Θεοφάνεια (Theophania)",
+      "Богоявление (Bogoiavlenie)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-06",
+    "dateRule": "January 6 (New Calendar) / January 19 (Old Calendar)",
+    "type": "solemnity",
+    "denominations": [
+      "eastern-orthodox",
+      "catholic",
+      "anglican"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ",
+      "holy-spirit",
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "In Eastern Orthodoxy, Theophany (January 6) primarily celebrates Christ's baptism in the Jordan River — the moment of the first full revelation of the Trinity (the Father's voice, the Son's presence, the Spirit descending as a dove). The central rite is the Great Blessing of Waters: the priest consecrates water (holy water / Agiasmos) which is distributed to the faithful and used to bless homes. In many Greek and Russian communities, a cross is thrown into a river, lake, or sea, and young men dive to retrieve it. In Russia, believers traditionally immerse themselves in ice-cold waters (ice-hole bathing, купания в проруби).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Theophany / Epiphany (Orthodox) — Christian holiday illustration",
+    "seoExcerpt": "In Eastern Orthodoxy, Theophany (January 6) primarily celebrates Christ's baptism in the Jordan River — the moment of the first full revelation of the…",
+    "phase1": true
+  },
+  {
+    "id": "presentation-of-christ-in-the-temple-meeting-of-the-lord",
+    "name": "Presentation of Christ in the Temple / Meeting of the Lord",
+    "alsoKnownAs": [
+      "Ypapante (Greek: \"Meeting\")",
+      "Sreteniye (Russian)",
+      "Candlemas (Western)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "02-02",
+    "dateRule": "February 2 (New Calendar) / February 15 (Old Calendar)",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox",
+      "catholic",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ",
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "*(See Candlemas entry under Catholic section.)*",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Presentation of Christ in the Temple / Meeting of the Lord — Christian holiday illustration",
+    "seoExcerpt": "*(See Candlemas entry under Catholic…",
+    "phase1": false
+  },
+  {
+    "id": "pascha-orthodox-easter",
+    "name": "Pascha / Orthodox Easter",
+    "alsoKnownAs": [
+      "Resurrection of Christ",
+      "Feast of Feasts",
+      "Anastasis"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Calculated by Julian-based method; typically 1–5 weeks after Western Easter (occasionally same date)",
+    "moveableRule": "orthodox-pascha",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "eastern-christianity"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold",
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "In Eastern Orthodoxy, Pascha is not merely the most important feast — it is described as \"the Feast of Feasts,\" standing apart from and above all the Twelve Great Feasts. The Paschal service begins at midnight on Holy Saturday, with the lighting of the Paschal candle and the proclamation \"Christ is Risen!\" (Christos Anesti! / Khristos Voskrese!), to which the congregation responds \"Truly He is Risen!\" The entirety of Bright Week (the week after Pascha) is treated as one continuous feast. Orthodox Pascha is calculated using Julian-calendar rules, placing it 1–5 weeks later than Western Easter in most years (though occasionally on the same date when lunar cycles align).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Pascha / Orthodox Easter — Christian holiday illustration",
+    "seoExcerpt": "In Eastern Orthodoxy, Pascha is not merely the most important feast — it is described as \"the Feast of Feasts,\" standing apart from and above all the…",
+    "phase1": true
+  },
+  {
+    "id": "bright-week-easter-week-orthodox",
+    "name": "Bright Week / Easter Week (Orthodox)",
+    "dateType": "moveable",
+    "dateRule": "Week after Pascha (Monday through Sunday)",
+    "moveableRule": "western-easter",
+    "type": "liturgical-season",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "eastern-christianity"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The entire week following Orthodox Pascha is called Bright Week and is treated as one extended feast. Fasting is completely forbidden during Bright Week. Royal Doors of the iconostasis remain open throughout the week. Special services called \"Bright [Day] Matins\" are celebrated. A particular commemoration within Bright Week is Bright Friday, which is the feast of the \"Life-Giving Spring\" (Theotokos).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Bright Week / Easter Week (Orthodox) — Christian holiday illustration",
+    "seoExcerpt": "The entire week following Orthodox Pascha is called Bright Week and is treated as one extended feast. Fasting is completely forbidden during Bright Week.…",
+    "phase1": false
+  },
+  {
+    "id": "thomas-sunday-antipascha",
+    "name": "Thomas Sunday / Antipascha",
+    "alsoKnownAs": [
+      "The Second Sunday of Pascha",
+      "Quasimodo Sunday (Western equivalent)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Sunday after Pascha (8 days after Easter)",
+    "moveableRule": "western-easter",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox",
+      "catholic",
+      "anglican"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "resurrection",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Commemorates the appearance of the risen Christ to the apostle Thomas (\"Doubting Thomas\"), who had been absent at the first post-resurrection appearance. Christ invited Thomas to touch his wounds, and Thomas proclaimed \"My Lord and my God\" (John 20:24–29). In the Catholic Church, the Second Sunday of Easter is observed as \"Divine Mercy Sunday\" — a feast instituted by Pope John Paul II in 2000, based on the visions of St. Faustina Kowalska of Poland, a major 20th-century devotion.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Thomas Sunday / Antipascha — Christian holiday illustration",
+    "seoExcerpt": "Commemorates the appearance of the risen Christ to the apostle Thomas (\"Doubting Thomas\"), who had been absent at the first post-resurrection appearance.…",
+    "phase1": false
+  },
+  {
+    "id": "sunday-of-myrrh-bearing-women",
+    "name": "Sunday of Myrrh-Bearing Women",
+    "alsoKnownAs": [
+      "Third Sunday of Pascha",
+      "Sunday of the Holy Myrrhbearers"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Third Sunday after Pascha",
+    "moveableRule": "western-easter",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "eastern-christianity"
+    ],
+    "themes": [
+      "resurrection",
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Commemorates the women who brought spices (myrrh) to anoint Christ's body in the tomb and were the first to witness the resurrection. A Sunday of special honor for women in the Orthodox church, sometimes called the \"Orthodox equivalent of Mother's Day.\"",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Sunday of Myrrh-Bearing Women — Christian holiday illustration",
+    "seoExcerpt": "Commemorates the women who brought spices (myrrh) to anoint Christ's body in the tomb and were the first to witness the resurrection. A Sunday of special…",
+    "phase1": false
+  },
+  {
+    "id": "sunday-of-the-fathers-of-the-first-ecumenical-council",
+    "name": "Sunday of the Fathers of the First Ecumenical Council",
+    "dateType": "moveable",
+    "dateRule": "7th Sunday after Pascha",
+    "moveableRule": "western-easter",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "eastern-christianity"
+    ],
+    "themes": [
+      "church-history",
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Commemorates the 318 Fathers of the First Council of Nicaea (325 AD), who defined the full divinity of Christ (\"true God from true God, begotten not made, of one being with the Father\") against the Arian heresy. This Sunday is a reminder that Orthodox Theology is conciliar — defined by ecumenical councils — rather than by any single authority.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Sunday of the Fathers of the First Ecumenical Council — Christian holiday illustration",
+    "seoExcerpt": "Commemorates the 318 Fathers of the First Council of Nicaea (325 AD), who defined the full divinity of Christ (\"true God from true God, begotten not made,…",
+    "phase1": false
+  },
+  {
+    "id": "all-saints-sunday-orthodox",
+    "name": "All Saints Sunday (Orthodox)",
+    "alsoKnownAs": [
+      "Sunday of All Saints",
+      "First Sunday after Pentecost"
+    ],
+    "dateType": "moveable",
+    "dateRule": "First Sunday after Pentecost",
+    "type": "feast",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "eastern-christianity"
+    ],
+    "themes": [
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Sunday on which the Orthodox Church commemorates all saints — known and unknown — in a single celebration. In the Orthodox calendar, this is equivalent to the Western All Saints' Day (November 1). The following Monday begins the Apostles' Fast.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "All Saints Sunday (Orthodox) — Christian holiday illustration",
+    "seoExcerpt": "The Sunday on which the Orthodox Church commemorates all saints — known and unknown — in a single celebration. In the Orthodox calendar, this is…",
+    "phase1": false
+  },
+  {
+    "id": "protection-of-the-mother-of-god-pokrov",
+    "name": "Protection of the Mother of God / Pokrov",
+    "alsoKnownAs": [
+      "Pokrov Bogoroditsy (Russian)",
+      "Feast of the Veil of the Theotokos",
+      "Intercession of the Mother of God"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "10-01",
+    "dateRule": "October 1 (New Calendar) / October 14 (Old Calendar)",
+    "type": "major-feast",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "eastern-europe",
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Blue"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating a vision seen by the fool-for-Christ St. Andrew of Constantinople in the 10th century: the Virgin Mary was seen in the air above the besieged city, spreading her protective veil (omoforion) over the people. Pokrov is one of the most popular Orthodox feasts in Russia and Ukraine, where countless churches are dedicated to it. The feast is not universally observed in all Orthodox traditions but holds great importance in Slavic Christianity. The town of Vladimir in Russia hosts one of the great masterpieces of Orthodox architecture, the Church of the Intercession on the Nerl (1165), built to commemorate this feast.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Protection of the Mother of God / Pokrov — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating a vision seen by the fool-for-Christ St. Andrew of Constantinople in the 10th century: the Virgin Mary was seen in the air above…",
+    "phase1": false
+  },
+  {
+    "id": "beheading-of-st-john-the-baptist",
+    "name": "Beheading of St. John the Baptist",
+    "alsoKnownAs": [
+      "The Decapitation of John the Forerunner",
+      "Усекновение главы (Russian)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "08-29",
+    "dateRule": "August 29 (New Calendar) / September 11 (Old Calendar)",
+    "type": "major-feast",
+    "denominations": [
+      "eastern-orthodox",
+      "catholic"
+    ],
+    "seasons": [
+      "apostles-fast-end",
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The commemoration of the beheading of John the Baptist at the request of Salome (Matthew 14:1–12, Mark 6:14–29). This is a day of strict fasting in the Orthodox tradition — no oil, wine, or circular-shaped foods (to avoid any appearance of representing a head on a plate). A memorial of repentance and sobriety.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Beheading of St. John the Baptist — Christian holiday illustration",
+    "seoExcerpt": "The commemoration of the beheading of John the Baptist at the request of Salome (Matthew 14:1–12, Mark 6:14–29). This is a day of strict fasting in the…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-neyrouz-coptic-new-year",
+    "name": "Feast of Neyrouz / Coptic New Year",
+    "alsoKnownAs": [
+      "Feast of the Martyrs",
+      "First of Tut"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "09-11",
+    "dateRule": "September 11 (Gregorian) / September 12 in leap years",
+    "type": "national-feast",
+    "denominations": [
+      "coptic-orthodox"
+    ],
+    "seasons": [
+      "year-round"
+    ],
+    "regions": [
+      "egypt",
+      "global"
+    ],
+    "themes": [
+      "church-history",
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The first day of the Coptic calendar (the month of Tut), and a commemoration of the many Christian martyrs who suffered under Emperor Diocletian (whose reign began in 284 AD, the Coptic Year 1). \"Neyrouz\" has no connection to the Persian spring festival Nowruz despite the similar name; it derives from the Coptic word for \"the flowing of the Nile.\" Red-colored foods are traditionally eaten to symbolize the blood of the martyrs.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Feast of Neyrouz / Coptic New Year — Christian holiday illustration",
+    "seoExcerpt": "The first day of the Coptic calendar (the month of Tut), and a commemoration of the many Christian martyrs who suffered under Emperor Diocletian (whose…",
+    "phase1": false
+  },
+  {
+    "id": "coptic-christmas-nativity-eid-al-milad",
+    "name": "Coptic Christmas / Nativity (Eid al-Milad)",
+    "dateType": "fixed",
+    "dateFixed": "01-07",
+    "dateRule": "January 7 (Gregorian)",
+    "type": "major-feast",
+    "denominations": [
+      "coptic-orthodox"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "egypt",
+      "global"
+    ],
+    "themes": [
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "GB"
+    ],
+    "sourceDescription": "The Coptic celebration of the Nativity of Jesus Christ, following 43 days of fasting (the Advent/Nativity Fast, called Tsome Gahad). The Mass (Liturgy of St. Basil) begins late on Christmas Eve and continues through the night. The feast is a national public holiday in Egypt. Celebrated by approximately 10–15 million Coptic Christians in Egypt.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Coptic Christmas / Nativity (Eid al-Milad) — Christian holiday illustration",
+    "seoExcerpt": "The Coptic celebration of the Nativity of Jesus Christ, following 43 days of fasting (the Advent/Nativity Fast, called Tsome Gahad). The Mass (Liturgy of…",
+    "phase1": true
+  },
+  {
+    "id": "coptic-theophany-epiphany-eid-al-ghattas",
+    "name": "Coptic Theophany / Epiphany (Eid al-Ghattas)",
+    "dateType": "fixed",
+    "dateFixed": "01-19",
+    "dateRule": "January 19 (Gregorian) / January 20 in leap years",
+    "type": "major-feast",
+    "denominations": [
+      "coptic-orthodox"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "egypt"
+    ],
+    "themes": [
+      "life-of-christ",
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Coptic celebration of Christ's Baptism in the Jordan River. A blessing of water is central to the feast. On the eve of the feast, a vigil is held and blessed water (Mayit al-Ghattas) is distributed to the faithful. The feast is also associated with the feast of St. John the Baptist.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Coptic Theophany / Epiphany (Eid al-Ghattas) — Christian holiday illustration",
+    "seoExcerpt": "The Coptic celebration of Christ's Baptism in the Jordan River. A blessing of water is central to the feast. On the eve of the feast, a vigil is held and…",
+    "phase1": false
+  },
+  {
+    "id": "flight-into-egypt",
+    "name": "Flight into Egypt",
+    "dateType": "fixed",
+    "dateFixed": "06-01",
+    "dateRule": "June 1 (Gregorian) / 24 Bashans (Coptic)",
+    "type": "feast",
+    "denominations": [
+      "coptic-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "egypt"
+    ],
+    "themes": [
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the Holy Family's flight to Egypt to escape Herod's massacre (Matthew 2:13–15), uniquely celebrated as a major feast in Egypt. The Coptic Church has an extensive tradition of the Holy Family's journey through Egypt — including specific cities, monasteries, and sites they are believed to have visited — spanning about 3.5 years. Pilgrimage routes following the Holy Family's path are an important part of Coptic spirituality.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Flight into Egypt — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the Holy Family's flight to Egypt to escape Herod's massacre (Matthew 2:13–15), uniquely celebrated as a major feast in Egypt. The…",
+    "phase1": false
+  },
+  {
+    "id": "coptic-easter-great-feast-of-resurrection",
+    "name": "Coptic Easter / Great Feast of Resurrection",
+    "dateType": "moveable",
+    "dateRule": "Calculated by Coptic method (same algorithm as Eastern Orthodox); typically April–May",
+    "moveableRule": "western-easter",
+    "type": "major-feast",
+    "denominations": [
+      "coptic-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "egypt",
+      "global"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The most important feast of the Coptic calendar, following 55 days of fasting during Coptic Lent. The fast is among the strictest in all of Christianity: complete abstinence from all animal products (vegan fast) on most days, with meals beginning only in the afternoon. The Pascha service begins on the night of Holy Saturday. Breaking the fast with lamb and traditional Coptic foods is a major cultural event.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Coptic Easter / Great Feast of Resurrection — Christian holiday illustration",
+    "seoExcerpt": "The most important feast of the Coptic calendar, following 55 days of fasting during Coptic Lent. The fast is among the strictest in all of Christianity:…",
+    "phase1": false
+  },
+  {
+    "id": "coptic-feast-of-the-apostles-peter-and-paul",
+    "name": "Coptic Feast of the Apostles (Peter and Paul)",
+    "dateType": "fixed",
+    "dateFixed": "07-12",
+    "dateRule": "July 12 (Gregorian)",
+    "type": "major-feast",
+    "denominations": [
+      "coptic-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "egypt"
+    ],
+    "themes": [
+      "apostles"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Coptic commemoration of the apostles Peter and Paul, celebrated on the same day as the Eastern Orthodox feast (June 29 Julian = July 12 Gregorian). It concludes the Apostles' Fast.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Coptic Feast of the Apostles (Peter and Paul) — Christian holiday illustration",
+    "seoExcerpt": "The Coptic commemoration of the apostles Peter and Paul, celebrated on the same day as the Eastern Orthodox feast (June 29 Julian = July 12 Gregorian). It…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-st-mark-the-evangelist-coptic",
+    "name": "Feast of St. Mark the Evangelist (Coptic)",
+    "dateType": "fixed",
+    "dateFixed": "05-08",
+    "dateRule": "May 8 (Gregorian) / 30 Baramuda (Coptic) — commemorates his martyrdom in 68 AD",
+    "type": "national-feast",
+    "denominations": [
+      "coptic-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "egypt"
+    ],
+    "themes": [
+      "apostles",
+      "martyrs-saints",
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Mark the Evangelist, who is believed to have founded the Church of Alexandria and brought Christianity to Egypt in the first century. The Coptic Orthodox Church traces its apostolic succession directly to Mark. His martyrdom (he was dragged through the streets of Alexandria by a mob) is commemorated with great solemnity. The Coptic Patriarch bears the title \"Pope of Alexandria and Patriarch of All Africa.\"",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Feast of St. Mark the Evangelist (Coptic) — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Mark the Evangelist, who is believed to have founded the Church of Alexandria and brought Christianity to Egypt in the first century. The…",
+    "phase1": false
+  },
+  {
+    "id": "genna-ledet-ethiopian-christmas",
+    "name": "Genna / Ledet (Ethiopian Christmas)",
+    "alsoKnownAs": [
+      "ጌና (Genna)",
+      "ልደት (Ledet)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-07",
+    "dateRule": "January 7 (Gregorian) / Tahsas 29 (Ethiopian)",
+    "type": "major-feast",
+    "denominations": [
+      "ethiopian-orthodox"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "ethiopia"
+    ],
+    "themes": [
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "GB"
+    ],
+    "sourceDescription": "The Ethiopian Orthodox celebration of the Nativity, observed on January 7, following 43 days of Advent fasting (Tsome Gahad). The name \"Genna\" is thought to derive from the word for \"imminent\" (relating to Christ's coming) and from a traditional hockey-like game (Yegena Chewata) played by men on this day. The liturgy begins very early in the morning (around 6 AM) with an elaborate procession. Men wear traditional white clothes (kemis and netela). Lalibela is a particularly famous site for Christmas celebrations, drawing pilgrims to its 12th-century rock-hewn churches.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Genna / Ledet (Ethiopian Christmas) — Christian holiday illustration",
+    "seoExcerpt": "The Ethiopian Orthodox celebration of the Nativity, observed on January 7, following 43 days of Advent fasting (Tsome Gahad). The name \"Genna\" is thought…",
+    "phase1": false
+  },
+  {
+    "id": "timkat-ethiopian-epiphany",
+    "name": "Timkat (Ethiopian Epiphany)",
+    "alsoKnownAs": [
+      "Timkat Festival",
+      "ጥምቀት"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-19",
+    "dateRule": "January 19 (Gregorian, or January 20 in leap years)",
+    "type": "major-feast",
+    "denominations": [
+      "ethiopian-orthodox"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "ethiopia"
+    ],
+    "themes": [
+      "life-of-christ",
+      "baptism",
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "One of the most spectacular religious celebrations in the world, Timkat commemorates Christ's Baptism in the Jordan River. The central ritual involves priests carrying the Tabot — a replica of the Ark of the Covenant — from the church to a nearby river or pool, covered with richly embroidered cloth. The procession begins on the eve of Timkat (Ketera), and thousands of pilgrims in white robes follow, chanting and dancing. The next morning, water is blessed and sprinkled on the faithful. Many worshippers immerse themselves or are splashed with holy water in a renewal of their baptism. UNESCO inscribed Timkat on the Intangible Cultural Heritage of Humanity list. The most famous Timkat celebration is held in Gondar, around the historic royal bath of Fasilides.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Timkat (Ethiopian Epiphany) — Christian holiday illustration",
+    "seoExcerpt": "One of the most spectacular religious celebrations in the world, Timkat commemorates Christ's Baptism in the Jordan River. The central ritual involves…",
+    "phase1": true
+  },
+  {
+    "id": "fasika-ethiopian-easter",
+    "name": "Fasika (Ethiopian Easter)",
+    "alsoKnownAs": [
+      "ፋሲካ",
+      "Easter of the Ethiopians"
+    ],
+    "dateType": "moveable",
+    "dateRule": "First Sunday after the first full moon after March 21 (Coptic/Julian calculation)",
+    "moveableRule": "western-easter",
+    "type": "major-feast",
+    "denominations": [
+      "ethiopian-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "ethiopia"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The most important religious celebration of the Ethiopian Orthodox calendar, preceded by the 55-day Great Lent (Hudade/Abye Tsome) — one of the strictest fasting periods of any Christian tradition. During the fast, Orthodox Ethiopians eat only once a day after 3 PM, with a completely vegan diet. The Easter Eve service (Ye'lel Qiddase) begins at 6 PM and continues through the night. After the Mass, the fast is broken with doro wat (spiced chicken stew) and tej (honey wine). Addis Ababa, Lalibela, Axum, and Gondar host the largest pilgrimages. Approximately 800,000 international visitors come to Ethiopia specifically for Fasika each year.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Fasika (Ethiopian Easter) — Christian holiday illustration",
+    "seoExcerpt": "The most important religious celebration of the Ethiopian Orthodox calendar, preceded by the 55-day Great Lent (Hudade/Abye Tsome) — one of the strictest…",
+    "phase1": false
+  },
+  {
+    "id": "enkutatash-ethiopian-new-year-st-john-the-baptist-day",
+    "name": "Enkutatash (Ethiopian New Year / St. John the Baptist Day)",
+    "alsoKnownAs": [
+      "ዓዲ",
+      "Kiddus Yohannes",
+      "September 11"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "09-11",
+    "dateRule": "September 11 (Gregorian, or Sep 12 in leap years) / Meskerem 1 (Ethiopian)",
+    "type": "national-feast",
+    "denominations": [
+      "ethiopian-orthodox"
+    ],
+    "seasons": [
+      "year-round"
+    ],
+    "regions": [
+      "ethiopia"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "creation"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Ethiopian New Year falls at the end of the long rainy season, when the highlands burst into color with golden Meskel daisies. \"Enkutatash\" means \"gift of jewels,\" evoking the story of the Queen of Sheba returning from visiting King Solomon in Jerusalem and being welcomed back with jewels by her chiefs. The day also commemorates St. John the Baptist (Kiddus Yohannes). Children dress in new clothes and sing traditional songs while carrying bouquets of flowers from house to house. A service is held at church, after which priests read the new calendar (Bahre-Hassab). Celebrated equally by Christians and Muslims in Ethiopia.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Enkutatash (Ethiopian New Year / St. John the Baptist Day) — Christian holiday illustration",
+    "seoExcerpt": "The Ethiopian New Year falls at the end of the long rainy season, when the highlands burst into color with golden Meskel daisies. \"Enkutatash\" means \"gift…",
+    "phase1": false
+  },
+  {
+    "id": "meskel-finding-of-the-true-cross",
+    "name": "Meskel (Finding of the True Cross)",
+    "alsoKnownAs": [
+      "Meskal",
+      "መስቀል",
+      "Demera Festival"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "09-27",
+    "dateRule": "September 27 (Gregorian) / Meskerem 17 (Ethiopian) — public holiday also on September 28",
+    "type": "major-feast",
+    "denominations": [
+      "ethiopian-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "ethiopia"
+    ],
+    "themes": [
+      "holy-cross"
+    ],
+    "liturgicalColor": [
+      "Red",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the discovery of the True Cross by Empress Helena, mother of Constantine, in 326 AD. According to Ethiopian tradition, part of the True Cross later found its way to Ethiopia and is enshrined at Gishen Mariam monastery. The central ritual is the Demera — the building and burning of a massive bonfire topped with crosses and the yellow Meskel daisies (Adey Ababa). Priests bless the bonfire, and the direction the smoke rises is interpreted as an omen for the coming year. After the fire dies, the faithful mark their foreheads with ash in the sign of the cross. The Meskel celebration at Meskel Square in Addis Ababa draws hundreds of thousands of people. UNESCO inscribed the Meskel celebration on the Intangible Cultural Heritage list in 2013.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Meskel (Finding of the True Cross) — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the discovery of the True Cross by Empress Helena, mother of Constantine, in 326 AD. According to Ethiopian tradition, part of the…",
+    "phase1": true
+  },
+  {
+    "id": "great-lent-hudade-ethiopian",
+    "name": "Great Lent / Hudade (Ethiopian)",
+    "dateType": "moveable",
+    "dateRule": "55 days before Fasika",
+    "type": "fasting-period",
+    "denominations": [
+      "ethiopian-orthodox"
+    ],
+    "seasons": [
+      "lent"
+    ],
+    "regions": [
+      "ethiopia"
+    ],
+    "themes": [
+      "penitence",
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "Purple"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Ethiopian Orthodox Great Lent, known as Hudade or Abye Tsome (\"the Great Fast\"), is 55 days long — longer than any other Christian tradition's Lenten fast. During this period, Ethiopian Orthodox Christians follow a strict vegan fast, eating only once a day after 3 PM (with exceptions on Saturdays and Sundays when a meal after the morning service is permitted). No meat, dairy, eggs, or other animal products are consumed. The fast is considered spiritually meritorious and is undertaken by the majority of Ethiopian Orthodox Christians.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Great Lent / Hudade (Ethiopian) — Christian holiday illustration",
+    "seoExcerpt": "The Ethiopian Orthodox Great Lent, known as Hudade or Abye Tsome (\"the Great Fast\"), is 55 days long — longer than any other Christian tradition's Lenten…",
+    "phase1": false
+  },
+  {
+    "id": "christmas-and-theophany-armenian",
+    "name": "Christmas and Theophany (Armenian)",
+    "alsoKnownAs": [
+      "Soorp Dzenoont (Armenian: Holy Birth)",
+      "Theophany of Our Lord"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-06",
+    "dateRule": "January 6",
+    "type": "major-feast",
+    "denominations": [
+      "armenian-apostolic"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "armenia"
+    ],
+    "themes": [
+      "incarnation",
+      "trinity"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": true,
+    "publicHolidayCountries": [
+      "GB"
+    ],
+    "sourceDescription": "The Armenian church uniquely combines the Nativity and Epiphany on January 6, preserving an ancient pre-4th-century practice. The Western and most Eastern separation of Christmas (December 25) and Epiphany (January 6) was not adopted by the Armenian church. The January 6 date thus commemorates simultaneously the birth of Christ and his baptism (the two \"epiphanies\" of God). The traditional fast before Christmas (the Advent Fast) precedes this date. The Christmas Eve dinner (Khetum) features rice, fish, nevik (chard and chickpeas), and yogurt soup, eaten before the Divine Liturgy. Liturgy is in Classical Armenian (Grabar).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Christmas and Theophany (Armenian) — Christian holiday illustration",
+    "seoExcerpt": "The Armenian church uniquely combines the Nativity and Epiphany on January 6, preserving an ancient pre-4th-century practice. The Western and most Eastern…",
+    "phase1": false
+  },
+  {
+    "id": "armenian-easter-zatik",
+    "name": "Armenian Easter (Zatik)",
+    "alsoKnownAs": [
+      "Surb Zatik",
+      "elebrate as Soorb Zadig",
+      "Zatig"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Calculated by Western (Gregorian) Easter formula (unlike Greek and Russian Orthodox)",
+    "moveableRule": "western-easter",
+    "type": "feast",
+    "denominations": [
+      "armenian-apostolic"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "armenia"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The most sacred feast of the Armenian calendar, celebrating the resurrection of Christ. The Armenian church follows the Western Easter calculation (not the Julian calendar method used by Greek and Russian Orthodox), so Armenian Easter usually coincides with Western Easter. However, unique Armenian practices surround it: the Great Lent (Medz Bahk) lasts 40 days plus Holy Week. The Arm of St. Gregory the Illuminator (a relic at the Mother See of Holy Etchmiadzin) is displayed during Holy Week.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Armenian Easter (Zatik) — Christian holiday illustration",
+    "seoExcerpt": "The most sacred feast of the Armenian calendar, celebrating the resurrection of Christ. The Armenian church follows the Western Easter calculation (not…",
+    "phase1": false
+  },
+  {
+    "id": "transfiguration-vardavar",
+    "name": "Transfiguration / Vardavar",
+    "alsoKnownAs": [
+      "Festival of Roses",
+      "Water Festival",
+      "Vayfearavar"
+    ],
+    "dateType": "moveable",
+    "dateRule": "14 weeks (98 days) after Easter — always a Sunday",
+    "moveableRule": "vardavar",
+    "type": "national-feast",
+    "denominations": [
+      "armenian-apostolic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "armenia"
+    ],
+    "themes": [
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Armenian celebration of Christ's Transfiguration, placed 14 weeks after Easter rather than on the universal date of August 6. This feast absorbed an ancient pre-Christian Armenian holiday dedicated to Astghik, goddess of water and love, and thus retains the popular tradition of throwing water on one another (water fights in the streets). The theological connection is to the waters of baptism and the divine light of Tabor. In Armenia today, Vardavar is one of the most joyfully anticipated holidays, with city-wide water fights and outdoor celebrations. Priests bless rose-water during the liturgy. The day after Vardavar, Monday, is a \"Merelots\" (Memorial Day) when families visit graves.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Transfiguration / Vardavar — Christian holiday illustration",
+    "seoExcerpt": "The Armenian celebration of Christ's Transfiguration, placed 14 weeks after Easter rather than on the universal date of August 6. This feast absorbed an…",
+    "phase1": true
+  },
+  {
+    "id": "assumption-of-the-theotokos-asdvadzadzin",
+    "name": "Assumption of the Theotokos / Asdvadzadzin",
+    "alsoKnownAs": [
+      "Surp Asdvadzadzin (\"Holy Mother of God\")",
+      "Assumption of Mary (Armenian)",
+      "Verapokhmoomn"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "Third Sunday of August",
+    "type": "national-feast",
+    "denominations": [
+      "armenian-apostolic"
+    ],
+    "seasons": [
+      "dormition-fast",
+      "ordinary-time"
+    ],
+    "regions": [
+      "armenia"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "One of the Five Cardinal Feasts, celebrating the Assumption/Dormition of the Virgin Mary. The feast is preceded by a week-long fast (Navasard Fast). In Armenian popular tradition, it is strongly connected to the blessing of grapes and other first fruits of summer — the feast is celebrated outdoors with vineyard processions, the blessing of produce, and family feasts. The connection between the Virgin Mary and agricultural abundance is ancient in Armenian spirituality. Followed by nine days of memorial services (for the souls of the departed).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Assumption of the Theotokos / Asdvadzadzin — Christian holiday illustration",
+    "seoExcerpt": "One of the Five Cardinal Feasts, celebrating the Assumption/Dormition of the Virgin Mary. The feast is preceded by a week-long fast (Navasard Fast). In…",
+    "phase1": false
+  },
+  {
+    "id": "exaltation-of-the-holy-cross-khatchverats",
+    "name": "Exaltation of the Holy Cross / Khatchverats",
+    "alsoKnownAs": [
+      "Khachverats (Armenian)",
+      "Feast of the Holy Cross"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "Third Sunday of September, National Public Holiday (the following Monday is given off)",
+    "type": "feast",
+    "denominations": [
+      "armenian-apostolic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "armenia"
+    ],
+    "themes": [
+      "holy-cross"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "One of the Five Cardinal Feasts, commemorating the recovery of the True Cross from the Persians by the Byzantine Emperor Heraclius in 628 AD and its triumphant return through Armenia to Jerusalem. A large cross decorated with basil is brought out in procession to a field, and four priests move to the four corners to bless the entire world. The feast follows a fast (the Fast of the Exaltation) the preceding week.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Exaltation of the Holy Cross / Khatchverats — Christian holiday illustration",
+    "seoExcerpt": "One of the Five Cardinal Feasts, commemorating the recovery of the True Cross from the Persians by the Byzantine Emperor Heraclius in 628 AD and its…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-the-holy-translators-surp-tarkmanchats",
+    "name": "Feast of the Holy Translators / Surp Tarkmanchats",
+    "alsoKnownAs": [
+      "Saints Mesrop and Sahak Feast",
+      "Feast of the Armenian Alphabet"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "Third Saturday of October",
+    "type": "national-feast",
+    "denominations": [
+      "armenian-apostolic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "armenia"
+    ],
+    "themes": [
+      "church-history",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A feast unique to the Armenian church, honoring Mesrop Mashtots (360–440 AD), who created the Armenian alphabet, and Catholicos Sahak I (350–439 AD), who directed the first translation of the Bible into Armenian. Together they and their circle of scholars translated the Scriptures, Greek theological works, and many liturgical texts into Armenian, enabling an independent Armenian Christian civilization. The feast also honors the later theologians Yeghishe, Moses of Khoren, David the Philosopher, Gregory of Narek, and Nerses Shnorhali. There is no equivalent feast in any other Christian tradition — the act of translation itself is commemorated as a sacred achievement.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Feast of the Holy Translators / Surp Tarkmanchats — Christian holiday illustration",
+    "seoExcerpt": "A feast unique to the Armenian church, honoring Mesrop Mashtots (360–440 AD), who created the Armenian alphabet, and Catholicos Sahak I (350–439 AD), who…",
+    "phase1": false
+  },
+  {
+    "id": "fast-of-st-gregory-the-illuminator",
+    "name": "Fast of St. Gregory the Illuminator",
+    "dateType": "semi-fixed",
+    "dateRule": "Monday – Saturday (week before the feast; varies by year)",
+    "type": "observance",
+    "denominations": [
+      "armenian-apostolic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "armenia"
+    ],
+    "themes": [
+      "penitence",
+      "church-history",
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A five-day fast honoring St. Gregory the Illuminator, the first Catholicos of Armenia, who is credited with converting the Armenian king Tiridates III to Christianity in 301 AD, making Armenia the first nation to adopt Christianity as a state religion. Gregory had been imprisoned in a pit (the Khor Virap, \"Deep Well\") for 15 years before being released to heal the king. The Feast of St. Gregory includes the solemn display of his relics (particularly the right arm, or \"Holy Arm\") at the Mother See of Etchmiadzin.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Fast of St. Gregory the Illuminator — Christian holiday illustration",
+    "seoExcerpt": "A five-day fast honoring St. Gregory the Illuminator, the first Catholicos of Armenia, who is credited with converting the Armenian king Tiridates III to…",
+    "phase1": false
+  },
+  {
+    "id": "nineveh-fast-fast-of-the-ninevites",
+    "name": "Nineveh Fast / Fast of the Ninevites",
+    "alsoKnownAs": [
+      "Ba'uta d'Ninwe (Syriac)",
+      "Rogation of the Ninevites"
+    ],
+    "dateType": "moveable",
+    "dateRule": "3 weeks and 3 days before Great Lent (Monday – Wednesday)",
+    "type": "fasting-period",
+    "denominations": [
+      "syriac-orthodox",
+      "catholic",
+      "coptic-orthodox",
+      "ethiopian-orthodox"
+    ],
+    "seasons": [
+      "pre-lent"
+    ],
+    "regions": [
+      "middle-east",
+      "ethiopia"
+    ],
+    "themes": [
+      "penitence"
+    ],
+    "liturgicalColor": [
+      "Purple"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A unique three-day fast observed before Lent, recalling the fast of the city of Nineveh (Jonah 3) as a model of repentance and God's mercy. This is observed primarily in the Syriac and Assyrian Christian traditions and has a distinct liturgy. It is not found in Greek or Roman Catholic practice (which has no analogous fast before Lent), making it one of the most distinctive features of Eastern/Oriental Christian fasting practice. In Ethiopia it is observed as well.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "missions",
+    "edenCtaLabel": "Explore mission trips →",
+    "edenCtaUrl": "/missions",
+    "imageAlt": "Nineveh Fast / Fast of the Ninevites — Christian holiday illustration",
+    "seoExcerpt": "A unique three-day fast observed before Lent, recalling the fast of the city of Nineveh (Jonah 3) as a model of repentance and God's mercy. This is…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-st-peter-and-st-paul-syriac",
+    "name": "Feast of St. Peter and St. Paul (Syriac)",
+    "dateType": "fixed",
+    "dateFixed": "06-29",
+    "dateRule": "June 29 (same as Catholic and Orthodox calculation)",
+    "type": "major-feast",
+    "denominations": [
+      "syriac-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "themes": [
+      "apostles"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of the two founding apostles of the Church at Antioch, where Syriac Christianity traces its origins. The Syriac tradition particularly honors both Peter (the rock of the Church) and Paul (the Apostle to the Gentiles).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Feast of St. Peter and St. Paul (Syriac) — Christian holiday illustration",
+    "seoExcerpt": "The feast of the two founding apostles of the Church at Antioch, where Syriac Christianity traces its origins. The Syriac tradition particularly honors…",
+    "phase1": false
+  },
+  {
+    "id": "holy-name-of-our-lord-jesus-christ-anglican-lutheran",
+    "name": "Holy Name of Our Lord Jesus Christ (Anglican/Lutheran)",
+    "alsoKnownAs": [
+      "Feast of the Holy Name",
+      "Circumcision (former name)",
+      "New Year's Day feast"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-01",
+    "dateRule": "January 1",
+    "type": "feast",
+    "denominations": [
+      "anglican",
+      "episcopal",
+      "lutheran"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "incarnation",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast marking the day Jesus received his name, eight days after his birth (Luke 2:21), in accordance with Jewish law. In older calendars this was called the Feast of the Circumcision; the name was changed in the 20th century. It represents Christ's full entry into the human condition as a Jewish infant. Coinciding with New Year's Day, it sets the tone for the year with meditation on the name and identity of Christ.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Holy Name of Our Lord Jesus Christ (Anglican/Lutheran) — Christian holiday illustration",
+    "seoExcerpt": "The feast marking the day Jesus received his name, eight days after his birth (Luke 2:21), in accordance with Jewish law. In older calendars this was…",
+    "phase1": false
+  },
+  {
+    "id": "st-david-of-wales",
+    "name": "St. David of Wales",
+    "alsoKnownAs": [
+      "Dewi Sant",
+      "Patron of Wales"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "03-01",
+    "dateRule": "March 1",
+    "type": "national-feast",
+    "denominations": [
+      "anglican"
+    ],
+    "seasons": [
+      "lent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. David (c. 500–589), Patron Saint of Wales and Bishop of Menevia, celebrated as a national day in Wales. March 1 is St. David's Day, marked by wearing daffodils or leeks (national symbols of Wales), parades, and services in Welsh. St. David is known for his austere monastic rule and for his final sermon's command: \"Do the little things\" (Gwnewch y pethau bychain).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "St. David of Wales — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. David (c. 500–589), Patron Saint of Wales and Bishop of Menevia, celebrated as a national day in Wales. March 1 is St. David's Day,…",
+    "phase1": false
+  },
+  {
+    "id": "st-patrick-bishop-of-ireland",
+    "name": "St. Patrick, Bishop of Ireland",
+    "alsoKnownAs": [
+      "Lá Fhéile Pádraig (Irish)",
+      "National Day of Ireland"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "03-17",
+    "dateRule": "March 17",
+    "type": "national-feast",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "pan-christian"
+    ],
+    "seasons": [
+      "lent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "church-history",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Green"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Patrick (c. 385–461), Patron Saint of Ireland, who was captured by Irish raiders as a teenager, escaped, returned as a missionary, and is credited with Christianizing Ireland. St. Patrick's Day is simultaneously a feast day and the national day of Ireland, observed with parades, the wearing of shamrocks (the Trinity symbol Patrick used), and Masses. Lenten fast restrictions are traditionally dispensed on this day in Ireland. In the USA, it is widely celebrated as a cultural holiday by the Irish diaspora and beyond.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "St. Patrick, Bishop of Ireland — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Patrick (c. 385–461), Patron Saint of Ireland, who was captured by Irish raiders as a teenager, escaped, returned as a missionary, and is…",
+    "phase1": true
+  },
+  {
+    "id": "holy-cross-day-anglican",
+    "name": "Holy Cross Day (Anglican)",
+    "dateType": "fixed",
+    "dateFixed": "09-14",
+    "dateRule": "September 14",
+    "type": "feast",
+    "denominations": [
+      "anglican",
+      "episcopal",
+      "catholic",
+      "lutheran"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "holy-cross"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "*(See also Exaltation of the Holy Cross under Catholic section.)*",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Holy Cross Day (Anglican) — Christian holiday illustration",
+    "seoExcerpt": "*(See also Exaltation of the Holy Cross under Catholic…",
+    "phase1": false
+  },
+  {
+    "id": "st-michael-and-all-angels",
+    "name": "St. Michael and All Angels",
+    "alsoKnownAs": [
+      "Michaelmas",
+      "Feast of St. Michael the Archangel (Catholic: Sept 29)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "09-29",
+    "dateRule": "September 29",
+    "type": "feast",
+    "denominations": [
+      "anglican",
+      "catholic",
+      "lutheran"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "angels"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of the archangels Michael, Gabriel, and Raphael (and all angels). \"Michaelmas\" is one of the traditional English quarter-days, marking the beginning of autumn terms at universities. St. Michael is the warrior-archangel and protector of the Church. The feast is significant in Anglican tradition as a school and university calendar marker (\"Michaelmas term\"). In Catholic tradition, September 29 is \"Ss. Michael, Gabriel and Raphael, Archangels.\"",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "St. Michael and All Angels — Christian holiday illustration",
+    "seoExcerpt": "The feast of the archangels Michael, Gabriel, and Raphael (and all angels). \"Michaelmas\" is one of the traditional English quarter-days, marking the…",
+    "phase1": false
+  },
+  {
+    "id": "st-andrew-apostle",
+    "name": "St. Andrew, Apostle",
+    "alsoKnownAs": [
+      "Andrew's Day",
+      "Patron of Scotland",
+      "St. Andrew's Cross"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "11-30",
+    "dateRule": "November 30",
+    "type": "national-feast",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "global",
+      "greece",
+      "russia-slavic"
+    ],
+    "themes": [
+      "apostles"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Andrew the Apostle (brother of Peter), Patron Saint of Scotland, Greece, Romania, Russia, Ukraine, and many other nations. Scotland's national flag (the Saltire) depicts his X-shaped cross (crux decussata) on which he is traditionally believed to have been martyred. In Scotland, St. Andrew's Day (November 30) is a bank holiday. Celebrated with St. Andrew's Cross imagery, Scottish music and food (haggis, etc.), and church services. Also a major feast in Greece, where the relics of St. Andrew are kept at the Cathedral of Patras.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "St. Andrew, Apostle — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Andrew the Apostle (brother of Peter), Patron Saint of Scotland, Greece, Romania, Russia, Ukraine, and many other nations. Scotland's…",
+    "phase1": false
+  },
+  {
+    "id": "st-george-martyr",
+    "name": "St. George, Martyr",
+    "alsoKnownAs": [
+      "Patron of England",
+      "Georgia",
+      "and many other nations"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "04-23",
+    "dateRule": "April 23",
+    "type": "national-feast",
+    "denominations": [
+      "anglican",
+      "catholic",
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. George (c. 280–303 AD), Patron Saint of England, Georgia, Ethiopia, Portugal, Catalonia, and many other nations, believed to have been a Roman soldier martyred under Emperor Diocletian. The dragon-slaying legend is a later medieval allegory (George's faith conquering evil). St. George's Day (April 23) is England's national day, observed with red-cross flag displays, special services, and increasingly popular public events. England's flag (St. George's Cross) bears his symbol.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "St. George, Martyr — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. George (c. 280–303 AD), Patron Saint of England, Georgia, Ethiopia, Portugal, Catalonia, and many other nations, believed to have been a…",
+    "phase1": true
+  },
+  {
+    "id": "rogation-days-anglican-catholic",
+    "name": "Rogation Days (Anglican/Catholic)",
+    "dateType": "moveable",
+    "dateRule": "Monday, Tuesday, and Wednesday before Ascension Day",
+    "type": "fast-day",
+    "denominations": [
+      "anglican",
+      "catholic"
+    ],
+    "seasons": [
+      "ascension"
+    ],
+    "regions": [
+      "western-christianity"
+    ],
+    "themes": [
+      "creation",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Three days of prayer for God's blessing on the crops and the land, with traditional \"beating the bounds\" processions around parish boundaries. The practice dates to 5th-century Gaul and was widespread across pre-Reformation Europe. Today, Rogation services are revived in many Anglican parishes as occasions for blessing agricultural communities and praying for creation. The word \"Rogation\" comes from the Latin rogare (to ask/pray).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Rogation Days (Anglican/Catholic) — Christian holiday illustration",
+    "seoExcerpt": "Three days of prayer for God's blessing on the crops and the land, with traditional \"beating the bounds\" processions around parish boundaries. The…",
+    "phase1": false
+  },
+  {
+    "id": "ember-days",
+    "name": "Ember Days",
+    "dateType": "semi-fixed",
+    "dateRule": "Four times per year: after Ash Wednesday, Pentecost, Holy Cross (Sep 14), and St. Lucy (Dec 13); specifically on the Wednesday, Friday, and Saturday of those weeks",
+    "type": "fast-day",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran"
+    ],
+    "seasons": [
+      "various"
+    ],
+    "regions": [
+      "western-christianity"
+    ],
+    "themes": [
+      "penitence",
+      "creation",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Quarterly periods of fasting and prayer for the sanctification of time and the ordination of clergy, observed on the Wednesday, Friday, and Saturday after the First Sunday of Lent, the Day of Pentecost, Holy Cross Day, and December 13. Though largely fallen into disuse in the 20th century, Ember Days are retained in the Anglican, Lutheran, and Catholic liturgical calendars and many parishes are reviving them as occasions for creation prayer and vocational discernment.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Ember Days — Christian holiday illustration",
+    "seoExcerpt": "Quarterly periods of fasting and prayer for the sanctification of time and the ordination of clergy, observed on the Wednesday, Friday, and Saturday after…",
+    "phase1": false
+  },
+  {
+    "id": "reformation-day-reformation-sunday",
+    "name": "Reformation Day / Reformation Sunday",
+    "alsoKnownAs": [
+      "Reformationstag (German)",
+      "Day of the Reformation"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "October 31 (Reformation Day); Sunday nearest October 31 (Reformation Sunday)",
+    "type": "commemoration",
+    "denominations": [
+      "lutheran",
+      "presbyterian",
+      "anglican"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The commemoration of Martin Luther's posting of the Ninety-Five Theses on the door of the Castle Church in Wittenberg on October 31, 1517 — the event traditionally regarded as the beginning of the Protestant Reformation. The liturgical color is red (for the Holy Spirit and the Word of God). A public holiday in several German states. The 500th anniversary (2017) was celebrated worldwide. Lutherans give thanks for the recovery of the Gospel and the Scriptures in the vernacular. The hymn \"A Mighty Fortress Is Our God\" (Ein feste Burg ist unser Gott) by Luther is the quintessential Reformation Day anthem.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Reformation Day / Reformation Sunday — Christian holiday illustration",
+    "seoExcerpt": "The commemoration of Martin Luther's posting of the Ninety-Five Theses on the door of the Castle Church in Wittenberg on October 31, 1517 — the event…",
+    "phase1": true
+  },
+  {
+    "id": "transfiguration-sunday-lutheran",
+    "name": "Transfiguration Sunday (Lutheran)",
+    "dateType": "semi-fixed",
+    "dateRule": "Last Sunday of Epiphany (immediately before Ash Wednesday)",
+    "type": "observance",
+    "denominations": [
+      "lutheran",
+      "methodist",
+      "anglican"
+    ],
+    "seasons": [
+      "epiphany"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "In the Lutheran calendar, the Transfiguration is celebrated on the Last Sunday after Epiphany as a bridge between the Epiphany season (Christ revealed) and Lent (Christ crucified). The ELCA also retains August 6 as an optional observance. This liturgical placement is distinct from Catholic and Orthodox practice (August 6 and Twelve Great Feasts, respectively) and from the Armenian practice (14 weeks after Easter).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Transfiguration Sunday (Lutheran) — Christian holiday illustration",
+    "seoExcerpt": "In the Lutheran calendar, the Transfiguration is celebrated on the Last Sunday after Epiphany as a bridge between the Epiphany season (Christ revealed)…",
+    "phase1": false
+  },
+  {
+    "id": "confession-of-st-peter-lutheran-anglican",
+    "name": "Confession of St. Peter (Lutheran/Anglican)",
+    "dateType": "fixed",
+    "dateFixed": "01-18",
+    "dateRule": "January 18",
+    "type": "feast",
+    "denominations": [
+      "lutheran",
+      "anglican"
+    ],
+    "seasons": [
+      "epiphany"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "apostles",
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating Peter's confession that Jesus is \"the Christ, the Son of the living God\" (Matthew 16:13–19), which Jesus declared as the \"rock\" on which he would build his Church. The feast was added to the Lutheran and Anglican calendars in the 20th century and is particularly significant as the beginning of the Week of Prayer for Christian Unity (January 18–25, ending with the Conversion of St. Paul).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Confession of St. Peter (Lutheran/Anglican) — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating Peter's confession that Jesus is \"the Christ, the Son of the living God\" (Matthew 16:13–19), which Jesus declared as the \"rock\" on…",
+    "phase1": false
+  },
+  {
+    "id": "visitation-of-our-lords-mother-to-elizabeth-lutheran-catholic-anglican",
+    "name": "Visitation of Our Lord's Mother to Elizabeth (Lutheran/Catholic/Anglican)",
+    "dateType": "fixed",
+    "dateFixed": "05-31",
+    "dateRule": "May 31",
+    "type": "feast",
+    "denominations": [
+      "lutheran",
+      "catholic",
+      "anglican"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating Mary's visit to her cousin Elizabeth (Luke 1:39–56), during which John the Baptist leaped in the womb and Mary proclaimed the Magnificat. This feast, retained from pre-Reformation practice, concludes the month of May (traditionally devoted to Mary) and precedes the Nativity of John the Baptist (June 24) by exactly four weeks.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Visitation of Our Lord's Mother to Elizabeth (Lutheran/Catholic/Anglican) — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating Mary's visit to her cousin Elizabeth (Luke 1:39–56), during which John the Baptist leaped in the womb and Mary proclaimed the…",
+    "phase1": false
+  },
+  {
+    "id": "commemoration-of-martin-luther-elca",
+    "name": "Commemoration of Martin Luther (ELCA)",
+    "dateType": "fixed",
+    "dateFixed": "02-18",
+    "dateRule": "February 18",
+    "type": "commemoration",
+    "denominations": [
+      "lutheran"
+    ],
+    "seasons": [
+      "epiphany"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The commemoration of Martin Luther (1483–1546), reformer, biblical scholar, and hymn-writer, on the date of his death (February 18, 1546). Listed in the ELCA's Evangelical Lutheran Worship as \"Martin Luther, Renewer of the Church.\" The LCMS also commemorates Luther but within Reformation observances. Luther's translation of the Bible into German (1522–1534) and his catechisms fundamentally shaped German language and Lutheran theology.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Commemoration of Martin Luther (ELCA) — Christian holiday illustration",
+    "seoExcerpt": "The commemoration of Martin Luther (1483–1546), reformer, biblical scholar, and hymn-writer, on the date of his death (February 18, 1546). Listed in the…",
+    "phase1": false
+  },
+  {
+    "id": "watch-night-covenant-renewal-service",
+    "name": "Watch Night / Covenant Renewal Service",
+    "alsoKnownAs": [
+      "New Year's Eve Service",
+      "Freedom Night"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "12-31",
+    "dateRule": "December 31 (New Year's Eve)",
+    "type": "observance",
+    "denominations": [
+      "methodist",
+      "baptist",
+      "evangelical"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "north-america"
+    ],
+    "themes": [
+      "covenant",
+      "eschatology"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A service of prayer, praise, and covenant renewal held on New Year's Eve, culminating at midnight. The tradition was established by John Wesley, who held the first Covenant Service for Methodists in 1755. Historically, enslaved African Americans in the USA used Watch Night on December 31, 1862 — the night before the Emancipation Proclamation took effect (January 1, 1863) — for prayer vigils, giving the service the additional name \"Freedom Night.\" Many African American churches continue this tradition. The service includes renewal of Covenant promises: \"I am no longer my own, but thine...\" (Wesley's Covenant Prayer).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Watch Night / Covenant Renewal Service — Christian holiday illustration",
+    "seoExcerpt": "A service of prayer, praise, and covenant renewal held on New Year's Eve, culminating at midnight. The tradition was established by John Wesley, who held…",
+    "phase1": false
+  },
+  {
+    "id": "aldersgate-sunday",
+    "name": "Aldersgate Sunday",
+    "alsoKnownAs": [
+      "Wesley Day",
+      "Aldersgate Day"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "Sunday nearest May 24",
+    "type": "observance",
+    "denominations": [
+      "methodist"
+    ],
+    "seasons": [
+      "easter",
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "church-history",
+      "holy-spirit"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The commemoration of John Wesley's \"Aldersgate experience\" on May 24, 1738, when, during a meeting in Aldersgate Street, London, at which Luther's Preface to the Epistle to the Romans was being read, Wesley felt his \"heart strangely warmed\" and experienced an assurance of salvation. This moment is considered the pivotal event of the Evangelical Revival and the beginning of the Methodist movement. The Sunday nearest May 24 is observed in many Methodist congregations with reflections on grace, assurance, and the work of the Holy Spirit.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Aldersgate Sunday — Christian holiday illustration",
+    "seoExcerpt": "The commemoration of John Wesley's \"Aldersgate experience\" on May 24, 1738, when, during a meeting in Aldersgate Street, London, at which Luther's Preface…",
+    "phase1": false
+  },
+  {
+    "id": "world-communion-sunday",
+    "name": "World Communion Sunday",
+    "alsoKnownAs": [
+      "First Sunday in October"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "First Sunday of October",
+    "type": "observance",
+    "denominations": [
+      "methodist",
+      "presbyterian",
+      "lutheran",
+      "baptist",
+      "anglican"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "covenant",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "An interdenominational observance on the first Sunday of October, when Christians of different traditions celebrate the Lord's Supper in intentional solidarity with all believers worldwide. Originated in 1933 by Hugh Thomson Kerr of Shadyside Presbyterian Church, Pittsburgh, it was adopted by the Federal Council of Churches in 1940 and is now observed across many denominations. The day emphasizes the unity of all Christians at the common table.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "World Communion Sunday — Christian holiday illustration",
+    "seoExcerpt": "An interdenominational observance on the first Sunday of October, when Christians of different traditions celebrate the Lord's Supper in intentional…",
+    "phase1": false
+  },
+  {
+    "id": "the-lords-day-reformed",
+    "name": "The Lord's Day (Reformed)",
+    "dateType": "fixed",
+    "dateRule": "Every Sunday",
+    "type": "observance",
+    "denominations": [
+      "presbyterian",
+      "baptist",
+      "evangelical"
+    ],
+    "seasons": [
+      "year-round"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "resurrection",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The weekly celebration of Sunday as the Christian Sabbath and the \"little Easter\" — the day of Christ's resurrection and of his appearance to the disciples. Reformed and Presbyterian theology has traditionally placed the primary emphasis here, not on the annual calendar, but on the weekly rhythm of Word preaching, prayer, and communion. The Westminster Confession of Faith (1647) teaches that Sunday is \"the Christian Sabbath\" and that one day in seven is holy.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "The Lord's Day (Reformed) — Christian holiday illustration",
+    "seoExcerpt": "The weekly celebration of Sunday as the Christian Sabbath and the \"little Easter\" — the day of Christ's resurrection and of his appearance to the…",
+    "phase1": false
+  },
+  {
+    "id": "resurrection-sunday-evangelical-baptist",
+    "name": "Resurrection Sunday (Evangelical/Baptist)",
+    "dateType": "moveable",
+    "dateRule": "Same as Western Easter",
+    "moveableRule": "western-easter",
+    "type": "observance",
+    "denominations": [
+      "baptist",
+      "evangelical",
+      "pentecostal"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Many Baptist and Evangelical churches prefer the term \"Resurrection Sunday\" over \"Easter\" (which some associate with pre-Christian spring festivals and the name of the Anglo-Saxon goddess Ēostre). The service emphasizes the bodily resurrection of Christ from the dead, typically with special music, dramatic presentations, and large attendance. Unlike Catholic and liturgical traditions, most Baptist and Evangelical churches observe minimal additional Holy Week services beyond a Good Friday service and the Sunday celebration.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Resurrection Sunday (Evangelical/Baptist) — Christian holiday illustration",
+    "seoExcerpt": "Many Baptist and Evangelical churches prefer the term \"Resurrection Sunday\" over \"Easter\" (which some associate with pre-Christian spring festivals and…",
+    "phase1": false
+  },
+  {
+    "id": "reformation-sunday-reformed-presbyterian",
+    "name": "Reformation Sunday (Reformed/Presbyterian)",
+    "dateType": "semi-fixed",
+    "dateRule": "Sunday nearest October 31",
+    "type": "observance",
+    "denominations": [
+      "lutheran",
+      "presbyterian",
+      "anglican"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Observed by many Reformed and Presbyterian churches, this Sunday commemorates the Protestant Reformation and the principles of sola scriptura (Scripture alone), sola fide (faith alone), sola gratia (grace alone), and solus Christus (Christ alone). Special readings from the Reformers, sermons on the history of the Reformation, and singing of Reformation-era hymns (including Calvin's versification of the Psalms) are common.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Reformation Sunday (Reformed/Presbyterian) — Christian holiday illustration",
+    "seoExcerpt": "Observed by many Reformed and Presbyterian churches, this Sunday commemorates the Protestant Reformation and the principles of sola scriptura (Scripture…",
+    "phase1": false
+  },
+  {
+    "id": "national-day-of-prayer-usa",
+    "name": "National Day of Prayer (USA)",
+    "dateType": "semi-fixed",
+    "dateRule": "First Thursday of May",
+    "type": "observance",
+    "denominations": [
+      "evangelical",
+      "baptist"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "north-america"
+    ],
+    "themes": [
+      "mission",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A federally designated day of prayer in the United States (established by Congress in 1952, given its current form in 1988), widely observed by Evangelical, Baptist, Reformed, and non-denominational Protestant churches. National Day of Prayer events are coordinated by the National Day of Prayer Task Force and held at courthouses, capitol buildings, and churches. Distinct from a liturgical feast, it is a civic-religious observance.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "National Day of Prayer (USA) — Christian holiday illustration",
+    "seoExcerpt": "A federally designated day of prayer in the United States (established by Congress in 1952, given its current form in 1988), widely observed by…",
+    "phase1": false
+  },
+  {
+    "id": "pentecost-sunday-pentecostal-emphasis",
+    "name": "Pentecost Sunday (Pentecostal Emphasis)",
+    "dateType": "moveable",
+    "dateRule": "50 days after Easter",
+    "moveableRule": "pentecost",
+    "type": "observance",
+    "denominations": [
+      "pentecostal"
+    ],
+    "seasons": [
+      "pentecost"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "holy-spirit",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Pentecost Sunday carries particular theological weight in Pentecostal traditions, as it commemorates the outpouring of the Holy Spirit that gave rise to speaking in tongues (glossolalia), prophecy, healing, and the charismata (spiritual gifts) — the experiences that define Pentecostal worship. Pentecostal churches often observe Pentecost with extended worship services, testimonies, prayer for the gifts of the Spirit, and evangelistic outreach. The 1906 Azusa Street Revival (Los Angeles) — which launched modern Pentecostalism — is sometimes recalled on this Sunday.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "festivals",
+    "edenCtaLabel": "Browse Christian festivals →",
+    "edenCtaUrl": "/festivals",
+    "imageAlt": "Pentecost Sunday (Pentecostal Emphasis) — Christian holiday illustration",
+    "seoExcerpt": "Pentecost Sunday carries particular theological weight in Pentecostal traditions, as it commemorates the outpouring of the Holy Spirit that gave rise to…",
+    "phase1": false
+  },
+  {
+    "id": "azusa-street-centennial-anniversary",
+    "name": "Azusa Street Centennial / Anniversary",
+    "dateType": "fixed",
+    "dateFixed": "04-14",
+    "dateRule": "April 14 (anniversary of the beginning of the 1906 Azusa Street Revival)",
+    "type": "commemoration",
+    "denominations": [
+      "pentecostal"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "themes": [
+      "church-history",
+      "holy-spirit"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "April 14, 1906 is the date of the initial outpouring of the Holy Spirit at 312 Azusa Street, Los Angeles, under the leadership of William J. Seymour — the beginning of the global Pentecostal movement. While not a formal liturgical feast, this date is recognized in many Pentecostal and Charismatic churches, particularly around anniversaries (the centennial in 2006 saw major global celebrations).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Azusa Street Centennial / Anniversary — Christian holiday illustration",
+    "seoExcerpt": "April 14, 1906 is the date of the initial outpouring of the Holy Spirit at 312 Azusa Street, Los Angeles, under the leadership of William J. Seymour — the…",
+    "phase1": false
+  },
+  {
+    "id": "the-sabbath-saturday",
+    "name": "The Sabbath (Saturday)",
+    "dateType": "fixed",
+    "dateRule": "Every Saturday (from Friday sunset to Saturday sunset)",
+    "type": "observance",
+    "denominations": [
+      "adventist"
+    ],
+    "seasons": [
+      "year-round"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "creation",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Seventh-day Sabbath is the central distinctive observance of the Adventist faith, based on the Fourth Commandment (Exodus 20:8–11) and the Genesis account of God resting on the seventh day of creation. The Adventist Sabbath includes corporate worship on Saturday morning, Bible study (Sabbath School), and a day set apart from ordinary work and commerce. It begins at sunset Friday and ends at sunset Saturday. Adventists view Sabbath observance as a sign of loyalty to God and an anticipation of the eternal \"Sabbath rest\" described in Hebrews 4.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "The Sabbath (Saturday) — Christian holiday illustration",
+    "seoExcerpt": "The Seventh-day Sabbath is the central distinctive observance of the Adventist faith, based on the Fourth Commandment (Exodus 20:8–11) and the Genesis…",
+    "phase1": false
+  },
+  {
+    "id": "creation-sabbath",
+    "name": "Creation Sabbath",
+    "dateType": "semi-fixed",
+    "dateRule": "Last Saturday of October (annually designated by the General Conference)",
+    "type": "observance",
+    "denominations": [
+      "adventist"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "creation",
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "An annual emphasis Sabbath celebrating God as Creator, established by the Adventist General Conference. Congregations focus on creation, stewardship of the earth, and the relationship between the Sabbath rest and God's creative work. Resources are distributed to churches worldwide.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Creation Sabbath — Christian holiday illustration",
+    "seoExcerpt": "An annual emphasis Sabbath celebrating God as Creator, established by the Adventist General Conference. Congregations focus on creation, stewardship of…",
+    "phase1": false
+  },
+  {
+    "id": "week-of-prayer-spring-fall",
+    "name": "Week of Prayer (Spring & Fall)",
+    "dateType": "semi-fixed",
+    "dateRule": "Designated weeks each spring and fall (varying by year and division)",
+    "type": "observance",
+    "denominations": [
+      "adventist"
+    ],
+    "seasons": [
+      "various"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "mission",
+      "penitence"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Two periods each year designated by the Adventist General Conference for special prayer, revival, and commitment. The tradition of special weeks of prayer dates to the early Adventist movement. Theme readings are prepared globally. Coincides with special offerings for missions and evangelism.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Week of Prayer (Spring & Fall) — Christian holiday illustration",
+    "seoExcerpt": "Two periods each year designated by the Adventist General Conference for special prayer, revival, and commitment. The tradition of special weeks of prayer…",
+    "phase1": false
+  },
+  {
+    "id": "simbang-gabi-philippines",
+    "name": "Simbang Gabi (Philippines)",
+    "alsoKnownAs": [
+      "Misa de Aguinaldo",
+      "Night Mass",
+      "Misa de Gallo (final night)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "12-16",
+    "dateRule": "December 16–24 (nine days of pre-dawn Masses)",
+    "type": "regional-tradition",
+    "denominations": [
+      "catholic",
+      "methodist"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "philippines"
+    ],
+    "themes": [
+      "incarnation",
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Violet"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A devotional series of nine pre-dawn Masses (novena) held from December 16 to 24, unique to Filipino Catholic practice. Originally instituted during the Spanish colonial era so that farmers could attend Mass before working in the fields. The Masses begin as early as 4 AM. Outside the churches, vendors sell traditional delicacies: bibingka (coconut rice cakes) and puto bumbong (steamed purple rice). Completing all nine Masses is believed to bring special graces or the granting of a wish. The final Mass (Misa de Gallo, \"Rooster's Mass\") on Christmas Eve precedes the nochebuena feast. Simbang Gabi is considered the world's longest Christmas celebration period — in the Philippines, the \"ber months\" (September–December) are informally the Christmas season.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Simbang Gabi (Philippines) — Christian holiday illustration",
+    "seoExcerpt": "A devotional series of nine pre-dawn Masses (novena) held from December 16 to 24, unique to Filipino Catholic practice. Originally instituted during the…",
+    "phase1": true
+  },
+  {
+    "id": "las-posadas-mexico-latin-america",
+    "name": "Las Posadas (Mexico / Latin America)",
+    "alsoKnownAs": [
+      "Posadas",
+      "Posadas Navideñas"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "12-16",
+    "dateRule": "December 16–24 (nine nights)",
+    "type": "regional-tradition",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "themes": [
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A nine-night re-enactment of Mary and Joseph's search for lodging (posada) in Bethlehem before the birth of Jesus. Each night, participants split into two groups: pilgrims (singing the Litany of the Posadas asking for shelter) and innkeepers (refusing entry in song). The procession ends at a home or church where a manger scene (nacimiento) is set up. Piñatas (traditionally seven-pointed stars representing the seven deadly sins), traditional food (ponche, tamales), and singing mark the festivities. Las Posadas has pre-Columbian roots combined with Augustinian missionary adaptations from the 16th century.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Las Posadas (Mexico / Latin America) — Christian holiday illustration",
+    "seoExcerpt": "A nine-night re-enactment of Mary and Joseph's search for lodging (posada) in Bethlehem before the birth of Jesus. Each night, participants split into two…",
+    "phase1": true
+  },
+  {
+    "id": "dia-de-reyes-three-kings-day-spain-latin-america",
+    "name": "Día de Reyes / Three Kings Day (Spain, Latin America)",
+    "alsoKnownAs": [
+      "Día de los Reyes Magos",
+      "Epifanía",
+      "La Cabalgata de Reyes"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-06",
+    "dateRule": "January 6",
+    "type": "national-feast",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global",
+      "latin-america"
+    ],
+    "themes": [
+      "incarnation",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "In Spain and most Latin American countries, January 6 (Epiphany) is the traditional gift-giving day, not December 25. The \"Wise Men\" (Reyes Magos: Melchior, Gaspar, and Balthasar) are believed to deliver gifts to children on the night of January 5–6. The night before, children leave shoes and sometimes straw (for the camels) by their beds. La Cabalgata de Reyes (Three Kings' Parade) on the evening of January 5 is a major public event in Spanish cities, with floats, costumes, and candy thrown to the crowd. The Rosca de Reyes (a circular sweet bread with hidden figures) is eaten at family gatherings on January 6.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Día de Reyes / Three Kings Day (Spain, Latin America) — Christian holiday illustration",
+    "seoExcerpt": "In Spain and most Latin American countries, January 6 (Epiphany) is the traditional gift-giving day, not December 25. The \"Wise Men\" (Reyes Magos:…",
+    "phase1": false
+  },
+  {
+    "id": "wigilia-poland",
+    "name": "Wigilia (Poland)",
+    "alsoKnownAs": [
+      "Christmas Eve Supper",
+      "Wieczerza Wigilijna"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "12-24",
+    "dateRule": "December 24 (Christmas Eve)",
+    "type": "regional-tradition",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The most important family gathering in the Polish Catholic year, observed on Christmas Eve (Wigilia means \"Vigil\"). The meal begins when the first star appears in the evening sky (recalling the Star of Bethlehem). Families share the opłatek, a thin white wafer embossed with a nativity scene, breaking and sharing it with each person while exchanging wishes. A traditional 12-course meatless meal follows (one course for each apostle), including borscht, carp, pierogi, herring, mushroom soup, and poppy-seed cake. An empty place is set at the table for an unexpected traveler or a deceased relative.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Wigilia (Poland) — Christian holiday illustration",
+    "seoExcerpt": "The most important family gathering in the Polish Catholic year, observed on Christmas Eve (Wigilia means \"Vigil\"). The meal begins when the first star…",
+    "phase1": false
+  },
+  {
+    "id": "smigus-dyngus-wet-monday-poland",
+    "name": "Śmigus-Dyngus / Wet Monday (Poland)",
+    "alsoKnownAs": [
+      "Dyngus Day",
+      "Lany Poniedziałek (Splashing Monday)"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Easter Monday",
+    "moveableRule": "western-easter",
+    "type": "regional-tradition",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A uniquely Polish Easter Monday tradition in which people (especially boys) drench one another with water — originally by young men throwing buckets of water on girls they admired. The tradition predates Christianity and was absorbed into the Easter celebration as a symbol of baptism and renewal. In modern Poland and Polish-American communities, Dyngus Day is celebrated as a festive cultural holiday.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Śmigus-Dyngus / Wet Monday (Poland) — Christian holiday illustration",
+    "seoExcerpt": "A uniquely Polish Easter Monday tradition in which people (especially boys) drench one another with water — originally by young men throwing buckets of…",
+    "phase1": false
+  },
+  {
+    "id": "semana-santa-spain-latin-america",
+    "name": "Semana Santa (Spain / Latin America)",
+    "alsoKnownAs": [
+      "Holy Week Processions",
+      "Procesiones de Semana Santa"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Palm Sunday through Easter Sunday",
+    "moveableRule": "western-easter",
+    "type": "regional-tradition",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "holy-week"
+    ],
+    "regions": [
+      "global",
+      "latin-america",
+      "philippines"
+    ],
+    "themes": [
+      "passion-death",
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "Various"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Spain's Holy Week observances are among the most dramatic in the world, marked by elaborate public processions (procesiones) organized by religious brotherhoods (cofradías / hermandades). Large floats (pasos) bearing ornate statues of Christ and the Virgin Mary are carried through the streets by costaleros (bearers hidden underneath). Brotherhoods march in procession wearing distinctive pointed hoods (capirotes) and robes. The most famous celebrations are in Seville, Málaga, Zamora, Valladolid, and Granada. The \"Madrugá\" (early morning processions) on Holy Thursday night through Good Friday morning, ending at dawn, are the most emotionally intense. Similar traditions exist throughout Latin America.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Semana Santa (Spain / Latin America) — Christian holiday illustration",
+    "seoExcerpt": "Spain's Holy Week observances are among the most dramatic in the world, marked by elaborate public processions (procesiones) organized by religious…",
+    "phase1": false
+  },
+  {
+    "id": "misa-de-gallo-midnight-mass-latin-america",
+    "name": "Misa de Gallo / Midnight Mass (Latin America)",
+    "alsoKnownAs": [
+      "Mass of the Rooster"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "12-24",
+    "dateRule": "Midnight, Christmas Eve (December 24–25)",
+    "type": "regional-tradition",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "latin-america",
+      "philippines",
+      "global"
+    ],
+    "themes": [
+      "incarnation"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "Midnight Mass on Christmas Eve is called \"Misa de Gallo\" (\"Mass of the Rooster\") in Spanish-speaking Catholic countries, as it traditionally began at midnight when roosters crowed. While Midnight Mass is observed globally by Catholics, in Latin American culture it carries particular festivity — families attend together and the Mass is followed by feasting and celebration. In Brazil, the \"Missa do Galo\" is followed by the Christmas dinner (ceia).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Misa de Gallo / Midnight Mass (Latin America) — Christian holiday illustration",
+    "seoExcerpt": "Midnight Mass on Christmas Eve is called \"Misa de Gallo\" (\"Mass of the Rooster\") in Spanish-speaking Catholic countries, as it traditionally began at…",
+    "phase1": false
+  },
+  {
+    "id": "ferragosto-italy",
+    "name": "Ferragosto (Italy)",
+    "alsoKnownAs": [
+      "Mid-August holiday",
+      "Feast of the Assumption (Assumption Day)"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "08-15",
+    "dateRule": "August 15",
+    "type": "solemnity",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "In Italy, the Feast of the Assumption (Ferragosto) is the peak of the summer holiday season and a national public holiday. The name \"Ferragosto\" derives from the Roman Feriae Augusti (Festival of Augustus), making this one of the clearest examples of an ancient Roman festival absorbed into Christian observance. Most businesses close and Italians travel or visit family. Mass is celebrated with particular festivity, and in many coastal and rural towns, the feast is marked with fireworks, processions, and celebrations of the Virgin Mary.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Ferragosto (Italy) — Christian holiday illustration",
+    "seoExcerpt": "In Italy, the Feast of the Assumption (Ferragosto) is the peak of the summer holiday season and a national public holiday. The name \"Ferragosto\" derives…",
+    "phase1": false
+  },
+  {
+    "id": "our-lady-of-fatima",
+    "name": "Our Lady of Fátima",
+    "alsoKnownAs": [
+      "Our Lady of the Rosary of Fátima"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "05-13",
+    "dateRule": "May 13",
+    "type": "memorial",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast commemorating the first apparition of the Virgin Mary to three shepherd children (Lúcia, Francisco, and Jacinta) at Fátima, Portugal, on May 13, 1917. The subsequent apparitions and the \"Miracle of the Sun\" witnessed by 70,000 people on October 13, 1917, made Fátima one of the most celebrated Marian apparition sites in the world. Our Lady of Fátima asked for prayer, penance, consecration of Russia, and the Rosary. The Sanctuary of Fátima draws millions of pilgrims annually. October 13 is also observed as a lesser feast.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Our Lady of Fátima — Christian holiday illustration",
+    "seoExcerpt": "The feast commemorating the first apparition of the Virgin Mary to three shepherd children (Lúcia, Francisco, and Jacinta) at Fátima, Portugal, on May 13,…",
+    "phase1": true
+  },
+  {
+    "id": "our-lady-of-czestochowa-black-madonna",
+    "name": "Our Lady of Czestochowa / Black Madonna",
+    "alsoKnownAs": [
+      "Matka Boska Częstochowska",
+      "Queen of Poland"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "08-26",
+    "dateRule": "August 26",
+    "type": "national-feast",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of the famous icon of the Black Madonna enshrined at Jasna Góra Monastery in Częstochowa, Poland. The monastery and its miraculous icon are the spiritual heart of Poland and the most visited pilgrimage site in the country. The icon is attributed miraculous protection of Poland during the \"Swedish Deluge\" (1655–60), after which the icon was crowned Queen of Poland. Pilgrims walk to Częstochowa on foot — some journeys lasting weeks — from all over Poland. August 26 is the feast day, though the largest pilgrimage influx is on August 15 (Assumption) which precedes it.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Our Lady of Czestochowa / Black Madonna — Christian holiday illustration",
+    "seoExcerpt": "The feast of the famous icon of the Black Madonna enshrined at Jasna Góra Monastery in Częstochowa, Poland. The monastery and its miraculous icon are the…",
+    "phase1": false
+  },
+  {
+    "id": "our-lady-of-aparecida-brazil",
+    "name": "Our Lady of Aparecida (Brazil)",
+    "alsoKnownAs": [
+      "Nossa Senhora Aparecida",
+      "Patroness of Brazil"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "10-12",
+    "dateRule": "October 12",
+    "type": "national-feast",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "marian"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of the Patroness of Brazil, commemorating the discovery of a small terracotta statue of the Virgin Mary by fishermen in the Paraíba River in 1717 and the subsequent miraculous catch of fish. The statue (which is dark-skinned, hence \"Aparecida\"/\"Appeared\") is enshrined at the Basilica of Our Lady of Aparecida, which is one of the largest churches in the world. October 12 is a national public holiday in Brazil. The basilica welcomes over 12 million pilgrims per year.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Our Lady of Aparecida (Brazil) — Christian holiday illustration",
+    "seoExcerpt": "The feast of the Patroness of Brazil, commemorating the discovery of a small terracotta statue of the Virgin Mary by fishermen in the Paraíba River in…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-the-black-nazarene-philippines",
+    "name": "Feast of the Black Nazarene (Philippines)",
+    "alsoKnownAs": [
+      "Traslación",
+      "Feast of the Black Nazarene of Quiapo"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "01-09",
+    "dateRule": "January 9",
+    "type": "national-feast",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "christmas",
+      "epiphany"
+    ],
+    "regions": [
+      "philippines"
+    ],
+    "themes": [
+      "passion-death",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "Red",
+      "Maroon"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of the Black Nazarene, a dark-colored statue of Jesus Christ carrying the cross, enshrined in the Minor Basilica of Quiapo, Manila. The statue arrived from Mexico in 1767 and is believed to be miraculous. On January 9, an estimated nine million barefoot devotees participate in the Traslación — a procession re-enacting the transfer of the statue from Quirino Grandstand to Quiapo Church. Devotees wear maroon shirts (the color of the Nazarene's robe) and barefoot as a sign of devotion. The procession can take over 20 hours due to the massive crowds. It is considered one of the largest religious processions in the world.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Feast of the Black Nazarene (Philippines) — Christian holiday illustration",
+    "seoExcerpt": "The feast of the Black Nazarene, a dark-colored statue of Jesus Christ carrying the cross, enshrined in the Minor Basilica of Quiapo, Manila. The statue…",
+    "phase1": false
+  },
+  {
+    "id": "sinulog-festival-philippines",
+    "name": "Sinulog Festival (Philippines)",
+    "alsoKnownAs": [
+      "Feast of the Santo Niño de Cebú",
+      "Feast of the Holy Child"
+    ],
+    "dateType": "semi-fixed",
+    "dateRule": "Third Sunday of January",
+    "type": "national-feast",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "christmas",
+      "epiphany"
+    ],
+    "regions": [
+      "philippines"
+    ],
+    "themes": [
+      "incarnation",
+      "life-of-christ"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of the Santo Niño (Holy Child Jesus) of Cebu — the oldest statue of Christianity in the Philippines, given by Ferdinand Magellan to the Queen of Cebu in 1521 and recovered when Legaspi arrived in 1565. The Sinulog festival features enormous street dancing competitions in which dancers replicate the sinulog rhythm (a forward-and-backward motion recalling river currents) wearing elaborate costumes. The festival draws over a million participants and is considered one of the most colorful in Southeast Asia. A Solemn Pontifical Mass is celebrated at the Basilica Minore del Santo Niño.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Sinulog Festival (Philippines) — Christian holiday illustration",
+    "seoExcerpt": "The feast of the Santo Niño (Holy Child Jesus) of Cebu — the oldest statue of Christianity in the Philippines, given by Ferdinand Magellan to the Queen of…",
+    "phase1": false
+  },
+  {
+    "id": "mothering-sunday-united-kingdom",
+    "name": "Mothering Sunday (United Kingdom)",
+    "alsoKnownAs": [
+      "Mid-Lent Sunday",
+      "Laetare Sunday",
+      "Fourth Sunday of Lent"
+    ],
+    "dateType": "moveable",
+    "dateRule": "Fourth Sunday of Lent (mid-Lent)",
+    "type": "feast",
+    "denominations": [
+      "anglican",
+      "catholic",
+      "methodist"
+    ],
+    "seasons": [
+      "lent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "church-history",
+      "marian"
+    ],
+    "liturgicalColor": [
+      "Rose/Pink"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A tradition with pre-Reformation origins, when servants were given the day off to visit their \"mother church\" (the cathedral or church of baptism). Families reunited and the day became an occasion for celebration of mothers. The liturgical color rose/pink is used on this Sunday (called \"Laetare Sunday,\" from the opening word of the introit \"Laetare Jerusalem\" — \"Rejoice, Jerusalem\"). Traditional simnel cake (a rich fruit cake decorated with marzipan) is eaten. In the Anglican tradition, the Epistle of the day is Galatians 4:21–31 (on the \"mother\" Jerusalem). Now widely observed as the UK equivalent of Mother's Day.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Mothering Sunday (United Kingdom) — Christian holiday illustration",
+    "seoExcerpt": "A tradition with pre-Reformation origins, when servants were given the day off to visit their \"mother church\" (the cathedral or church of baptism).…",
+    "phase1": false
+  },
+  {
+    "id": "st-nicholas-day",
+    "name": "St. Nicholas Day",
+    "alsoKnownAs": [
+      "Sinterklaas (Netherlands/Belgium)",
+      "Nikolaustag (Germany)",
+      "Feast of St. Nicholas"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "12-06",
+    "dateRule": "December 6",
+    "type": "memorial",
+    "denominations": [
+      "catholic",
+      "lutheran",
+      "eastern-orthodox",
+      "presbyterian"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "global",
+      "eastern-europe"
+    ],
+    "themes": [
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Nicholas, Bishop of Myra (c. 270–343 AD), known for his generosity to the poor (including secretly providing dowries for three girls, throwing bags of gold through their window). St. Nicholas is the historical prototype of the modern \"Santa Claus\" figure (Sinterklaas → Santa Claus). In the Netherlands and Belgium, Sinterklaas arrives by boat from Spain on November 19, parades through cities on a white horse, and brings gifts to children on the evening of December 5 (Sinterklaas Eve). In Germany and Austria, children put shoes out on December 5 to be filled with sweets by \"Father Christmas\" (Nikolaus). The Eastern Orthodox Church observes the feast on December 6 (Old Calendar: December 19).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "St. Nicholas Day — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Nicholas, Bishop of Myra (c. 270–343 AD), known for his generosity to the poor (including secretly providing dowries for three girls,…",
+    "phase1": false
+  },
+  {
+    "id": "krampusnacht-st-nicholas-eve-austria-bavaria-czech-republic",
+    "name": "Krampusnacht / St. Nicholas Eve (Austria, Bavaria, Czech Republic)",
+    "dateType": "fixed",
+    "dateRule": "December 5 (night before St. Nicholas Day)",
+    "type": "regional-tradition",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "On the eve of St. Nicholas Day (December 6), the companion figure of Krampus (a horned creature representing punishment for naughty children) traditionally accompanies St. Nicholas. Krampusnacht involves costumed figures processing through villages. While pre-Christian in origin, the tradition has been intertwined with the Catholic feast of St. Nicholas for centuries.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Krampusnacht / St. Nicholas Eve (Austria, Bavaria, Czech Republic) — Christian holiday illustration",
+    "seoExcerpt": "On the eve of St. Nicholas Day (December 6), the companion figure of Krampus (a horned creature representing punishment for naughty children)…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-st-francis-of-assisi",
+    "name": "Feast of St. Francis of Assisi",
+    "alsoKnownAs": [
+      "Blessing of the Animals"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "10-04",
+    "dateRule": "October 4",
+    "type": "memorial",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "episcopal",
+      "lutheran",
+      "methodist",
+      "pan-christian"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "creation"
+    ],
+    "liturgicalColor": [
+      "Brown",
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Francis of Assisi (1181–1226), founder of the Franciscan Order, patron of ecology and animals, known for his \"Canticle of the Sun\" and his embodiment of evangelical poverty. Many churches — across a wide range of denominations, well beyond Catholic — hold \"Blessing of the Animals\" services on or around October 4, in honor of Francis's legendary love for all creatures. The feast has become one of the most ecumenically observed of all saint's days.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Feast of St. Francis of Assisi — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Francis of Assisi (1181–1226), founder of the Franciscan Order, patron of ecology and animals, known for his \"Canticle of the Sun\" and…",
+    "phase1": true
+  },
+  {
+    "id": "corpus-christi-processions-germany-poland-austria-bavaria",
+    "name": "Corpus Christi Processions (Germany, Poland, Austria, Bavaria)",
+    "dateType": "moveable",
+    "dateRule": "Thursday (or Sunday) after Trinity Sunday",
+    "moveableRule": "corpus-christi-thursday",
+    "type": "solemnity",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global",
+      "latin-america"
+    ],
+    "themes": [
+      "covenant"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "While Corpus Christi is a universal Catholic feast, its outdoor processions take on special character in Bavaria, Austria, and Poland, where entire towns decorate their streets with flower carpets and elaborate altars. In Murnau, Garmisch, Mittenwald, and other Bavarian towns, residents in traditional dirndl and lederhosen follow the monstrance through streets carpeted with intricate flower arrangements. In Poland (Boże Ciało), Corpus Christi processions stop at four outdoor altars and are followed by a public holiday.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Corpus Christi Processions (Germany, Poland, Austria, Bavaria) — Christian holiday illustration",
+    "seoExcerpt": "While Corpus Christi is a universal Catholic feast, its outdoor processions take on special character in Bavaria, Austria, and Poland, where entire towns…",
+    "phase1": false
+  },
+  {
+    "id": "day-of-the-dead-dia-de-muertos-mexico",
+    "name": "Day of the Dead / Día de Muertos (Mexico)",
+    "alsoKnownAs": [
+      "Día de los Muertos",
+      "Todos Santos",
+      "Ofrenda tradition"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "11-01",
+    "dateRule": "November 1–2 (coinciding with All Saints' and All Souls' Days)",
+    "type": "observance",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "themes": [
+      "penitence",
+      "eschatology",
+      "martyrs-saints"
+    ],
+    "liturgicalColor": [
+      "Multicolor (marigolds",
+      "purple",
+      "orange)"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "A Mexican and Central American observance blending Catholic All Saints' and All Souls' commemorations with pre-Columbian Aztec ancestor veneration (particularly the Aztec Feast of the Dead, originally in summer). Families build elaborate altars (ofrendas) decorated with marigold flowers (cempasúchil), photographs of deceased loved ones, food, candles, and the deceased's favorite items. The belief is that on these nights, the spirits of the dead return to visit the living. UNESCO inscribed it as Intangible Cultural Heritage in 2008. The tradition has spread beyond Mexico through cultural exchange and is now observed in many US communities.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Day of the Dead / Día de Muertos (Mexico) — Christian holiday illustration",
+    "seoExcerpt": "A Mexican and Central American observance blending Catholic All Saints' and All Souls' commemorations with pre-Columbian Aztec ancestor veneration…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-st-thomas-apostle-india",
+    "name": "Feast of St. Thomas, Apostle (India)",
+    "alsoKnownAs": [
+      "Feast of Doubting Thomas",
+      "St. Thomas the Apostle",
+      "Mar Thoma"
+    ],
+    "dateType": "fixed",
+    "dateFixed": "07-03",
+    "dateRule": "July 3 (Catholic, Anglican, Lutheran); October 6 (Eastern Orthodox)",
+    "type": "feast",
+    "denominations": [
+      "catholic",
+      "anglican",
+      "lutheran",
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "ordinary-time"
+    ],
+    "regions": [
+      "india"
+    ],
+    "themes": [
+      "apostles",
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Thomas the Apostle, who according to ancient tradition brought Christianity to India in 52 AD and was martyred in Chennai (Madras) in 72 AD. For the Thomas Christians of Kerala (India), the oldest Christian community in Asia, this feast is of extraordinary importance — they trace their faith directly to Thomas. The Basilica of the National Shrine of St. Thomas at Mylapore (Chennai) is a major pilgrimage site. Thomas' role as the one who doubted and then proclaimed \"My Lord and my God\" upon touching Christ's wounds has given him particular devotion as patron of those with intellectual struggles in faith.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Feast of St. Thomas, Apostle (India) — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Thomas the Apostle, who according to ancient tradition brought Christianity to India in 52 AD and was martyred in Chennai (Madras) in 72…",
+    "phase1": false
+  },
+  {
+    "id": "feast-of-st-francis-xavier-asia-goa",
+    "name": "Feast of St. Francis Xavier (Asia, Goa)",
+    "dateType": "fixed",
+    "dateFixed": "12-03",
+    "dateRule": "December 3",
+    "type": "memorial",
+    "denominations": [
+      "catholic"
+    ],
+    "seasons": [
+      "advent"
+    ],
+    "regions": [
+      "india",
+      "global",
+      "philippines",
+      "asia"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "mission"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Red"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Francis Xavier (1506–1552), Jesuit missionary and \"Apostle of the Indies,\" co-founder of the Jesuits with Ignatius Loyola. He is the patron of Christian missions, Goa, Navarre (Spain), Japan, and co-patron of the Philippines. His incorrupt body is enshrined at the Basilica of Bom Jesus in Old Goa, India, and is exposed to the public every ten years (the \"Exposition\"). The feast is a public holiday in Goa. Francis Xavier baptized thousands throughout India, Japan, and Southeast Asia during his 10 years of mission (1542–1552).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Find a retreat →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Feast of St. Francis Xavier (Asia, Goa) — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Francis Xavier (1506–1552), Jesuit missionary and \"Apostle of the Indies,\" co-founder of the Jesuits with Ignatius Loyola. He is the…",
+    "phase1": false
+  },
+  {
+    "id": "orthodox-easter-celebrations-greece-local-color",
+    "name": "Orthodox Easter Celebrations (Greece — Local Color)",
+    "dateType": "moveable",
+    "dateRule": "Orthodox Pascha (moveable)",
+    "moveableRule": "orthodox-pascha",
+    "type": "major-feast",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "easter"
+    ],
+    "regions": [
+      "greece"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "White",
+      "Gold"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Greek Orthodox Easter combines liturgical solemnity with vivid popular traditions. The midnight service of Pascha (\"Anastasis\") sees worshippers holding candles lit from the \"Holy Fire\" (believed to descend miraculously at the Church of the Holy Sepulchre in Jerusalem each Holy Saturday). The proclamation \"Christos Anesti!\" (Christ is Risen!) is met with \"Alithos Anesti!\" (Truly He is Risen!). On Easter Sunday, families roast whole lambs (spit-roasted arnaki), and Easter eggs (dyed red to symbolize the blood of Christ) are cracked in the game tsougrisma (knocking eggs together, the winner's egg remaining intact). The Easter table features tsoureki (braided sweet bread), kokoretsi, and magiritsa (lamb offal soup eaten after the midnight service).",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Orthodox Easter Celebrations (Greece — Local Color) — Christian holiday illustration",
+    "seoExcerpt": "The Greek Orthodox Easter combines liturgical solemnity with vivid popular traditions. The midnight service of Pascha (\"Anastasis\") sees worshippers…",
+    "phase1": false
+  },
+  {
+    "id": "holy-fire-ceremony-jerusalem",
+    "name": "Holy Fire Ceremony (Jerusalem)",
+    "dateType": "moveable",
+    "dateRule": "Holy Saturday (Orthodox calendar)",
+    "type": "observance",
+    "denominations": [
+      "eastern-orthodox"
+    ],
+    "seasons": [
+      "holy-week"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "themes": [
+      "resurrection"
+    ],
+    "liturgicalColor": [
+      "N/A"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The Holy Fire (Holy Light) ceremony at the Church of the Holy Sepulchre in Jerusalem is one of the most ancient rituals in Eastern Christianity, attested since the 4th century. The Greek Orthodox Patriarch enters the Tomb of Christ (the Edicule) and emerges carrying two lighted candles, believed by the faithful to have been miraculously lit by divine fire. The fire is distributed throughout the congregation and flown to Orthodox capitals worldwide (Athens, Moscow, etc.) for distribution to the faithful. The ceremony is broadcast live on television across Orthodox countries.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "pilgrimages",
+    "edenCtaLabel": "Explore pilgrimage holidays →",
+    "edenCtaUrl": "/pilgrimages",
+    "imageAlt": "Holy Fire Ceremony (Jerusalem) — Christian holiday illustration",
+    "seoExcerpt": "The Holy Fire (Holy Light) ceremony at the Church of the Holy Sepulchre in Jerusalem is one of the most ancient rituals in Eastern Christianity, attested…",
+    "phase1": false
+  },
+  {
+    "id": "sveti-sava-st-sava-day-serbia",
+    "name": "Sveti Sava / St. Sava Day (Serbia)",
+    "dateType": "fixed",
+    "dateFixed": "01-27",
+    "dateRule": "January 27",
+    "type": "national-feast",
+    "denominations": [
+      "pan-christian"
+    ],
+    "seasons": [
+      "christmas"
+    ],
+    "regions": [
+      "global"
+    ],
+    "themes": [
+      "martyrs-saints",
+      "church-history"
+    ],
+    "liturgicalColor": [
+      "White"
+    ],
+    "isPublicHoliday": false,
+    "sourceDescription": "The feast of St. Sava (Nemanjić, 1174–1236), founder of the Serbian Orthodox Church and the first Archbishop of Serbia, patron of the Serbs, of education, and of children. Sveti Sava Day is one of the most important days in the Serbian Orthodox calendar and is associated particularly with schools (children bring offerings to their teachers). The Shrine of St. Sava on Vračar Hill in Belgrade (the largest Orthodox church in the world) is dedicated to him.",
+    "descriptionTeen": "",
+    "edenCtaCategory": "retreats",
+    "edenCtaLabel": "Browse Christian holidays →",
+    "edenCtaUrl": "/retreats",
+    "imageAlt": "Sveti Sava / St. Sava Day (Serbia) — Christian holiday illustration",
+    "seoExcerpt": "The feast of St. Sava (Nemanjić, 1174–1236), founder of the Serbian Orthodox Church and the first Archbishop of Serbia, patron of the Serbs, of education,…",
+    "phase1": false
+  }
+]

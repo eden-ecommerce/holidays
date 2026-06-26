@@ -8,6 +8,7 @@ import { HelpCircle, User, Phone, Cross } from "lucide-react";
 
 const NAV_LINKS = [
   { text: "All Holidays", href: NAMESPACE_PATH, internal: true },
+  { text: "The Christian Calendar", href: `${NAMESPACE_PATH}/calendar`, internal: true, badge: "New" },
   { text: "Retreats & Centres", href: `${NAMESPACE_PATH}/retreats`, internal: true },
   { text: "Tour Operators", href: `${NAMESPACE_PATH}/tours`, internal: true },
   { text: "Pilgrimages", href: `${NAMESPACE_PATH}/pilgrimages`, internal: true },
@@ -78,9 +79,14 @@ export function EdenHeader() {
               <NsLink
                 key={link.text}
                 href={link.href}
-                className="shrink-0 whitespace-nowrap px-3 py-3 text-sm font-medium underline-offset-2 hover:underline"
+                className="relative shrink-0 whitespace-nowrap px-3 py-3 text-sm font-medium underline-offset-2 hover:underline"
               >
                 {link.text}
+                {"badge" in link && link.badge ? (
+                  <span className="ml-1.5 rounded bg-white/20 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide">
+                    {link.badge}
+                  </span>
+                ) : null}
               </NsLink>
             ) : (
               <a

@@ -11,7 +11,8 @@ import { VERCEL_PRODUCTION_ORIGIN } from "@lib/constants";
 import { CATEGORIES } from "@lib/holidays/categories";
 import { getFeaturedProviders } from "@lib/holidays/providers";
 import { getDomesticDestinations, getInternationalDestinations } from "@lib/holidays/destinations";
-import { ArrowRight, MapPin } from "lucide-react";
+import { getHolidayCount } from "@lib/calendar/holidays";
+import { ArrowRight, MapPin, Calendar } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -40,6 +41,32 @@ export default function HolidaysHomePage() {
 
       {/* ── Trust bar ── */}
       <HolidaysTrustBar />
+
+      {/* ── Christian Calendar CTA ── */}
+      <section className="border-b border-border bg-[#2d7a27] text-white">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-white/80">
+              <Calendar className="h-4 w-4" aria-hidden="true" />
+              New
+            </span>
+            <h2 className="mt-2 text-balance text-2xl font-bold sm:text-3xl">
+              Explore the Christian Calendar
+            </h2>
+            <p className="mt-2 max-w-xl text-base text-white/85">
+              {getHolidayCount()}+ holidays explained for students and families — filter by
+              denomination, season, and region. From Christmas and Easter to Timkat and Vardavar.
+            </p>
+          </div>
+          <NsLink
+            href={`${NAMESPACE_PATH}/calendar`}
+            className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-[#1a3d2b] shadow-sm transition-opacity hover:opacity-90"
+          >
+            Open the calendar
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </NsLink>
+        </div>
+      </section>
 
       <div className="mx-auto max-w-6xl px-4 py-14">
 

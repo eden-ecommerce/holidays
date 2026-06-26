@@ -4,11 +4,12 @@ const FOOTER_COLUMNS = [
   {
     heading: "Find a Holiday",
     links: [
-      { text: "Retreat Centres", href: "https://www.eden.co.uk/holidays/retreats" },
-      { text: "Tour Operators", href: "https://www.eden.co.uk/holidays/tours" },
-      { text: "Pilgrimages", href: "https://www.eden.co.uk/holidays/pilgrimages" },
-      { text: "Youth Camps", href: "https://www.eden.co.uk/holidays/youth" },
-      { text: "Festivals & Events", href: "https://www.eden.co.uk/holidays/festivals" },
+      { text: "The Christian Calendar", href: "https://www.eden.co.uk/christian-holidays/calendar" },
+      { text: "Retreat Centres", href: "https://www.eden.co.uk/christian-holidays/retreats" },
+      { text: "Tour Operators", href: "https://www.eden.co.uk/christian-holidays/tours" },
+      { text: "Pilgrimages", href: "https://www.eden.co.uk/christian-holidays/pilgrimages" },
+      { text: "Youth Camps", href: "https://www.eden.co.uk/christian-holidays/youth" },
+      { text: "Festivals & Events", href: "https://www.eden.co.uk/christian-holidays/festivals" },
     ],
   },
   {
