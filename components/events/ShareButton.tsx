@@ -6,9 +6,10 @@ import { Share2, Check } from "lucide-react";
 type Props = {
   url: string;
   title: string;
+  className?: string;
 };
 
-export function ShareButton({ url, title }: Props) {
+export function ShareButton({ url, title, className = "" }: Props) {
   const [copied, setCopied] = useState(false);
 
   async function handleShare() {
@@ -29,7 +30,7 @@ export function ShareButton({ url, title }: Props) {
     <button
       type="button"
       onClick={handleShare}
-      className="inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+      className={`inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-xs font-medium transition-colors hover:bg-muted hover:text-foreground ${className}`}
     >
       {copied ? (
         <Check className="h-3.5 w-3.5 text-green-600" aria-hidden="true" />

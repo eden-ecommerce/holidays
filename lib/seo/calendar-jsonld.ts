@@ -35,7 +35,7 @@ export function buildCalendarItemListJsonLd(holidays: CalendarHoliday[]) {
       position: index + 1,
       name: h.name,
       description: h.descriptionTeen || h.seoExcerpt,
-      url: `${BASE_URL}#${h.id}`,
+      url: `${BASE_URL}/${h.id}`,
     })),
   };
 }
@@ -89,7 +89,7 @@ export function buildCalendarEventJsonLd(year = getCurrentYear()) {
         name: h.name,
         description: h.seoExcerpt,
         startDate: toISODate(start),
-        url: `${BASE_URL}#${h.id}`,
+        url: `${BASE_URL}/${h.id}`,
         eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
         eventStatus: "https://schema.org/EventScheduled",
         location: {

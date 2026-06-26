@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import { NsLink } from "@components/ns-link";
 import { formatDisplayDate } from "@lib/calendar/dates";
 import { DENOMINATION_LABELS, labelFor } from "@lib/calendar/filter-labels";
 import { getPrimarySeason, getSeasonColour } from "@lib/calendar/season-colours";
 import { SEASON_LABELS } from "@lib/calendar/filter-labels";
 import type { CalendarHoliday } from "@lib/calendar/types";
-import { CalendarDays } from "lucide-react";
+import { NAMESPACE_PATH } from "@lib/config";
+import { CalendarDays, ArrowRight } from "lucide-react";
 
 type Props = {
   holiday: CalendarHoliday;
@@ -15,20 +15,16 @@ type Props = {
 };
 
 export function HolidayCard({ holiday, year }: Props) {
-  const [expanded, setExpanded] = useState(false);
   const season = getPrimarySeason(holiday.seasons);
   const seasonColour = getSeasonColour(season);
   const displayDate = formatDisplayDate(holiday, year);
-  const description =
-    holiday.phase1 && holiday.descriptionTeen
-      ? holiday.descriptionTeen
-      : holiday.descriptionTeen ||
-        holiday.sourceDescription?.slice(0, 200) ||
-        "Full guide coming soon.";
+  const description = holiday.descriptionTeen || "Learn more about this Christian holiday.";
+  const excerpt =
+    description.length > 160 ? `${description.slice(0, 157).replace(/\s+\S*$/, "")}…` : description;
 
-  const showReadMore = description.length > 160 && !expanded;
   const visibleDenoms = holiday.denominations.slice(0, 3);
   const extraDenoms = holiday.denominations.length - visibleDenoms.length;
+  const detailHref = `${NAMESPACE_PATH}/calendar/${holiday.id}`;
 
   return (
     <article
@@ -42,7 +38,11 @@ export function HolidayCard({ holiday, year }: Props) {
           <span>{labelFor(SEASON_LABELS, season)}</span>
         </div>
 
-        <h3 className="mt-2 text-lg font-bold text-[#1a3d2b] sm:text-xl">{holiday.name}</h3>
+        <h3 className="mt-2 text-lg font-bold text-[#1a3d2b] sm:text-xl">
+          <NsLink href={detailHref} className="hover:text-primary hover:underline">
+            {holiday.name}
+          </NsLink>
+        </h3>
 
         {holiday.alsoKnownAs?.length ? (
           <p className="mt-1 text-xs italic text-muted-foreground">
@@ -71,29 +71,25 @@ export function HolidayCard({ holiday, year }: Props) {
           ) : null}
         </div>
 
-        <p
-          className={`mt-3 text-[15px] leading-relaxed text-foreground/85 ${expanded ? "" : "line-clamp-3"}`}
-        >
-          {description}
+        <p className="mt-3 line-clamp-3 text-[15px] leading-relaxed text-foreground/85">
+          {excerpt}
         </p>
 
-        {showReadMore ? (
-          <button
-            type="button"
-            onClick={() => setExpanded(true)}
-            className="mt-1 text-left text-sm font-medium text-primary hover:underline"
-          >
-            Read more
-          </button>
-        ) : null}
+        <NsLink
+          href={detailHref}
+          className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+        >
+          Read full guide
+          <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+        </NsLink>
 
-        {holiday.phase1 && holiday.didYouKnow ? (
+        {holiday.didYouKnow ? (
           <p className="mt-3 rounded-lg bg-teal-50 px-3 py-2 text-[13px] italic leading-snug text-teal-900 dark:bg-teal-950/40 dark:text-teal-100">
             <span className="font-semibold not-italic">Did you know?</span> {holiday.didYouKnow}
           </p>
         ) : null}
 
-        {holiday.phase1 && holiday.edenCtaUrl ? (
+        {holiday.edenCtaUrl ? (
           <NsLink
             href={holiday.edenCtaUrl}
             className="mt-4 text-sm font-semibold text-primary hover:underline"

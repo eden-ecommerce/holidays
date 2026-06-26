@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { NsLink } from "@components/ns-link";
 import { CalendarHero } from "@components/calendar/CalendarHero";
 import { SeasonBanner, SeasonBannerMobile } from "@components/calendar/SeasonBanner";
 import { CommercialCtaBlock } from "@components/calendar/CommercialCtaBlock";
@@ -7,10 +8,12 @@ import { CalendarFilterTool } from "@components/calendar/CalendarFilterTool";
 import { QuickAnswersFaq } from "@components/calendar/QuickAnswersFaq";
 import { YearTimeline } from "@components/calendar/YearTimeline";
 import { DenominationExplorer } from "@components/calendar/DenominationExplorer";
+import { CalendarExportButton } from "@components/calendar/CalendarExportButton";
 import { HolidayCardSkeleton } from "@components/calendar/HolidayCard";
 import { CALENDAR_HOLIDAYS } from "@lib/calendar/holidays";
 import { getSeasonContext } from "@lib/calendar/season-context";
 import { getCalendarJsonLdScripts } from "@lib/seo/calendar-jsonld";
+import { NAMESPACE_PATH } from "@lib/config";
 
 const CANONICAL = "https://www.eden.co.uk/christian-holidays/calendar";
 const OG_IMAGE = "https://www.eden.co.uk/christian-holidays/calendar/og-image.svg";
@@ -81,6 +84,15 @@ export default function CalendarPage() {
         />
 
         <DenominationExplorer />
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <CalendarExportButton href="/api/calendar/ics" />
+          <NsLink
+            href={`${NAMESPACE_PATH}/calendar/print`}
+            className="text-sm font-medium text-primary hover:underline"
+          >
+            Printable school calendar (PDF)
+          </NsLink>
+        </div>
         <YearTimeline holidays={CALENDAR_HOLIDAYS} />
         <QuickAnswersFaq />
 

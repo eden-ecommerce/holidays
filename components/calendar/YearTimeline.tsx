@@ -118,7 +118,7 @@ export function YearTimeline({ holidays }: Props) {
                     return (
                       <li key={`${holiday.id}-${iso}`}>
                         <a
-                          href={`${NAMESPACE_PATH}/calendar#${holiday.id}`}
+                          href={`${NAMESPACE_PATH}/calendar/${holiday.id}`}
                           className="group flex items-start gap-2 text-left"
                           title={`${holiday.name} — ${date.getDate()} ${MONTH_NAMES[date.getMonth()]}`}
                         >
